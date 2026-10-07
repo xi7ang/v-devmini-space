@@ -225,8 +225,8 @@ function platformMeta(l) {
 }
 function iconStyle(l) {
   const p = platformMeta(l)
-  // 带品牌 logo 的网盘用白底：logo 多为透明底/浅色，压在暗色卡上看不清
-  if (p.iconImg) return { background: '#fff', borderColor: 'rgba(255,255,255,.18)' }
+  // 带品牌 logo 的网盘：logo 图自带对比底色，chip 不再叠背景，让图铺满整个方块
+  if (p.iconImg) return { background: 'transparent', borderColor: 'rgba(255,255,255,.14)' }
   const c = p.color || '#8a8880'
   return { background: c + '1a', borderColor: c + '55' }
 }
@@ -804,8 +804,8 @@ watch([showQr, activeLink], async ([v]) => {
 .mv__cards { display: grid; gap: 10px; }
 .mv-card { display: flex; align-items: center; gap: 14px; background: var(--bg-1); border: 1px solid var(--glass-border); border-radius: 12px; padding: 12px 14px; transition: all 0.2s; }
 .mv-card:hover { border-color: var(--accent-gold); box-shadow: var(--shadow-glow); transform: translateY(-1px); }
-.mv-card__ico { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 11px; border: 1px solid var(--glass-border); font-size: 19px; flex: 0 0 auto; overflow: hidden; }
-.mv-card__logo { width: 28px; height: 28px; object-fit: contain; display: block; }
+.mv-card__ico { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 12px; border: 1px solid var(--glass-border); font-size: 19px; flex: 0 0 auto; overflow: hidden; }
+.mv-card__logo { width: 100%; height: 100%; object-fit: cover; display: block; }
 .mv-card__mid { display: flex; flex-direction: column; gap: 2px; min-width: 0; flex: 1; }
 .mv-card__name { font-size: 15px; font-weight: 700; }
 .mv-card__line { font-size: 12px; color: var(--text-mid); }
