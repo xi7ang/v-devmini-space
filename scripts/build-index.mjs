@@ -26,7 +26,9 @@ function arg(name, def = null) {
   return v && !v.startsWith('--') ? v : def
 }
 const CONTENT_ROOT = path.resolve(ROOT, arg('content-root', '../../mswnlz'))
-const SEED = arg('seed', null)
+const SEED = arg('seed', null)          // 默认不合并任何种子，避免非影视资源混入
+const ONLY_CATEGORIES = (arg('categories', 'movies') || '').split(',').map(s => s.trim()).filter(Boolean)
+const NO_MERGE = process.argv.includes('--no-merge')  // 默认保留已发布条目
 const OUT_DIR = path.resolve(ROOT, 'data')
 
 const CATEGORY_LABELS = {
@@ -164,6 +166,7 @@ function scanContentRepos() {
   for (const dir of fs.readdirSync(CONTENT_ROOT)) {
     const catDir = path.join(CONTENT_ROOT, dir)
     if (!fs.statSync(catDir).isDirectory() || dir.startsWith('.')) continue
+    if (ONLY_CATEGORIES.length && !ONLY_CATEGORIES.includes(dir)) continue
     for (const f of fs.readdirSync(catDir)) {
       if (!/^20\d{4}\.md$/.test(f)) continue
       const month = f.replace('.md', '')
@@ -181,6 +184,7 @@ function fromSeed() {
   if (!Array.isArray(raw)) return out
   for (const r of raw) {
     if (!r.url || !r.title) continue
+    if (ONLY_CATEGORIES.length && !ONLY_CATEGORIES.includes(r.category)) continue
     out.push({
       title: r.title, subtitle: '', tags: [], desc: '', url: r.url,
       date: null, month: r.month || null, category: r.category || 'other',
@@ -232,11 +236,34 @@ function mergeItems(items) {
   return Array.from(byKey.values())
 }
 
+/** 合并现有 data/resources.json 中已发布的条目，避免 rebuild 抹掉直接发布的内容。 */
+function mergeExisting(items) {
+  const file = path.join(OUT_DIR, 'resources.json')
+  if (NO_MERGE || !fs.existsSync(file)) return items
+  let prev
+  try { prev = JSON.parse(fs.readFileSync(file, 'utf8')) } catch { return items }
+  const byKey = new Map(items.map(it => [normTitle(it.title) || it.id, it]))
+  for (const old of (prev.items || [])) {
+    if (!old || !old.title) continue
+    const key = normTitle(old.title) || old.id
+    const cur = byKey.get(key)
+    if (!cur) { byKey.set(key, { ...old }); continue }
+    for (const l of (old.links || [])) {
+      if (!cur.links.some(x => x.url === l.url)) cur.links.push(l)
+    }
+    if (!cur.poster && old.poster) cur.poster = old.poster
+    if (!cur.desc && old.desc) cur.desc = old.desc
+    if (!cur.year && old.year) cur.year = old.year
+    if ((!cur.tags || !cur.tags.length) && Array.isArray(old.tags) && old.tags.length) cur.tags = old.tags
+  }
+  return Array.from(byKey.values())
+}
+
 function main() {
   fs.mkdirSync(OUT_DIR, { recursive: true })
   const raw = [...scanContentRepos(), ...fromSeed()]
   const normalized = raw.map(normalize).filter(x => x.title && x.title.length >= 2)
-  const items = mergeItems(normalized)
+  const items = mergeExisting(mergeItems(normalized))
   // 排序：有日期的在前（新→旧），其次有月份的
   items.sort((a, b) => String(b.date || b.month || '').localeCompare(String(a.date || a.month || '')))
   items.forEach((it, idx) => { it.i = idx })

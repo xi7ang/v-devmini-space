@@ -5,9 +5,10 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 
 CONTENT_ROOT="${CONTENT_ROOT:-../../mswnlz}"
-SEED="${SEED:-../../xi7ang.github.io/docs/public/data/resources.json}"
+# 纯影视站：只索引 movies 目录，不合并任何外部种子
+CATEGORIES="${CATEGORIES:-movies}"
 
-node scripts/build-index.mjs --content-root "$CONTENT_ROOT" ${SEED:+--seed "$SEED"}
+node scripts/build-index.mjs --content-root "$CONTENT_ROOT" --categories "$CATEGORIES"
 
 git add data/resources.json data/search-index.json
 if git diff --cached --quiet; then

@@ -29,6 +29,7 @@ const PLATFORM_LABELS = {
   quark: '夸克', uc: 'UC', xunlei: '迅雷', guangya: '光鸭',
   aliyun: '阿里云盘', baidu: '百度', '123pan': '123网盘', tianyi: '天翼', unknown: '其他',
 }
+const CATEGORY_LABELS = { movies: '影视', games: '游戏', book: '书籍', tools: '软件工具' }
 
 function parseArgs(argv) {
   const out = { links: [], tags: [] }
@@ -125,7 +126,7 @@ function main() {
       quality: (p.title.match(/(4K|2160P|1080P|HDR|H265)/i) || [])[0] || null,
       tags, desc: p.desc || '', poster: p.poster || '',
       category: p.category || 'movies',
-      categoryLabel: p.category || '影视',
+      categoryLabel: CATEGORY_LABELS[p.category || 'movies'] || '影视',
       date, month: date.slice(0, 7).replace('-', ''),
       links: [],
     }
