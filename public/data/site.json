@@ -1,0 +1,22 @@
+{
+  "brand": { "name": "V影视", "accent": "影视" },
+  "siteName": "V影视",
+  "slogan": "影视资源网盘聚合 · 转存即看 · 持续更新",
+  "description": "V影视 影视资源网盘聚合站，聚合电影/电视剧/动漫/综艺/纪录片资源，夸克/UC/迅雷/光鸭多网盘支持，转存到自己的网盘即可下载观看。本站不提供在线播放。",
+  "announcement": "",
+  "announcementModal": { "enabled": false, "title": "", "content": "" },
+  "qqGroup": "",
+  "telegram": "",
+  "androidApp": "",
+  "email": "",
+  "footer": "本站仅收集、整理各网盘公开分享链接，不存储、不提供任何影视资源与在线播放服务；所有资源版权归原作者所有，请于下载后 24 小时内删除，支持正版。如有侵权，请联系删除。",
+  "platforms": {
+    "quark": { "label": "夸克网盘", "icon": "☁️", "color": "#4A90E2" },
+    "uc": { "label": "UC网盘", "icon": "🟠", "color": "#FF6600" },
+    "xunlei": { "label": "迅雷网盘", "icon": "⚡", "color": "#2DBD6C" },
+    "guangya": { "label": "光鸭网盘", "icon": "🦆", "color": "#E9BD2E" },
+    "aliyun": { "label": "阿里云盘", "icon": "☁️", "color": "#4A90D9" },
+    "baidu": { "label": "百度网盘", "icon": "🔵", "color": "#293BE4" },
+    "unknown": { "label": "网盘链接", "icon": "🔗", "color": "#8a8880" }
+  }
+}

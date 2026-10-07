@@ -1,0 +1,8 @@
+[
+  { "key": "movie", "name": "电影", "emoji": "🎬", "gradient": ["#c99a5b", "#a87b3f"], "order": 1, "show": true },
+  { "key": "tv", "name": "电视剧", "emoji": "📺", "gradient": ["#7d9cb3", "#4f6d8a"], "order": 2, "show": true },
+  { "key": "anime", "name": "动漫", "emoji": "🌀", "gradient": ["#9a8ab0", "#7a6a8f"], "order": 3, "show": true },
+  { "key": "variety", "name": "综艺", "emoji": "🎤", "gradient": ["#c46a4a", "#8a4a3a"], "order": 4, "show": true },
+  { "key": "documentary", "name": "纪录片", "emoji": "🌍", "gradient": ["#7da37d", "#5f7f5f"], "order": 5, "show": true },
+  { "key": "other", "name": "其他", "emoji": "📦", "gradient": ["#b08a5f", "#8a6844"], "order": 6, "show": true }
+]

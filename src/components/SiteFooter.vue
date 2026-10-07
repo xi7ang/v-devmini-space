@@ -1,0 +1,82 @@
+<template>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__top">
+        <div class="site-footer__brand">
+          <div class="brand__name">
+            <template v-if="parts.accent">{{ parts.main }}<span class="brand__accent">{{ parts.accent }}</span></template>
+            <template v-else>{{ parts.main || site?.brand?.name || 'GameHub' }}</template>
+          </div>
+          <p class="text-low">{{ site?.slogan }}</p>
+        </div>
+        <div class="site-footer__links">
+          <a href="/">首页</a>
+          <a href="/category.html">资源库</a>
+          <a href="/changelog.html">更新日志</a>
+          <a href="/disclaimer.html">免责声明</a>
+          <a v-if="site?.email" :href="'mailto:' + site.email">联系站长</a>
+        </div>
+      </div>
+      <div class="site-footer__bottom text-low">
+        <p>{{ site?.footer }}</p>
+        <p>Copyright © {{ year }} {{ brandName(site) }}</p>
+      </div>
+    </div>
+  </footer>
+</template>
+
+<script setup>
+import { useData } from '../composables/useData.js'
+import { useBrand } from '../composables/useBrand.js'
+import { computed } from 'vue'
+const { state } = useData()
+const site = computed(() => state.site)
+const { brandName, brandParts } = useBrand()
+const parts = computed(() => brandParts(site.value))
+const year = new Date().getFullYear()
+</script>
+
+<style scoped>
+.site-footer {
+  margin-top: 60px;
+  border-top: 1px solid rgba(var(--accent-rgb), 0.12);
+  background: rgba(var(--bg-0-rgb), 0.6);
+  backdrop-filter: blur(12px);
+  padding: 40px 0 24px;
+}
+.site-footer__top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+.brand__name {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 700;
+}
+.brand__accent {
+  background: linear-gradient(135deg, var(--neon-purple), var(--neon-cyan));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.site-footer__links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.site-footer__links a { color: var(--text-mid); font-size: 14px; transition: color 0.2s; }
+.site-footer__links a:hover { color: var(--neon-cyan); }
+.site-footer__bottom {
+  border-top: 1px solid rgba(var(--accent-rgb), 0.1);
+  padding-top: 18px;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+</style>
