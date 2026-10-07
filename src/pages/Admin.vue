@@ -692,7 +692,7 @@
 
           <template v-else-if="tab === 'analytics'">
             <div class="flex-between wrap gap-sm mb-md">
-              <h2 style="margin: 0">📊 访问统计 <span class="text-low" style="font-size: 13px">自建 Umami · stats.mibear.top</span></h2>
+              <h2 style="margin: 0">📊 访问统计 <span class="text-low" style="font-size: 13px">v.devmini.space · 自建 Umami · stats.mibear.top</span></h2>
               <div class="flex gap-sm">
                 <input
                   v-model="statsToken"
@@ -740,8 +740,8 @@
                   + <code>get:*</code>（获取点击）。<b>页面 PV 不算在这个数里</b>，它是浏览器自动上报的、不是自定义事件。
                 </li>
                 <li>
-                  <b>按域名</b>：同一个站部署在多个域名（mibear.top / pan.devmini.space），
-                  这张表把它们拆开看——<b>哪个入口带来的量更大</b>。
+                  <b>按域名</b>：本面板只统计 <b>v.devmini.space</b> 这个域名（ECS 上为它单独建了一个 Umami 站点，
+                  与 GameHub / 博客 / xuexi 的数据互不混淆）。这张表用于核对是否有其他域名也在发本指标。
                 </li>
                 <li>
                   <b>统计窗口</b>：页面上所有数字都是<b>最近 N 天的累计</b>，不是当天、也不是实时。
@@ -1161,9 +1161,9 @@ watch(
 )
 // ── 访问统计（自建 Umami 聚合接口）──
 // 数据源：ECS 上的聚合接口 https://stats.mibear.top/gh/stats（只读，Bearer token）。
-// 为什么要这层：Umami UI 给不出「每资源 点击/详情页PV = CTR」的表。
-const STATS_API = 'https://stats.mibear.top/gh/stats'
-const STATS_TOKEN_KEY = 'gamehub_stats_token'
+// ?site=vdev = 只取 v.devmini.space 专属 Umami 站点的数据（不混入 GameHub/博客/xuexi）。
+const STATS_API = 'https://stats.mibear.top/gh/stats?site=vdev'
+const STATS_TOKEN_KEY = 'vdev_stats_token'
 const statsToken = ref(localStorage.getItem(STATS_TOKEN_KEY) || '')
 const statsData = ref(null)
 const statsLoading = ref(false)
