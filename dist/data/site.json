@@ -11,10 +11,10 @@
   "email": "",
   "footer": "本站仅收集、整理各网盘公开分享链接，不存储、不提供任何影视资源与在线播放服务；所有资源版权归原作者所有，请于下载后 24 小时内删除，支持正版。如有侵权，请联系删除。",
   "platforms": {
-    "quark": { "label": "夸克网盘", "icon": "☁️", "color": "#4A90E2" },
-    "uc": { "label": "UC网盘", "icon": "🟠", "color": "#FF6600" },
-    "xunlei": { "label": "迅雷网盘", "icon": "⚡", "color": "#2DBD6C" },
-    "guangya": { "label": "光鸭网盘", "icon": "🦆", "color": "#E9BD2E" },
+    "quark": { "label": "夸克网盘", "icon": "☁️", "iconImg": "/platform-icons/quark.png", "color": "#4A90E2" },
+    "uc": { "label": "UC网盘", "icon": "🟠", "iconImg": "/platform-icons/uc.png", "color": "#FF6600" },
+    "xunlei": { "label": "迅雷网盘", "icon": "⚡", "iconImg": "/platform-icons/xunlei.png", "color": "#2DBD6C" },
+    "guangya": { "label": "光鸭网盘", "icon": "🦆", "iconImg": "/platform-icons/guangya.png", "color": "#E9BD2E" },
     "aliyun": { "label": "阿里云盘", "icon": "☁️", "color": "#4A90D9" },
     "baidu": { "label": "百度网盘", "icon": "🔵", "color": "#293BE4" },
     "unknown": { "label": "网盘链接", "icon": "🔗", "color": "#8a8880" }

@@ -49,7 +49,15 @@
                     rel="noreferrer"
                     @click="onGet($event, l)"
                   >
-                    <span class="mv-card__ico" :style="iconStyle(l)">{{ platformMeta(l).icon }}</span>
+                    <span class="mv-card__ico" :style="iconStyle(l)">
+                      <img
+                        v-if="platformMeta(l).iconImg"
+                        :src="platformMeta(l).iconImg"
+                        :alt="platformMeta(l).label"
+                        class="mv-card__logo"
+                      />
+                      <template v-else>{{ platformMeta(l).icon }}</template>
+                    </span>
                     <span class="mv-card__mid">
                       <span class="mv-card__name">{{ platformMeta(l).label }}</span>
                       <span class="mv-card__line">
@@ -216,7 +224,10 @@ function platformMeta(l) {
   return state.site?.platforms?.[l.platform] || { label: '网盘链接', icon: '🔗', color: '#8a8880' }
 }
 function iconStyle(l) {
-  const c = platformMeta(l).color || '#8a8880'
+  const p = platformMeta(l)
+  // 带品牌 logo 的网盘用白底：logo 多为透明底/浅色，压在暗色卡上看不清
+  if (p.iconImg) return { background: '#fff', borderColor: 'rgba(255,255,255,.18)' }
+  const c = p.color || '#8a8880'
   return { background: c + '1a', borderColor: c + '55' }
 }
 // 提取码自动拼进链接：光鸭用 code，其余用 pwd
@@ -793,7 +804,8 @@ watch([showQr, activeLink], async ([v]) => {
 .mv__cards { display: grid; gap: 10px; }
 .mv-card { display: flex; align-items: center; gap: 14px; background: var(--bg-1); border: 1px solid var(--glass-border); border-radius: 12px; padding: 12px 14px; transition: all 0.2s; }
 .mv-card:hover { border-color: var(--accent-gold); box-shadow: var(--shadow-glow); transform: translateY(-1px); }
-.mv-card__ico { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 11px; border: 1px solid var(--glass-border); font-size: 19px; flex: 0 0 auto; }
+.mv-card__ico { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 11px; border: 1px solid var(--glass-border); font-size: 19px; flex: 0 0 auto; overflow: hidden; }
+.mv-card__logo { width: 28px; height: 28px; object-fit: contain; display: block; }
 .mv-card__mid { display: flex; flex-direction: column; gap: 2px; min-width: 0; flex: 1; }
 .mv-card__name { font-size: 15px; font-weight: 700; }
 .mv-card__line { font-size: 12px; color: var(--text-mid); }
