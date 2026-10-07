@@ -829,7 +829,7 @@
           <!-- 保存条 -->
           <div v-if="dirty" class="save-bar">
             <div class="flex gap-sm">
-              <input v-model="commitMsg" class="form-input" style="flex: 1" placeholder="commit message，如：add: 新增5个游戏资源" />
+              <input v-model="commitMsg" class="form-input" style="flex: 1" placeholder="commit message，如：add: 新增5个影视资源" />
               <button class="btn btn-primary" :disabled="saving" @click="saveAll">{{ saving ? '提交中...' : '💾 提交到 GitHub' }}</button>
             </div>
             <p class="save-bar__hint text-low">提交后将自动触发 GitHub Actions 重新部署（3-5 分钟）</p>
@@ -848,8 +848,12 @@
             <input v-model="editing.title" class="form-input" />
           </div>
           <div class="form-group">
-            <label class="form-label">英文名</label>
-            <input v-model="editing.enTitle" class="form-input" />
+            <label class="form-label">年份</label>
+            <input v-model="editing.year" class="form-input" placeholder="2026" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">画质</label>
+            <input v-model="editing.quality" class="form-input" placeholder="4K / 1080P" />
           </div>
           <div class="form-group">
             <label class="form-label">分类 *</label>
@@ -1756,7 +1760,8 @@ function blankEdit() {
     size: '',
     sizeBytes: null,
     cover: '',
-    steamAppID: null,
+    year: '',
+    quality: '',
     desc: '',
     statusInactive: false,
     featured: false,
@@ -1787,7 +1792,8 @@ function confirmEdit() {
     size: editing.size.trim() || '',
     sizeBytes: editing.sizeBytes || null,
     cover: editing.cover.trim() || '',
-    steamAppID: editing.steamAppID ?? null,
+    year: editing.year || null,
+    quality: editing.quality || '',
     desc: editing.desc.trim(),
     status: editing.statusInactive ? 'inactive' : 'active',
     featured: !!editing.featured,
@@ -2016,7 +2022,7 @@ function saveImport() {
   importText.value = ''
   tab.value = 'resources'
   dirty.value = true
-  commitMsg.value = `add: 批量导入 ${items.length} 个游戏资源`
+  commitMsg.value = `add: 批量导入 ${items.length} 个影视资源`
 }
 
 // ── 保存 & 部署 ──
