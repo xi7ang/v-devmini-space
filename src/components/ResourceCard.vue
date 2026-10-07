@@ -80,7 +80,7 @@ const haloStyle = computed(() => {
 /* 4:3 影视封面 */
 .rc__cover {
   position: relative;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 3 / 4;   /* 竖版封面 3:4 */
   overflow: hidden;
   display: flex;
   align-items: center;
