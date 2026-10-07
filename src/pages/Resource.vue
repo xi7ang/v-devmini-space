@@ -47,7 +47,7 @@
                     :href="transferUrl(l)"
                     target="_blank"
                     rel="noreferrer"
-                    @click="onGet"
+                    @click="onGet($event, l)"
                   >
                     <span class="mv-card__ico" :style="iconStyle(l)">{{ platformMeta(l).icon }}</span>
                     <span class="mv-card__mid">
@@ -87,20 +87,20 @@
       </div>
     </div>
 
-    <!-- 二维码弹窗（PC 端「一键获取」触发，qrcode 渐变游戏风二维码） -->
-    <div v-if="showQr" class="modal-mask" @click.self="showQr = false">
+    <!-- 二维码弹窗（PC 端「一键获取」触发）——码与提取码都跟你点的那张卡走 -->
+    <div v-if="showQr" class="modal-mask" @click.self="closeQr">
       <div class="modal glass game-modal">
-        <button class="game-modal__close" @click="showQr = false" title="关闭">✕</button>
-        <h3 class="game-modal__title">🎮 扫码获取资源</h3>
-        <p class="game-modal__hint">手机扫一扫，资源立即到手</p>
+        <button class="game-modal__close" @click="closeQr" title="关闭">✕</button>
+        <h3 class="game-modal__title">扫码转存{{ activePlatformLabel ? ' · ' + activePlatformLabel : '' }}</h3>
+        <p class="game-modal__hint">手机扫一扫，打开 {{ activePlatformLabel || '网盘' }} 分享页（提取码已自动带入）</p>
         <div class="game-modal__qr-wrap">
           <canvas ref="qrRef" class="game-modal__qr"></canvas>
         </div>
-        <div v-if="r?.pwd" class="game-modal__pwd">
+        <div v-if="activeLink?.pwd" class="game-modal__pwd">
           <span class="text-low">提取码：</span>
-          <code class="pwd-code">{{ r.pwd }}</code>
+          <code class="pwd-code">{{ activeLink.pwd }}</code>
         </div>
-        <p class="game-modal__tip">⚡ 扫一扫，资源到手 🎮</p>
+        <p v-else class="game-modal__tip" style="opacity: 0.7">该网盘无需提取码</p>
       </div>
     </div>
 
@@ -303,10 +303,19 @@ async function copyPwd() {
     alert('提取码: ' + r.value.pwd)
   }
 }
-// 「一键获取」设备分流：PC 弹二维码，移动端直接跳转网盘
-function onGet(e) {
+// 「一键获取」设备分流：PC 弹二维码，移动端直接跳转网盘。
+// link = 你点的那张网盘卡；二维码与提取码都取它，而不是条目的主平台。
+const activeLink = ref(null)
+const activePlatformLabel = computed(() => activeLink.value
+  ? (state.site?.platforms?.[activeLink.value.platform]?.label || '')
+  : '')
+function closeQr() { showQr.value = false }
+function onGet(e, link) {
   // 先埋点再分流：两条路径（弹码 / 直接跳）都算一次「获取」
   if (r.value?.id) track('get:' + r.value.id)
+  activeLink.value = link
+    || links.value[0]
+    || (r.value ? { platform: r.value.platform, url: r.value.url, pwd: r.value.pwd } : null)
   if (window.matchMedia('(min-width: 768px)').matches) {
     e.preventDefault()
     showQr.value = true
@@ -361,12 +370,14 @@ async function drawGradientQr(canvas, text) {
   ctx.globalCompositeOperation = 'source-over'
 }
 
-watch(showQr, async (v) => {
+watch([showQr, activeLink], async ([v]) => {
   if (!v || !r.value) return
   await nextTick() // 先等 v-if 弹窗挂载完成，再拿 canvas
   if (!qrRef.value) return
   try {
-    await drawGradientQr(qrRef.value, r.value.url)
+    // 码必须跟着当前点击的那张网盘卡走（含该平台的提取码参数）
+    const link = activeLink.value
+    await drawGradientQr(qrRef.value, link ? transferUrl(link) : r.value.url)
   } catch (e) {
     console.error('二维码生成失败:', e)
   }
@@ -770,7 +781,7 @@ watch(showQr, async (v) => {
 .mv__backdrop { position: absolute; inset: 0; background-size: cover; background-position: center; filter: blur(30px) saturate(1.2); transform: scale(1.25); opacity: 0.35; }
 .mv__veil { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(var(--bg-0-rgb), 0.72), rgba(var(--bg-0-rgb), 0.96)); }
 .mv__body { position: relative; display: grid; grid-template-columns: 300px 1fr; gap: 28px; padding: 26px 28px; }
-.mv__poster { position: relative; aspect-ratio: 4 / 3; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-card); background: var(--bg-2); display: flex; align-items: center; justify-content: center; }
+.mv__poster { position: relative; aspect-ratio: 3 / 4; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-card); background: var(--bg-2); display: flex; align-items: center; justify-content: center; }
 .mv__poster img { width: 100%; height: 100%; object-fit: cover; }
 .mv__title { font-family: var(--font-display); font-size: 30px; font-weight: 700; line-height: 1.25; margin-bottom: 10px; }
 .mv__desc { color: var(--text-mid); font-size: 14.5px; line-height: 1.85; margin-bottom: 20px; white-space: pre-wrap; }
@@ -789,5 +800,5 @@ watch(showQr, async (v) => {
 .mv-card__line b { color: var(--accent-gold); }
 .mv-card__go { flex: 0 0 auto; background: linear-gradient(135deg, var(--accent-gold), var(--accent-gold-deep)); color: #fff; font-weight: 700; font-size: 13.5px; padding: 9px 16px; border-radius: 100px; white-space: nowrap; }
 .mv__meta { display: flex; gap: 16px; flex-wrap: wrap; font-size: 12.5px; margin-top: 14px; }
-@media (max-width: 840px) { .mv__body { grid-template-columns: 1fr; padding: 18px; } .mv__poster { aspect-ratio: 16 / 9; } .mv__title { font-size: 22px; } }
+@media (max-width: 840px) { .mv__body { grid-template-columns: 1fr; padding: 18px; } .mv__poster { aspect-ratio: 3 / 4; max-width: 220px; } .mv__title { font-size: 22px; } }
 </style>
