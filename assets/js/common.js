@@ -70,6 +70,26 @@
     toastTimer = setTimeout(() => toastEl.classList.remove('show'), 1800);
   }
 
+  /* ── 主题（全站唯一入口，默认暗色）── */
+  const THEME_KEY = 'vdev-theme';
+  function applyTheme(t) {
+    document.documentElement.setAttribute('data-theme', t);
+    try { localStorage.setItem(THEME_KEY, t); } catch (e) { /* ignore */ }
+    const b = document.getElementById('themeToggle');
+    if (b) b.textContent = t === 'dark' ? '☀️' : '🌙';
+  }
+  function initTheme() {
+    applyTheme((() => { try { return localStorage.getItem(THEME_KEY) || 'dark' } catch (e) { return 'dark' } })());
+    const wire = () => {
+      const b = document.getElementById('themeToggle');
+      if (!b || b.dataset.wired) return;
+      b.dataset.wired = '1';
+      b.onclick = () => applyTheme(document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+    };
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', wire); else wire();
+  }
+  initTheme();
+
   function hashHue(title) {
     let h = 0;
     for (const c of String(title || 'x')) h = (h * 31 + c.charCodeAt(0)) % 360;
@@ -78,5 +98,5 @@
   const phGradient = t => `linear-gradient(135deg,hsl(${hashHue(t)} 42% 22%),hsl(${(hashHue(t) + 40) % 360} 38% 13%))`;
   const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
-  global.VU = { CODE_PARAM, PLATFORM, withCode, transferUrl, copyText, toast, phGradient, esc };
+  global.VU = { CODE_PARAM, PLATFORM, withCode, transferUrl, copyText, toast, phGradient, esc, applyTheme };
 })(window);
