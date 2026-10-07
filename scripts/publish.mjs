@@ -32,7 +32,7 @@ const PLATFORM_LABELS = {
 const CATEGORY_LABELS = { movies: '影视', games: '游戏', book: '书籍', tools: '软件工具' }
 
 function parseArgs(argv) {
-  const out = { links: [], tags: [] }
+  const out = { links: [], tags: [], codes: [] }
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i]
     if (a === '--push') { out.push = true; continue }
@@ -41,6 +41,7 @@ function parseArgs(argv) {
     const val = argv[i + 1]
     if (key === 'link') { out.links.push(val); i++; continue }
     if (key === 'tags') { out.tags.push(val); i++; continue }
+    if (key === 'code') { out.codes.push(val); i++; continue }
     out[key] = val; i++
   }
   return out
@@ -66,6 +67,21 @@ function detectPlatform(url) {
   return 'unknown'
 }
 const extractPwd = url => (String(url || '').match(/[?&]pwd=([^&\s)]+)/) || [])[1] || null
+
+// 提取码参数名：光鸭用 code，其余用 pwd
+const CODE_PARAM = { guangya: 'code' }
+function withCode(url, pwd, platform) {
+  if (!url || !pwd) return url
+  const key = CODE_PARAM[platform] || 'pwd'
+  const code = String(pwd).trim()
+  if (!code) return url
+  const re = new RegExp('([?&]' + key + '=)([^&#]*)')
+  if (re.test(url)) return url.replace(re, '$1' + encodeURIComponent(code))
+  const i = url.indexOf('#')
+  const base = i >= 0 ? url.slice(0, i) : url
+  const hash = i >= 0 ? url.slice(i) : ''
+  return base + (base.includes('?') ? '&' : '?') + key + '=' + encodeURIComponent(code) + hash
+}
 
 function detectType(title, tags) {
   const s = `${title} ${tags.join(' ')}`
@@ -97,6 +113,13 @@ function buildPayload(args) {
     else links.push({ platform: detectPlatform(l), url: l })
   }
   if (links.length) p.links = links
+  // --code platform=VALUE  → 各平台提取码（UC/光鸭返回 code，迅雷返回 pwd）
+  const codes = {}
+  for (const c of (args.codes || [])) {
+    const m = String(c).match(/^([a-z0-9]+)=(.*)$/i)
+    if (m) codes[m[1].toLowerCase()] = m[2]
+  }
+  p._codes = codes
   return p
 }
 
@@ -137,12 +160,14 @@ function main() {
     if (tags.length) item.tags = Array.from(new Set([...(item.tags || []), ...tags]))
     item.date = date
   }
+  const codeMap = Object.assign({}, p._codes || {})
   for (const l of p.links) {
     const platform = l.platform || detectPlatform(l.url)
-    const url = l.url
-    if (!/^https?:\/\//.test(url)) { console.error(`[publish] 跳过非法链接: ${url}`); continue }
+    if (!/^https?:\/\//.test(l.url)) { console.error(`[publish] 跳过非法链接: ${l.url}`); continue }
+    const pwd = l.pwd ?? codeMap[platform] ?? extractPwd(l.url)
+    const url = withCode(l.url, pwd, platform)   // 提取码自动写进链接，用户无需手输
     if (!item.links.some(x => x.url === url)) {
-      item.links.push({ platform, url, pwd: l.pwd ?? extractPwd(url) })
+      item.links.push({ platform, url, pwd: pwd || null })
     }
   }
 

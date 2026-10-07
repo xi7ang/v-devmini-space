@@ -59,8 +59,23 @@ function detectPlatform(url) {
 
 function extractPwd(url) {
   if (!url) return null
-  const m = url.match(/[?&]pwd=([^&\s)]+)/)
+  const m = url.match(/[?&](?:pwd|code)=([^&\s)]+)/)
   return m ? m[1] : null
+}
+
+// 提取码参数名：光鸭用 code，其余用 pwd；写入数据时就把码拼进链接
+const CODE_PARAM = { guangya: 'code' }
+function withCode(url, pwd, platform) {
+  if (!url || !pwd) return url
+  const key = CODE_PARAM[platform] || 'pwd'
+  const code = String(pwd).trim()
+  if (!code) return url
+  const re = new RegExp('([?&]' + key + '=)([^&#]*)')
+  if (re.test(url)) return url.replace(re, '$1' + encodeURIComponent(code))
+  const i = url.indexOf('#')
+  const base = i >= 0 ? url.slice(0, i) : url
+  const hash = i >= 0 ? url.slice(i) : ''
+  return base + (base.includes('?') ? '&' : '?') + key + '=' + encodeURIComponent(code) + hash
 }
 
 function sha1(s) {
@@ -213,7 +228,7 @@ function normalize(raw) {
     categoryLabel: CATEGORY_LABELS[raw.category] || '其他',
     date: raw.date || null,
     month: raw.month || null,
-    links: [{ platform, url: raw.url, pwd: extractPwd(raw.url) }],
+    links: [{ platform, url: withCode(raw.url, extractPwd(raw.url), platform), pwd: extractPwd(raw.url) }],
   }
   return item
 }

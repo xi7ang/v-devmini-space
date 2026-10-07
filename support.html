@@ -3,47 +3,55 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>使用说明 · V影视</title>
-<meta name="theme-color" content="#0d0f14" />
+<title>使用说明 - V影视</title>
+<meta name="theme-color" content="#18191e" />
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
 <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-<header class="site-header">
-  <div class="wrap header-inner">
-    <a class="logo" href="index.html"><span class="logo-mark">▶</span><span class="logo-text">V<b>影视</b></span></a>
-    <nav class="main-nav"><a href="index.html">首页</a><a class="active" href="support.html">使用说明</a></nav>
+<header class="qy-header">
+  <div class="container-x header-inner">
+    <div class="qy-logo">
+      <a href="index.html" style="display:flex;align-items:center;gap:9px">
+        <span class="logo-mark">▶</span><span class="logo-text">V<b>影视</b></span>
+      </a>
+    </div>
+    <nav class="qy-nav">
+      <a class="nav-link" href="index.html">首页</a>
+      <a class="nav-link active" href="support.html">使用说明</a>
+    </nav>
   </div>
 </header>
-<main class="wrap detail-wrap">
-  <a class="back-link" href="index.html">← 返回首页</a>
-  <div class="detail-card" style="grid-template-columns:1fr">
-    <div>
-      <h1 class="detail-title">使用说明</h1>
-      <p class="detail-desc">V影视 是一个影视资源分享链接聚合站：我们把散落在各家网盘的分享链接整理成可搜索的索引。本站<strong style="color:var(--accent-2)">不提供在线播放，也不存储任何影视文件</strong>。</p>
-      <p class="links-title">三步拿到资源</p>
-      <div class="link-btns">
-        <div class="link-btn"><span class="lb-left"><span class="lb-ico">1️⃣</span><span class="lb-name">在首页搜索或按分类浏览，找到想看的资源</span></span></div>
-        <div class="link-btn"><span class="lb-left"><span class="lb-ico">2️⃣</span><span class="lb-name">进入详情页，点击对应网盘按钮（UC / 迅雷 / 光鸭 / 夸克）</span></span></div>
-        <div class="link-btn"><span class="lb-left"><span class="lb-ico">3️⃣</span><span class="lb-name">在网盘里「转存 / 保存到我的网盘」，之后即可下载观看</span></span></div>
-      </div>
-      <div class="tip-box">
-        <b>小提示</b>
-        <ol>
-          <li>没有网盘账号时，先注册对应网盘（多数免费注册即送容量）</li>
-          <li>部分链接带提取码，详情页会直接显示，复制即可</li>
-          <li>资源可能随时间失效，若链接失效可等待更新或搜索同款</li>
-        </ol>
-      </div>
-      <div class="tip-box" style="border-left-color:var(--accent-2)">
-        <b>免责声明</b>
-        <p>本站所有资源均来自互联网公开分享，仅供学习交流，请于下载后 24 小时内删除，支持正版。若内容侵犯您的权益，请通过站点邮箱联系，我们将第一时间处理。</p>
-      </div>
+<main class="container-x qy-main">
+  <div class="qy-mod-list">
+    <div class="qy-mod-header"><h2 class="qy-mod-title">使用说明</h2></div>
+    <div class="save-panel" style="max-width:820px">
+      <p class="detail-synopsis" style="margin-bottom:16px">
+        V影视 是一个影视资源分享链接聚合站：把散落在各家网盘的分享链接整理成可搜索的索引。
+        本站<strong style="color:var(--red)">不提供在线播放，也不存储任何影视文件</strong>。
+      </p>
+      <h3>三步拿到资源</h3>
+      <ol class="save-steps" style="font-size:14px">
+        <li>在首页搜索或按分类浏览，找到想看的资源</li>
+        <li>进入详情页，点对应的「一键转存」按钮（UC / 迅雷 / 光鸭 / 夸克）——<b>提取码已自动带在链接里，不用手输</b></li>
+        <li>登录网盘后点「保存到我的网盘 / 转存」，之后即可下载观看</li>
+      </ol>
+      <h3 style="margin-top:20px">小提示</h3>
+      <ol class="save-steps" style="font-size:14px">
+        <li>没有网盘账号时，先注册对应网盘（多数免费注册即送容量）</li>
+        <li>资源可能随时间失效，若链接打不开可等待更新或搜索同款</li>
+        <li>也可点「复制链接」把带提取码的完整链接分享给朋友</li>
+      </ol>
+      <h3 style="margin-top:20px;color:var(--red)">免责声明</h3>
+      <p class="detail-synopsis" style="margin:0">
+        本站所有资源均来自互联网公开分享，仅供学习交流，请于下载后 24 小时内删除，支持正版。
+        若内容侵犯您的权益，请联系站点邮箱，我们将第一时间处理。
+      </p>
     </div>
   </div>
 </main>
-<footer class="site-footer">
-  <div class="wrap"><p class="copyright">Copyright © 2026 v.devmini.space · All Rights Reserved</p></div>
+<footer class="qy-footer">
+  <div class="container-x"><p class="copyright">Copyright © 2026 v.devmini.space · All Rights Reserved</p></div>
 </footer>
 </body>
 </html>

@@ -3,42 +3,52 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>资源详情 · V影视</title>
-<meta name="theme-color" content="#0d0f14" />
+<title>资源详情 - V影视</title>
+<meta name="theme-color" content="#18191e" />
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
 <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-<header class="site-header">
-  <div class="wrap header-inner">
-    <a class="logo" href="index.html">
-      <span class="logo-mark">▶</span>
-      <span class="logo-text">V<b>影视</b></span>
-    </a>
-    <nav class="main-nav" id="mainNav"></nav>
-    <form class="search-box" id="searchForm" autocomplete="off">
-      <input type="search" id="searchInput" placeholder="搜索电影、剧集、动漫、综艺…" aria-label="搜索" />
-      <button type="submit" aria-label="搜索">🔍</button>
-    </form>
+<header class="qy-header" id="qyHeader">
+  <div class="container-x header-inner">
+    <div class="qy-logo">
+      <a href="index.html" style="display:flex;align-items:center;gap:9px">
+        <span class="logo-mark">▶</span>
+        <span class="logo-text">V<b>影视</b></span>
+      </a>
+    </div>
+    <nav class="qy-nav" id="qyNav"></nav>
+    <div class="qy-search">
+      <form class="search-box" id="searchForm" autocomplete="off">
+        <span class="search-type">全部 ▾</span>
+        <input type="text" id="searchInput" placeholder="搜索 ..." aria-label="搜索" name="keyword" />
+        <button type="submit" class="search-btn" aria-label="搜索">🔍</button>
+      </form>
+    </div>
   </div>
 </header>
 
-<main class="wrap detail-wrap" id="detail">
-  <div class="loading" id="loading">加载中…</div>
+<main class="container-x qy-main">
+  <div class="qy-loading" id="loading">加载中…</div>
+  <div id="detail"></div>
+
+  <section class="qy-mod-list" id="relatedWrap" hidden style="margin-top:40px">
+    <div class="qy-mod-header"><h2 class="qy-mod-title">猜你喜欢</h2></div>
+    <ul class="qy-mod-ul" id="relatedGrid"></ul>
+  </section>
 </main>
 
-<section class="wrap related-wrap" id="relatedWrap" hidden>
-  <h2 class="section-title">相关推荐</h2>
-  <div class="grid" id="relatedGrid"></div>
-</section>
-
-<footer class="site-footer">
-  <div class="wrap">
-    <p class="disclaimer">本站仅收集、整理各网盘公开分享链接，不存储、不提供任何影视资源与在线播放服务。所有资源版权归原作者所有，请于下载后 24 小时内删除，支持正版。如有侵权，请联系删除。</p>
+<footer class="qy-footer">
+  <div class="container-x">
+    <p class="disclaimer">
+      版权声明：如果本网站提供内容侵犯了您的版权，请来函说明，本网站将立即删除，保护版权所有者的权益。<br />
+      本站仅收集、整理各网盘公开分享链接，不存储、不提供任何影视资源与在线播放服务；请于下载后 24 小时内删除，支持正版。
+    </p>
     <p class="copyright">Copyright © 2026 v.devmini.space · All Rights Reserved</p>
   </div>
 </footer>
 
+<script src="assets/js/common.js"></script>
 <script src="assets/js/detail.js"></script>
 </body>
 </html>
