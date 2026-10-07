@@ -861,19 +861,17 @@
               <option v-for="c in state.categories" :key="c.key" :value="c.key">{{ c.name }}</option>
             </select>
           </div>
-          <div class="form-group">
-            <label class="form-label">平台 *</label>
-            <select v-model="editing.platform" class="form-input">
-              <option v-for="(p, k) in state.site?.platforms" :key="k" :value="k">{{ p.label }}</option>
-            </select>
-          </div>
           <div class="form-group" style="grid-column: 1/-1">
-            <label class="form-label">网盘链接 *</label>
-            <input v-model="editing.url" class="form-input" placeholder="https://pan.quark.cn/s/..." />
-          </div>
-          <div class="form-group">
-            <label class="form-label">提取码</label>
-            <input v-model="editing.pwd" class="form-input" />
+            <label class="form-label">网盘资源（有几个填几个，前台按实际存在的自适应展示）*</label>
+            <div v-for="(l, i) in editing.links" :key="i" class="link-row">
+              <select v-model="l.platform" class="form-input" style="width: 138px">
+                <option v-for="(p, k) in state.site?.platforms" :key="k" :value="k">{{ p.label }}</option>
+              </select>
+              <input v-model="l.url" class="form-input" style="flex: 1" placeholder="https://drive.uc.cn/s/..." />
+              <input v-model="l.pwd" class="form-input" style="width: 104px" placeholder="提取码" />
+              <button class="btn btn-sm btn-danger" type="button" @click="editing.links.splice(i, 1)" title="删除该网盘">✕</button>
+            </div>
+            <button class="btn btn-sm" type="button" @click="editing.links.push({ platform: 'uc', url: '', pwd: '' })">＋ 添加网盘</button>
           </div>
           <div class="form-group">
             <label class="form-label">大小（展示用）</label>
@@ -1754,9 +1752,7 @@ function blankEdit() {
     enTitle: '',
     category: cats.value[0]?.key || 'pc',
     tagsStr: '',
-    platform: 'quark',
-    url: '',
-    pwd: '',
+    links: [{ platform: 'quark', url: '', pwd: '' }],
     size: '',
     sizeBytes: null,
     cover: '',
@@ -1769,15 +1765,24 @@ function blankEdit() {
   }
 }
 function openEdit(r) {
-  Object.assign(editing, r ? {
-    ...r,
-    tagsStr: (r.tags || []).join(', '),
-    statusInactive: r.status === 'inactive',
-  } : blankEdit())
+  const base = r
+    ? {
+        ...r,
+        tagsStr: (r.tags || []).join(', '),
+        statusInactive: r.status === 'inactive',
+        links: Array.isArray(r.links) && r.links.length
+          ? r.links.map((l) => ({ platform: l.platform || 'quark', url: l.url || '', pwd: l.pwd || '' }))
+          : [{ platform: r.platform || 'quark', url: r.url || '', pwd: r.pwd || '' }],
+      }
+    : blankEdit()
+  Object.assign(editing, base)
   editVisible.value = true
 }
 function confirmEdit() {
-  if (!editing.title || !editing.url || !editing.category) { alert('标题/链接/分类必填'); return }
+  const editLinks = (editing.links || [])
+    .map((l) => ({ platform: l.platform, url: String(l.url || '').trim(), pwd: String(l.pwd || '').trim() || null }))
+    .filter((l) => l.url)
+  if (!editing.title || !editLinks.length || !editing.category) { alert('标题 / 至少一条网盘链接 / 分类 必填'); return }
   const nowIso = new Date().toISOString().replace(/\.\d{3}Z$/, '+08:00').replace(/T/, 'T')
   const month = (editing.addedAt || nowIso).slice(0, 7).replace('-', '')
   const item = {
@@ -1786,9 +1791,10 @@ function confirmEdit() {
     enTitle: editing.enTitle.trim(),
     category: editing.category,
     tags: editing.tagsStr.split(/[,，]/).map((s) => s.trim()).filter(Boolean).slice(0, 8),
-    platform: editing.platform,
-    url: editing.url.trim(),
-    pwd: editing.pwd.trim() || null,
+    links: editLinks,
+    platform: editLinks[0].platform,
+    url: editLinks[0].url,
+    pwd: editLinks[0].pwd,
     size: editing.size.trim() || '',
     sizeBytes: editing.sizeBytes || null,
     cover: editing.cover.trim() || '',
@@ -2450,4 +2456,8 @@ onMounted(async () => {
   .admin-nav { flex-direction: row; overflow-x: auto; }
   .form-grid { grid-template-columns: 1fr; }
 }
+
+/* 多网盘编辑行 */
+.link-row { display: flex; gap: 8px; align-items: center; margin-bottom: 8px; }
+.link-row .form-input { margin: 0; }
 </style>
