@@ -3,9 +3,9 @@
     <!-- ── 登录 ── -->
     <div v-if="!authed" class="login-wrap">
       <div class="login-card glass">
-        <div class="login-card__logo">🎮</div>
-        <h1 class="login-card__title">GameHub 管理后台</h1>
-        <p class="text-low">输入 GitHub 细粒度 PAT（仅 GameHub 仓库 contents:write）</p>
+        <div class="login-card__logo">🎬</div>
+        <h1 class="login-card__title">V影视 管理后台</h1>
+        <p class="text-low">输入 GitHub 细粒度 PAT（仅 v-devmini-space 仓库 contents:write）</p>
         <input
           v-model="tokenInput"
           type="password"
@@ -28,7 +28,7 @@
       <header class="admin-topbar">
         <div class="container flex-between">
           <div class="flex gap-sm">
-            <span class="admin-logo">🎮 {{ siteForm.brand?.name || 'GameHub' }} 后台</span>
+            <span class="admin-logo">🎬 {{ siteForm.brand?.name || 'V影视' }} 后台</span>
             <span class="badge">已连接 {{ repo }}</span>
           </div>
           <div class="flex gap-sm">
@@ -269,7 +269,7 @@
               </div>
               <div class="form-group">
                 <label class="form-label">品牌名（一键换品牌）</label>
-                <input v-model="siteForm.brand.name" class="form-input" placeholder="如：GameHub" />
+                <input v-model="siteForm.brand.name" class="form-input" placeholder="如：V影视" />
               </div>
               <div class="form-group">
                 <label class="form-label">品牌高亮后缀（可留空）</label>
@@ -1007,7 +1007,7 @@ import { useData } from '../composables/useData.js'
 
 const { state, load, parseLines, catLabel, catMeta } = useData()
 
-const REPO = 'xi7ang/GameHub'
+const REPO = 'xi7ang/v-devmini-space'
 const BASE = 'https://api.github.com'
 const TOKEN_KEY = 'gamehub-pat'
 
@@ -1101,7 +1101,7 @@ const resources = ref([])
 const cats = ref([])
 const siteForm = reactive({
   brand: {
-    name: 'GameHub',
+    name: 'V影视',
     accent: 'Hub',
   },
   announcementModal: {
@@ -1659,10 +1659,10 @@ async function refreshAll() {
   if (!Array.isArray(site.announcementModal.items)) site.announcementModal.items = []
   // 兼容旧版 site.json：无 brand 时按 siteName 首词推断品牌名，默认无高亮后缀
   if (!site.brand) {
-    const fallbackName = String(site.siteName || 'GameHub').split(/\s+/)[0]
+    const fallbackName = String(site.siteName || 'V影视').split(/\s+/)[0]
     site.brand = { name: fallbackName, accent: '' }
   }
-  site.brand.name = site.brand.name || String(site.siteName || 'GameHub').split(/\s+/)[0]
+  site.brand.name = site.brand.name || String(site.siteName || 'V影视').split(/\s+/)[0]
   site.brand.accent = site.brand.accent != null ? site.brand.accent : ''
   Object.assign(siteForm, JSON.parse(JSON.stringify(site)))
   siteInit.value = true // 之后用户任何修改都会触发 dirty
@@ -2089,7 +2089,7 @@ async function saveAll() {
   if (!dirty.value) return
   saving.value = true
   try {
-    const msg = commitMsg.value.trim() || 'chore: 更新 GameHub 数据'
+    const msg = commitMsg.value.trim() || 'chore: 更新站点数据'
     // 先上传暂存的封面图片（每个文件一次 commit）
     for (const up of pendingUploads.value) {
       await writeFileBinary(up.path, up.content, `add: 封面 ${up.path.split('/').pop()}`)
