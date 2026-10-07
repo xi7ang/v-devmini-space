@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>V影视 · 网盘影视资源搜索</title>
+<meta name="description" content="V影视 - 影视资源网盘搜索，提供 UC / 迅雷 / 光鸭 / 夸克 网盘资源链接，转存到自己的网盘即可下载观看。本站不提供在线播放。" />
+<meta name="theme-color" content="#0d0f14" />
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="logo" href="index.html">
+      <span class="logo-mark">▶</span>
+      <span class="logo-text">V<b>影视</b></span>
+    </a>
+    <nav class="main-nav" id="mainNav"></nav>
+    <form class="search-box" id="searchForm" autocomplete="off">
+      <input type="search" id="searchInput" placeholder="搜索电影、剧集、动漫、综艺…" aria-label="搜索" />
+      <button type="submit" aria-label="搜索">🔍</button>
+    </form>
+  </div>
+</header>
+
+<section class="hero" id="hero">
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <p class="hero-kicker">网盘资源 · 转存即看</p>
+      <h1 class="hero-title" id="heroTitle">影视资源，一键转存</h1>
+      <p class="hero-desc" id="heroDesc">聚合 UC 网盘 / 迅雷网盘 / 光鸭网盘 / 夸克网盘分享链接，转存到自己的网盘后下载观看。本站<strong>不提供在线播放</strong>。</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#list" id="heroCta">开始搜索</a>
+        <a class="btn btn-ghost" href="support.html">使用说明</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main class="wrap" id="list">
+  <div class="filter-bar">
+    <div class="filter-row" id="categoryRow" role="tablist" aria-label="分类"></div>
+    <div class="filter-row" id="platformRow" role="tablist" aria-label="网盘"></div>
+    <div class="filter-tools">
+      <select id="sortSelect" aria-label="排序">
+        <option value="new">最新发布</option>
+        <option value="type">按类型</option>
+        <option value="title">按标题</option>
+      </select>
+      <span class="stat" id="stat">加载中…</span>
+    </div>
+  </div>
+
+  <div class="grid" id="grid" aria-live="polite"></div>
+  <div class="empty" id="empty" hidden>
+    <p>没有匹配的资源。</p>
+    <p class="muted">换个关键词，或切换分类试试。</p>
+  </div>
+  <div class="load-more-wrap">
+    <button class="btn btn-ghost" id="loadMore" hidden>加载更多</button>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="disclaimer">本站仅收集、整理各网盘公开分享链接，不存储、不提供任何影视资源与在线播放服务。所有资源版权归原作者所有，请于下载后 24 小时内删除，支持正版。如有侵权，请联系删除。</p>
+    <p class="copyright">Copyright © 2026 v.devmini.space · All Rights Reserved</p>
+  </div>
+</footer>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>

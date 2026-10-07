@@ -1,0 +1,5 @@
+# 依赖 / 临时产物
+node_modules/
+tmp/
+*.log
+.DS_Store
