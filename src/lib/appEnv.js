@@ -1,5 +1,5 @@
 // src/lib/appEnv.js
-// 是否运行在「游戏源神」安卓 App 的 WebView 内 —— 命中才隐藏「安卓APP」下载入口。
+// 是否运行在「V影视」安卓 App 的 WebView 内 —— 命中才隐藏「安卓APP」下载入口。
 //
 // 只认壳自己打的标记：MainActivity 在 settings.userAgentString 末尾追加的 ` GameHubApp`。
 //

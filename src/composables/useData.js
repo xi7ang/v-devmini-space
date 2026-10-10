@@ -76,7 +76,7 @@ function catMeta(key) {
 // 品牌动态化：site.json 的 brand.name 为当前品牌名。各页面 *.html 静态 title/meta 里
 // 写的是仓库默认品牌（=DEFAULT_BRAND），load 完成后统一替换成运行时品牌。
 // 这样后台“一键换品牌”后，浏览器页签 + og:title 同步生效，无需改 7 个 html。
-const DEFAULT_BRAND = 'GameHub'
+const DEFAULT_BRAND = 'V影视'
 
 function applyBrandToDoc(site) {
   const name = site?.brand?.name

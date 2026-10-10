@@ -1,13 +1,13 @@
 // src/composables/useBrand.js
 // 品牌名解析：site.json 的 brand 配置 → 页面各处展示
-// brand = { name: 'GameHub', accent: 'Hub' }（name 完整名，accent 可高亮后缀）
+// brand = { name: 'V影视', accent: '影视' }（name 完整名，accent 可高亮后缀）
 // 兼容旧数据：无 brand 字段时回退 siteName 首词，无 accent 则不拆高亮
 import { useData } from './useData.js'
 
 const LS_KEY = 'gamehub-brand'
 
 // 构建期注入的品牌（scripts/inject-brand.js 写入 window.__BRAND__）：数据未就绪时首帧即正确，
-// 不必等 site.json 返回后再改名 —— 消除「先 GameHub 后换名」的闪烁。
+// 不必等 site.json 返回后再改名 —— 消除「先显示默认名再换名」的闪烁。
 function injected() {
   try {
     if (typeof window === 'undefined' || !window.__BRAND__) return null
@@ -20,7 +20,7 @@ function injected() {
 export function useBrand() {
   const { state } = useData()
 
-  // 完整品牌名：site 配置优先；数据未就绪时用构建期注入值，再退 localStorage 记忆，最后默认 GameHub
+  // 完整品牌名：site 配置优先；数据未就绪时用构建期注入值，再退 localStorage 记忆，最后默认 V影视
   function brandName(site) {
     const s = site || state.site
     const b = s?.brand
@@ -28,7 +28,7 @@ export function useBrand() {
     if (s?.siteName) return String(s.siteName).split(/\s+/)[0]
     const inj = injected()
     if (inj) return inj.name
-    try { return localStorage.getItem(LS_KEY) || 'GameHub' } catch (e) { return 'GameHub' }
+    try { return localStorage.getItem(LS_KEY) || 'V影视' } catch (e) { return 'V影视' }
   }
 
   // 高亮后缀（无则空串 = 不拆分）。localStorage 只记了整名，拆分信息靠构建期注入值补上。

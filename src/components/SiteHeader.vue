@@ -12,7 +12,7 @@
         </span>
         <span class="brand__name">
           <template v-if="parts.accent">{{ parts.main }}<span class="brand__accent">{{ parts.accent }}</span></template>
-          <template v-else>{{ parts.main || site?.brand?.name || 'GameHub' }}</template>
+          <template v-else>{{ parts.main || site?.brand?.name || 'V影视' }}</template>
         </span>
       </a>
 

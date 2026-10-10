@@ -6,8 +6,8 @@
     <!-- Hero -->
     <section class="hero">
       <div class="container hero__inner">
-        <h1 class="hero__title">发现全网<br /><em>优质游戏资源</em></h1>
-        <p class="hero__subtitle">{{ site?.slogan }} · 单机 / 手游 / Switch / MOD 一站式聚合</p>
+        <h1 class="hero__title">发现全网<br /><em>优质影视资源</em></h1>
+        <p class="hero__subtitle">{{ site?.slogan }} · 电影 / 剧集 / 动漫 / 综艺 / 纪录片 一站式聚合</p>
         <div class="hero__search">
           <SearchBox :lucky-resources="luckyCoverPool" />
         </div>
@@ -23,9 +23,9 @@
       </div>
     </section>
 
-    <!-- 游戏推荐：每次打开随机从有封面的资源中选 8 个 -->
+    <!-- 影视推荐：每次打开随机从有封面的资源中选 8 个 -->
     <section v-if="featured.length" class="container section">
-      <h2 class="section-title">🎲 游戏推荐</h2>
+      <h2 class="section-title">🎬 影视推荐</h2>
       <div class="rc-grid">
         <ResourceCard v-for="r in featured" :key="r.id" :r="r" />
       </div>
@@ -139,7 +139,7 @@
       </div>
       <div class="stat">
         <div class="stat__num">{{ state.categories.length }}</div>
-        <div class="stat__label text-low">游戏分类</div>
+        <div class="stat__label text-low">影视分类</div>
       </div>
       <div class="stat">
         <div class="stat__num">{{ lastMonthCount }}</div>
@@ -264,7 +264,7 @@ async function pickRandomHotKeywords() {
   } catch { /* 加载失败不展示 */ }
 }
 
-// 游戏推荐：每次打开页面从「有封面的资源池」中随机选 8 个（池来自 home.json）
+// 影视推荐：每次打开页面从「有封面的资源池」中随机选 8 个（池来自 home.json）
 const featured = ref([])
 // 「手气不错」的随机池：同一份有封面的资源（home.json 的 coverPool，437 条）
 const luckyCoverPool = computed(() => state.home?.coverPool || [])

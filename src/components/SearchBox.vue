@@ -80,7 +80,7 @@ import { detailHref } from '../lib/short.js'
 import { ensureIndex, search, searchOnResources, toHit } from '../lib/search.js'
 
 const props = defineProps({
-  placeholder: { type: String, default: '搜索游戏、资源名称...' },
+  placeholder: { type: String, default: '搜索影视、资源名称...' },
   autofocus: { type: Boolean, default: false },
   // 首页传入「有封面的资源」池（home.json 的 coverPool）；为空时不渲染「手气不错」
   luckyResources: { type: Array, default: () => [] },

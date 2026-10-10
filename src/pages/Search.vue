@@ -15,7 +15,7 @@
     <section class="container">
       <div v-if="!q" class="empty glass">
         <div style="font-size: 40px; margin-bottom: 10px">⌨️</div>
-        <p>输入关键词搜索游戏资源（支持 / 快捷键聚焦）</p>
+        <p>输入关键词搜索影视资源（支持 / 快捷键聚焦）</p>
       </div>
 
       <template v-else>

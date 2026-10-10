@@ -1,7 +1,7 @@
 // scripts/inject-build.js
 // 构建后把「构建期常量」写进 dist：
-//   1) 品牌名：<title>/<meta> 里的默认品牌（GameHub）直接换成 site.json 的 brand.name，页签首帧即正确；
-//   2) window.__BRAND__ / window.__BRAND_ACCENT__：useBrand() 首帧读它，logo 不再先渲染 GameHub 再换名；
+//   1) 品牌名：<title>/<meta> 里的默认品牌（V影视）直接换成 site.json 的 brand.name，页签首帧即正确；
+//   2) window.__BRAND__ / window.__BRAND_ACCENT__：useBrand() 首帧读它，logo 不再先渲染默认名再换名；
 //   3) window.__BUILD_ID__ + dist/version.json：运行时比对构建号，部署后自动切新版本（src/lib/version.js）；
 //   4) home.json 的 preload 补上同一个 ?v=，让预载 URL 和实际 fetch 命中同一个缓存条目。
 // 品牌与构建号都是构建期常量：改 site.json / push 代码 → CI 重建，两边自动同步。
@@ -12,7 +12,7 @@ import { fileURLToPath } from 'node:url'
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const DIST = resolve(root, 'dist')
-const DEFAULT_BRAND = 'GameHub'
+const DEFAULT_BRAND = 'V影视'
 
 const site = JSON.parse(readFileSync(resolve(root, 'public/data/site.json'), 'utf8'))
 const name = site?.brand?.name || site?.siteName || DEFAULT_BRAND

@@ -336,7 +336,7 @@ function onGet(e, link) {
   gotIt.value = true
 }
 
-// 渐变游戏风二维码：深色模块替换为紫→蓝→青渐变
+// 渐变影视风二维码：深色模块替换为紫→蓝→青渐变
 function lerp(a, b, t) {
   return Math.round(a + (b - a) * t)
 }
@@ -694,7 +694,7 @@ watch([showQr, activeLink], async ([v]) => {
 .modal__iframe iframe { width: 100%; height: 100%; border: 0; display: block; }
 .modal__pwd { display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 4px; }
 
-/* 游戏风弹窗：霓虹渐变边框 + 渐变二维码 */
+/* 影视风弹窗：霓虹渐变边框 + 渐变二维码 */
 .game-modal {
   position: relative;
   max-width: 400px;

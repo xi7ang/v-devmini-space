@@ -92,7 +92,7 @@
                 <div>
                   <h3 style="margin: 0 0 4px">🎲 背景墙随机刷新</h3>
                   <p class="text-low" style="font-size: 12px; margin: 0">
-                    从 30 张 Steam 胶囊图中随机洗牌 18 行背景墙。点击随机刷新，新洗牌立即生效（纯前端、不提交 commit）。
+                    从 30 张影视封面图中随机洗牌 18 行背景墙。点击随机刷新，新洗牌立即生效（纯前端、不提交 commit）。
                   </p>
                   <p v-if="bgwallRefreshed" class="text-low" style="font-size: 12px; margin: 6px 0 0; color: var(--accent-sage)">✅ 已随机刷新！背景墙图片顺序已更新。</p>
                 </div>
@@ -975,8 +975,8 @@
           <div v-if="!repoCovers.length" class="text-low" style="grid-column: 1/-1">加载中...</div>
         </div>
 
-        <!-- ② Steam 匹配 -->
-        <h4 class="cover-sec-title">② Steam 封面匹配</h4>
+        <!-- ② 封面图匹配（Steam 图源，备用） -->
+        <h4 class="cover-sec-title">② 封面图匹配（Steam 图源，备用）</h4>
         <div class="flex gap-sm mb-sm">
           <input v-model="steamQuery" class="form-input" style="flex: 1" placeholder="输入英文名搜索，如：Stardew Valley" @keydown.enter="steamSearch" />
           <button class="btn btn-sm" :disabled="steamLoading" @click="steamSearch">{{ steamLoading ? '搜索中...' : '🔍 搜索' }}</button>
@@ -1102,7 +1102,7 @@ const cats = ref([])
 const siteForm = reactive({
   brand: {
     name: 'V影视',
-    accent: 'Hub',
+    accent: '影视',
   },
   announcementModal: {
     enabled: false,
@@ -1305,7 +1305,7 @@ const qualityWarns = computed(() => {
   const noEn = resources.value.filter((r) => !r.enTitle).length
   if (noSize) warns.push(`📏 有 ${noSize} 条资源未填大小（占 ${Math.round((noSize / resources.value.length) * 100)}%），排序与展示不完整`)
   if (noCover) warns.push(`🖼️ 有 ${noCover} 条资源无封面（占 ${Math.round((noCover / resources.value.length) * 100)}%），前台将显示渐变占位图`)
-  if (noEn) warns.push(`🌐 有 ${noEn} 条资源缺英文名（占 ${Math.round((noEn / resources.value.length) * 100)}%），Steam 封面匹配和英文搜索受影响`)
+  if (noEn) warns.push(`🌐 有 ${noEn} 条资源缺英文名（占 ${Math.round((noEn / resources.value.length) * 100)}%），封面匹配和英文搜索受影响`)
   cats.value.forEach((c) => {
     if (c.show && !resources.value.some((r) => r.category === c.key)) warns.push(`📭 分类「${c.name}」前台显示但无资源`)
   })
