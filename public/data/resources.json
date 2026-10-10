@@ -1,1 +1,39 @@
-[]
+[
+ {
+  "id": "tv-202610-0001",
+  "title": "蒸蒸日上 (2026) 更至04集 [4K][剧情/律政][韩东君/高叶]",
+  "enTitle": "",
+  "category": "tv",
+  "tags": [
+   "蒸蒸日上",
+   "剧集",
+   "4K",
+   "剧情",
+   "律政",
+   "韩东君",
+   "高叶"
+  ],
+  "platform": "uc",
+  "url": "https://drive.uc.cn/s/a69fcf49e8c34",
+  "pwd": null,
+  "links": [
+   {
+    "platform": "uc",
+    "url": "https://drive.uc.cn/s/a69fcf49e8c34",
+    "pwd": null
+   }
+  ],
+  "size": "",
+  "sizeBytes": null,
+  "quality": "4K",
+  "year": 2026,
+  "cover": "/covers/zhengzheng-rishang.webp",
+  "desc": "该剧以东北地域特色为背景，讲述女律师萧龙女因坚持正义原则离开高端律所，在大众浴池二楼组建律师团队，与行政古苗苗、法考钉子户罗智等组成非典型组合。通过处理民间纠纷案件与昔日同事兼竹马的李信展开法律观念交锋，从职场对手到携手合作，在呈现基层法律工作者坚守的同时，展现角色在职业困境中的成长蜕变。",
+  "status": "active",
+  "featured": false,
+  "addedAt": "2026-10-10T14:37:43+08:00",
+  "updatedAt": "2026-10-10T14:37:43+08:00",
+  "month": "202610",
+  "steamAppID": null
+ }
+]
