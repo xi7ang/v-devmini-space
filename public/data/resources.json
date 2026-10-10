@@ -1,5 +1,39 @@
 [
  {
+  "id": "tv-202610-0004",
+  "title": "恋爱充电中 (2026) 全10集 [1080P][韩剧/爱情]",
+  "enTitle": "",
+  "category": "tv",
+  "tags": [
+   "韩剧",
+   "恋爱充电中",
+   "爱情",
+   "1080P"
+  ],
+  "platform": "uc",
+  "url": "https://drive.uc.cn/s/d972e2419b7c4",
+  "pwd": null,
+  "links": [
+   {
+    "platform": "uc",
+    "url": "https://drive.uc.cn/s/d972e2419b7c4",
+    "pwd": null
+   }
+  ],
+  "size": "",
+  "sizeBytes": null,
+  "quality": "1080P",
+  "year": 2026,
+  "cover": "/covers/lianaichongdianzhong.webp",
+  "desc": "植入人工心脏的企业继承人白浩朗(金英光 饰)遇见能够传导电流的女子罗宝培(蔡秀彬 饰)，两人的约定有望替他的电池续命，也可能点燃彼此间的火花。",
+  "status": "active",
+  "featured": false,
+  "addedAt": "2026-10-10T16:42:11+08:00",
+  "updatedAt": "2026-10-10T16:42:11+08:00",
+  "month": "202610",
+  "steamAppID": null
+ },
+ {
   "id": "anime-202610-0004",
   "title": "大夏守墓人 (2026) 更至06集 [都市奇幻/国漫]",
   "enTitle": "",
