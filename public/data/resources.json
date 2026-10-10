@@ -1,5 +1,144 @@
 [
  {
+  "id": "tv-202610-0003",
+  "title": "无可替代 (2026) 更至20集完结 [4K][都市职场][魏大勋/赵今麦]",
+  "enTitle": "",
+  "category": "tv",
+  "tags": [
+   "无可替代",
+   "剧集",
+   "4K",
+   "都市职场",
+   "魏大勋",
+   "赵今麦"
+  ],
+  "platform": "uc",
+  "url": "https://drive.uc.cn/s/f22a40e008924",
+  "pwd": null,
+  "links": [
+   {
+    "platform": "uc",
+    "url": "https://drive.uc.cn/s/f22a40e008924",
+    "pwd": null
+   }
+  ],
+  "size": "",
+  "sizeBytes": null,
+  "quality": "4K",
+  "year": 2026,
+  "cover": "/covers/wuketidai.webp",
+  "desc": "徐迟怀揣信念踏入咨询业，与精英合伙人叶信之从师徒到并肩，最终成为无可替代的彼此。",
+  "status": "active",
+  "featured": false,
+  "addedAt": "2026-10-10T15:03:59+08:00",
+  "updatedAt": "2026-10-10T15:03:59+08:00",
+  "month": "202610",
+  "steamAppID": null
+ },
+ {
+  "id": "variety-202610-0003",
+  "title": "梦想改造家 第13季 (2026) 更至10.9期 [家装/生活/综艺]",
+  "enTitle": "",
+  "category": "variety",
+  "tags": [
+   "梦想改造家",
+   "综艺",
+   "家装",
+   "生活"
+  ],
+  "platform": "uc",
+  "url": "https://drive.uc.cn/s/61e273eb7d104",
+  "pwd": null,
+  "links": [
+   {
+    "platform": "uc",
+    "url": "https://drive.uc.cn/s/61e273eb7d104",
+    "pwd": null
+   }
+  ],
+  "size": "",
+  "sizeBytes": null,
+  "quality": "",
+  "year": 2026,
+  "cover": "/covers/mengxiang-gaizaojia.webp",
+  "desc": "本季汇聚王平仲、顾忆、林琮然、赖旭东、曾建龙、柴弘、孙华锋、朱晓鸣等设计师参与不同项目；节目延续对公益及公共空间的关注，把设计价值延伸到更多生活场景。",
+  "status": "active",
+  "featured": false,
+  "addedAt": "2026-10-10T15:03:04+08:00",
+  "updatedAt": "2026-10-10T15:03:04+08:00",
+  "month": "202610",
+  "steamAppID": null
+ },
+ {
+  "id": "variety-202610-0002",
+  "title": "一路向海的少年 (2026) 更至10.10期 [综艺/旅行/成长]",
+  "enTitle": "",
+  "category": "variety",
+  "tags": [
+   "一路向海的少年",
+   "综艺",
+   "旅行",
+   "成长"
+  ],
+  "platform": "uc",
+  "url": "https://drive.uc.cn/s/decf67776fb04",
+  "pwd": null,
+  "links": [
+   {
+    "platform": "uc",
+    "url": "https://drive.uc.cn/s/decf67776fb04",
+    "pwd": null
+   }
+  ],
+  "size": "",
+  "sizeBytes": null,
+  "quality": "",
+  "year": 2026,
+  "cover": "/covers/yiluxianghai.webp",
+  "desc": "节目将5位少年空投至离海最远的大陆腹地，他们只有一辆车和一车椰子们，通过在途径补给站完成挑战任务，获取里程盲盒，一路向海，最终解锁终极目标地。这不仅是档公路远行节目，更是一场积蓄力量奔赴山海，在实践中探寻与体验的少年成长旅行真人秀。",
+  "status": "active",
+  "featured": false,
+  "addedAt": "2026-10-10T15:02:44+08:00",
+  "updatedAt": "2026-10-10T15:02:44+08:00",
+  "month": "202610",
+  "steamAppID": null
+ },
+ {
+  "id": "tv-202610-0002",
+  "title": "后西游记 第一季 (2026) 更至10集 [4K][H265][AI长剧][神话]",
+  "enTitle": "",
+  "category": "tv",
+  "tags": [
+   "后西游记",
+   "剧集",
+   "4K",
+   "AI长剧",
+   "神话"
+  ],
+  "platform": "uc",
+  "url": "https://drive.uc.cn/s/974465f172a74",
+  "pwd": null,
+  "links": [
+   {
+    "platform": "uc",
+    "url": "https://drive.uc.cn/s/974465f172a74",
+    "pwd": null
+   }
+  ],
+  "size": "",
+  "sizeBytes": null,
+  "quality": "4K",
+  "year": 2026,
+  "cover": "/covers/houxiyouji-s1.webp",
+  "desc": "此剧为AI制作的长剧，改编自明末清初匿名作者所著的同名神魔小说，讲述了孙悟空封圣一千零八十年之后，当年取回的真经变得缺失、引人误读，新一代猴王孙小圣与唐半偈、猪一戒、沙弥等人踏上补取真经的二次西行之路的故事。",
+  "status": "active",
+  "featured": false,
+  "addedAt": "2026-10-10T15:02:18+08:00",
+  "updatedAt": "2026-10-10T15:02:18+08:00",
+  "month": "202610",
+  "steamAppID": null
+ },
+ {
   "id": "variety-202610-0001",
   "title": "伦敦合伙人 (2026) 更至10.10期 [综艺/经营体验][合伙人 伦敦篇]",
   "enTitle": "",
