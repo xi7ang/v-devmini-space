@@ -1,5 +1,39 @@
 [
  {
+  "id": "variety-202610-0001",
+  "title": "伦敦合伙人 (2026) 更至10.10期 [综艺/经营体验][合伙人 伦敦篇]",
+  "enTitle": "",
+  "category": "variety",
+  "tags": [
+   "伦敦合伙人",
+   "综艺",
+   "经营体验",
+   "伦敦篇"
+  ],
+  "platform": "uc",
+  "url": "https://drive.uc.cn/s/5460d0056e424",
+  "pwd": null,
+  "links": [
+   {
+    "platform": "uc",
+    "url": "https://drive.uc.cn/s/5460d0056e424",
+    "pwd": null
+   }
+  ],
+  "size": "",
+  "sizeBytes": null,
+  "quality": "",
+  "year": 2026,
+  "cover": "/covers/lundun-hehuoren.webp",
+  "desc": "合伙人们将进一步深入更全面真实的经营生态，全力助推国货出海，打造汇聚中国品牌的特色门店，从巴黎到伦敦，从深度筹备到实战经营，让东方美学跨越山海，向世界展现中国品牌的力量。",
+  "status": "active",
+  "featured": false,
+  "addedAt": "2026-10-10T14:55:49+08:00",
+  "updatedAt": "2026-10-10T14:55:49+08:00",
+  "month": "202610",
+  "steamAppID": null
+ },
+ {
   "id": "tv-202610-0001",
   "title": "蒸蒸日上 (2026) 更至04集 [4K][剧情/律政][韩东君/高叶]",
   "enTitle": "",
