@@ -126,6 +126,11 @@
     "platform": "uc",
     "url": "https://drive.uc.cn/s/f22a40e008924",
     "pwd": null
+   },
+   {
+    "platform": "xunlei",
+    "url": "https://pan.xunlei.com/s/VP3aVRo--Mtb80bcED3198nlA1?pwd=8n9f",
+    "pwd": "8n9f"
    }
   ],
   "size": "",
@@ -137,7 +142,7 @@
   "status": "active",
   "featured": false,
   "addedAt": "2026-10-10T15:03:59+08:00",
-  "updatedAt": "2026-10-10T15:03:59+08:00",
+  "updatedAt": "2026-10-10T15:50:22+08:00",
   "month": "202610",
   "steamAppID": null
  },
