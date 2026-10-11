@@ -114,6 +114,7 @@
 
     <SiteFooter />
   </div>
+  <AnnouncementModal />
 </template>
 
 <script setup>
@@ -123,6 +124,7 @@ import SiteHeader from '../components/SiteHeader.vue'
 import BgWall from '../components/BgWall.vue'
 import ResourceCard from '../components/ResourceCard.vue'
 import SiteFooter from '../components/SiteFooter.vue'
+import AnnouncementModal from '../components/AnnouncementModal.vue'
 import { useData } from '../composables/useData.js'
 import { useFavorites } from '../composables/useFavorites.js'
 import { shortId } from '../lib/short.js'

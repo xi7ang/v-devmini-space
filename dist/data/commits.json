@@ -1,5 +1,17 @@
 [
   {
+    "hash": "b245a31",
+    "date": "2026-10-11T20:02:17+08:00",
+    "message": "publish: 提欧奥特曼 / 捉妖天师 / 魅影神捕 / 启运丹田 / 美人余（v 白名单:uc+迅雷）",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/b245a31479eee7dfefc9cb667fbc86684d7a5b69"
+  },
+  {
+    "hash": "702762b",
+    "date": "2026-10-11T19:46:58+08:00",
+    "message": "feat(announcement): 公告弹窗最新一条默认展开（showAnnouncement 时置 expandedIdx=0）",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/702762b9ff4f0a1455c3f02d20344545dd666a91"
+  },
+  {
     "hash": "8ef1c53",
     "date": "2026-10-11T19:40:03+08:00",
     "message": "chore: 每日公告：发布【2026-10-11】影视资源更新通知（11 条新资源）",
@@ -166,17 +178,5 @@
     "date": "2026-10-07T20:35:33+08:00",
     "message": "feat(analytics): 接入自建 Umami 统计到 v.devmini.space 专属站点(website id 换新) + admin 访问统计面板切 ?site=vdev",
     "url": "https://github.com/xi7ang/v-devmini-space/commit/4961161bf248b86b7e9d8decf159c5e876099816"
-  },
-  {
-    "hash": "67a9902",
-    "date": "2026-10-07T20:18:01+08:00",
-    "message": "fix(admin): REPO 指向 xi7ang/v-devmini-space（原为 GameHub，会编辑错仓库）+ 品牌/主题文案去 GameHub 化",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/67a9902565cd411d32ac698883c83cb4581314b6"
-  },
-  {
-    "hash": "794f6f4",
-    "date": "2026-10-07T20:12:05+08:00",
-    "message": "feat: publish.mjs 适配影视站新schema(links[]/影视字段/自动重建索引) + admin 多网盘编辑器 + 同链接去重",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/794f6f48063026be3726947f8bd3dc48f50a31bc"
   }
 ]
