@@ -155,11 +155,6 @@
     "platform": "uc",
     "url": "https://drive.uc.cn/s/811db0342af84",
     "pwd": null
-   },
-   {
-    "platform": "xunlei",
-    "url": "https://pan.xunlei.com/s/VP3eKD6tJ6N2MzOr43bK3ztXA1?pwd=55mw",
-    "pwd": "55mw"
    }
   ],
   "size": "",
@@ -171,9 +166,16 @@
   "status": "active",
   "featured": false,
   "addedAt": "2026-10-11T09:40:26+08:00",
-  "updatedAt": "2026-10-11T09:40:26+08:00",
+  "updatedAt": "2026-10-11",
   "month": "202610",
-  "steamAppID": null
+  "steamAppID": null,
+  "deadLinks": [
+   {
+    "platform": "xunlei",
+    "url": "https://pan.xunlei.com/s/VP3eKD6tJ6N2MzOr43bK3ztXA1?pwd=55mw",
+    "pwd": "55mw"
+   }
+  ]
  },
  {
   "id": "tv-202610-0007",

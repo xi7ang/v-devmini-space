@@ -1,5 +1,71 @@
 [
   {
+    "hash": "7fcef31",
+    "date": "2026-10-11T17:52:39+08:00",
+    "message": "feat(links): 新增网盘链接巡检脚本 check-links.py（按平台真实接口校验，非 HTTP 状态码）",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/7fcef31ca5a446890ea1f93fee67bced37ac4b40"
+  },
+  {
+    "hash": "40a2714",
+    "date": "2026-10-11T17:41:12+08:00",
+    "message": "publish: 都市古仙医 / 楚离 / 死刑将至 / 她似野火 / 不可靠近的他（多盘过滤:仅 uc/迅雷）",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/40a2714a233ea0551a10f4da08dc4875e6f488e1"
+  },
+  {
+    "hash": "eac010b",
+    "date": "2026-10-11T17:29:57+08:00",
+    "message": "publish: 爱情来了 / 闲着干嘛呢 / 认识的哥哥 / 恶魔王座 / 惊人的星期六 / Doctor X（韩综韩剧泰剧日剧 6 条）",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/eac010b3c5006ba27b716a4485cc8035472a9359"
+  },
+  {
+    "hash": "d90bab5",
+    "date": "2026-10-11T00:42:41+08:00",
+    "message": "publish: 恋爱充电中 (2026) 韩剧",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/d90bab5bbc5a9a4a900e12ffce1d3154bced49f8"
+  },
+  {
+    "hash": "78f4ffc",
+    "date": "2026-10-11T00:23:59+08:00",
+    "message": "publish: 你好，星期六 / 密室大逃脱S8 / 花儿与少年 / 大夏守墓人",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/78f4ffc35baa2eeed39a95cf2962c08ec43bb3a3"
+  },
+  {
+    "hash": "6ee1d59",
+    "date": "2026-10-10T23:50:28+08:00",
+    "message": "publish: 无可替代 补迅雷平台（UC+迅雷）",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/6ee1d5948c25f95be0ee3237768b9aeb7f7fdcb6"
+  },
+  {
+    "hash": "6504838",
+    "date": "2026-10-10T23:35:20+08:00",
+    "message": "publish: 择日飞升 / 光阴之外 / 斗破苍穹（国漫）",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/650483806c5ac34c277172161022b650b512e511"
+  },
+  {
+    "hash": "62f569d",
+    "date": "2026-10-10T23:04:08+08:00",
+    "message": "publish: 后西游记 S1 / 一路向海的少年 / 梦想改造家 S13 / 无可替代",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/62f569df10628124fed49ed48944e36e2be2cddd"
+  },
+  {
+    "hash": "6aa78a0",
+    "date": "2026-10-10T22:55:50+08:00",
+    "message": "publish: 伦敦合伙人 (2026) 更至10.10期 [综艺/经营体验][合伙人 伦敦篇]",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/6aa78a0ba635ee3f9abf0bac2265e00cc75beda0"
+  },
+  {
+    "hash": "4767c45",
+    "date": "2026-10-10T22:38:15+08:00",
+    "message": "publish: 蒸蒸日上 (2026) 更至04集 [4K][剧情/律政][韩东君/高叶]",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/4767c457e777b3c0845d3145958c92b0c6904923"
+  },
+  {
+    "hash": "74ec9d3",
+    "date": "2026-10-10T21:51:55+08:00",
+    "message": "fix(changelog): commits.json 改由本仓库 git log 生成（原为 GameHub 遗留）+ CI fetch-depth:0",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/74ec9d317cca06982cc04757363efc23218fef7c"
+  },
+  {
     "hash": "50f59aa",
     "date": "2026-10-10T21:49:04+08:00",
     "message": "feat: 补齐 favorites.html / changelog.html 两页（对齐 GameHub 实现）",

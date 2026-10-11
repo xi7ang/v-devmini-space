@@ -1,0 +1,16 @@
+{
+  "checkedAt": "2026-10-11T17:53:21+0800",
+  "resources": 25,
+  "links": 27,
+  "dead": 1,
+  "errors": 0,
+  "deadLinks": [
+    {
+      "id": "anime-202610-0005",
+      "platform": "xunlei",
+      "url": "https://pan.xunlei.com/s/VP3eKD6tJ6N2MzOr43bK3ztXA1?pwd=55mw",
+      "dead": true,
+      "reason": "invalid"
+    }
+  ]
+}
