@@ -460,25 +460,26 @@
   "platform": "uc",
   "url": "https://drive.uc.cn/s/2109f5bafeb94",
   "pwd": null,
-  "links": [
-   {
-    "platform": "uc",
-    "url": "https://drive.uc.cn/s/2109f5bafeb94",
-    "pwd": null
-   }
-  ],
+  "links": [],
   "size": "",
   "sizeBytes": null,
   "quality": "",
   "year": 2026,
   "cover": "/covers/huaeryushaonian.webp",
   "desc": "新的一季集结7位跨越代际的嘉宾，踏上地球彼端的一场自助游学之旅。他们既追问世界的那头藏着怎样的风景，也在异乡的光影中重新凝视自我。",
-  "status": "active",
+  "status": "inactive",
   "featured": false,
   "addedAt": "2026-10-10T16:23:40+08:00",
-  "updatedAt": "2026-10-10T16:23:40+08:00",
+  "updatedAt": "2026-10-11",
   "month": "202610",
-  "steamAppID": null
+  "steamAppID": null,
+  "deadLinks": [
+   {
+    "platform": "uc",
+    "url": "https://drive.uc.cn/s/2109f5bafeb94",
+    "pwd": null
+   }
+  ]
  },
  {
   "id": "variety-202610-0005",
@@ -633,25 +634,26 @@
   "platform": "uc",
   "url": "https://drive.uc.cn/s/dd3b616869194",
   "pwd": null,
-  "links": [
-   {
-    "platform": "uc",
-    "url": "https://drive.uc.cn/s/dd3b616869194",
-    "pwd": null
-   }
-  ],
+  "links": [],
   "size": "",
   "sizeBytes": null,
   "quality": "4K",
   "year": 2026,
   "cover": "/covers/zeri-feisheng.webp",
   "desc": "乱世之下，妖祟横生，奸佞当道。又值幽界入侵，人、幽两界势力荼毒人间，捕蛇者许应因看不惯为幽界卖命的草头神欺压百姓，反抗犯下弑神之罪，又出手打死了不作为的朝廷官员，遭两界势力追杀，开启了逃亡的生涯······",
-  "status": "active",
+  "status": "inactive",
   "featured": false,
   "addedAt": "2026-10-10T15:30:10+08:00",
-  "updatedAt": "2026-10-10T15:30:10+08:00",
+  "updatedAt": "2026-10-11",
   "month": "202610",
-  "steamAppID": null
+  "steamAppID": null,
+  "deadLinks": [
+   {
+    "platform": "uc",
+    "url": "https://drive.uc.cn/s/dd3b616869194",
+    "pwd": null
+   }
+  ]
  },
  {
   "id": "tv-202610-0003",

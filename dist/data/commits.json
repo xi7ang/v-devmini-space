@@ -1,5 +1,11 @@
 [
   {
+    "hash": "bbdea5f",
+    "date": "2026-10-11T17:56:40+08:00",
+    "message": "fix(links): 回滚误判下架的迅雷链接 + 巡检加固（连续3次定论性无效才下架，抖动/限流一律不算）",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/bbdea5fda9a263acdf75446c6082eed9755852d3"
+  },
+  {
     "hash": "d4a722b",
     "date": "2026-10-11T17:53:32+08:00",
     "message": "chore(links): 巡检下架失效网盘链接（1 条资源）",
@@ -172,11 +178,5 @@
     "date": "2026-10-07T19:09:18+08:00",
     "message": "feat: 前端高度还原泥视频(暗金配色/板块布局) + 转存链接自动携带提取码(pwd/code)",
     "url": "https://github.com/xi7ang/v-devmini-space/commit/ecd5d3972a55717363d98262d2d435e2f81d1764"
-  },
-  {
-    "hash": "fcf9257",
-    "date": "2026-10-07T18:56:14+08:00",
-    "message": "feat: 纯影视索引(仅 movies)+发布适配器+rebuild 保留已发布条目",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/fcf9257e446932b377685a8dfacbe78fef8fdec8"
   }
 ]

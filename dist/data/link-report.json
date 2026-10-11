@@ -1,8 +1,23 @@
 {
-  "checkedAt": "2026-10-11T17:56:02+0800",
+  "checkedAt": "2026-10-11T18:23:19+0800",
   "resources": 25,
   "links": 27,
-  "dead": 0,
-  "uncertain": 1,
-  "deadLinks": []
+  "dead": 2,
+  "uncertain": 0,
+  "deadLinks": [
+    {
+      "id": "variety-202610-0006",
+      "platform": "uc",
+      "url": "https://drive.uc.cn/s/2109f5bafeb94",
+      "dead": true,
+      "reason": "分享地址已失效"
+    },
+    {
+      "id": "anime-202610-0001",
+      "platform": "uc",
+      "url": "https://drive.uc.cn/s/dd3b616869194",
+      "dead": true,
+      "reason": "分享地址已失效"
+    }
+  ]
 }

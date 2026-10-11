@@ -96,14 +96,27 @@ def _uc_check(url: str) -> tuple[bool, bool, str]:
                "content-type": "application/json;charset=UTF-8", "cookie": cookie}
     params = {"pr": uc.UC_PR, "fr": "pc", "uc_param_str": "",
               "__dt": random.randint(100, 9999), "__t": str(int(time.time() * 1000))}
+    # 1) token
     r = httpx.post(f"{uc.UC_API_BASE}/share/sharepage/token",
                    json={"pwd_id": pwd_id, "passcode": _pwd_of(url)},
                    params=params, headers=headers, timeout=TIMEOUT)
     j = r.json()
-    if j.get("status") == 200 and (j.get("data") or {}).get("stoken"):
+    stoken = (j.get("data") or {}).get("stoken")
+    if not stoken:
+        msg = str(j.get("message", ""))
+        return False, bool(INVALID_RE.search(msg)), msg or "token-failed"
+    # 2) detail —— 关键：token 成功≠分享有效！已失效的分享照样发 stoken，
+    #    真正的信号在 detail（失效时返回「分享地址已失效」）。
+    dp = dict(params)
+    dp.update({"pwd_id": pwd_id, "stoken": stoken, "pdir_fid": "0", "force": "0",
+               "_page": "1", "_size": "50", "_sort": "file_type:asc,updated_at:desc"})
+    r2 = httpx.get(f"{uc.UC_API_BASE}/share/sharepage/detail",
+                   params=dp, headers=headers, timeout=TIMEOUT)
+    j2 = r2.json()
+    if j2.get("status") == 200:
         return True, True, "ok"
-    msg = str(j.get("message", ""))
-    return False, bool(INVALID_RE.search(msg)), msg or "unknown"
+    msg = str(j2.get("message", ""))
+    return False, bool(INVALID_RE.search(msg)), msg or "detail-failed"
 
 
 # ── quark ─────────────────────────────────────────────────────────────
@@ -123,14 +136,29 @@ def _quark_check(url: str) -> tuple[bool, bool, str]:
     headers = {"user-agent": QUARK_UA, "origin": "https://pan.quark.cn",
                "referer": "https://pan.quark.cn/", "accept-language": "zh-CN,zh;q=0.9",
                "cookie": _quark_cookie()}
+    # 1) token
     r = httpx.post("https://drive-pc.quark.cn/1/clouddrive/share/sharepage/token",
                    json={"pwd_id": pwd_id, "passcode": _pwd_of(url)},
                    params=params, headers=headers, timeout=TIMEOUT)
     j = r.json()
-    if (j.get("data") or {}).get("stoken"):
+    stoken = (j.get("data") or {}).get("stoken")
+    if not stoken:
+        msg = str(j.get("message", ""))
+        return False, bool(INVALID_RE.search(msg)), msg or "token-failed"
+    # 2) detail —— 同 UC：token 成功≠有效，必须看 detail
+    dp = dict(params)
+    dp.update({"pwd_id": pwd_id, "stoken": stoken, "pdir_fid": "0", "force": "0",
+               "_page": "1", "_size": "50", "_sort": "file_type:asc,updated_at:desc"})
+    r2 = httpx.get("https://drive-pc.quark.cn/1/clouddrive/share/sharepage/detail",
+                   params=dp, headers=headers, timeout=TIMEOUT)
+    try:
+        j2 = r2.json()
+    except Exception:
+        return False, False, "detail-non-json"
+    if j2.get("status") == 200:
         return True, True, "ok"
-    msg = str(j.get("message", ""))
-    return False, bool(INVALID_RE.search(msg)), msg or "unknown"
+    msg = str(j2.get("message", ""))
+    return False, bool(INVALID_RE.search(msg)), msg or "detail-failed"
 
 
 # ── xunlei ────────────────────────────────────────────────────────────
