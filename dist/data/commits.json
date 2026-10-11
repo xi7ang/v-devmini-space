@@ -1,5 +1,11 @@
 [
   {
+    "hash": "d4a722b",
+    "date": "2026-10-11T17:53:32+08:00",
+    "message": "chore(links): 巡检下架失效网盘链接（1 条资源）",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/d4a722be657be90f5f10460a903eb94cf65492e0"
+  },
+  {
     "hash": "7fcef31",
     "date": "2026-10-11T17:52:39+08:00",
     "message": "feat(links): 新增网盘链接巡检脚本 check-links.py（按平台真实接口校验，非 HTTP 状态码）",
@@ -172,11 +178,5 @@
     "date": "2026-10-07T18:56:14+08:00",
     "message": "feat: 纯影视索引(仅 movies)+发布适配器+rebuild 保留已发布条目",
     "url": "https://github.com/xi7ang/v-devmini-space/commit/fcf9257e446932b377685a8dfacbe78fef8fdec8"
-  },
-  {
-    "hash": "14fb5b6",
-    "date": "2026-10-07T18:37:29+08:00",
-    "message": "feat: V影视 — 泥视频风格静态影视资源站（网盘链接聚合）",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/14fb5b68a0cb71e28ffb969ca81f9edfbcd403b2"
   }
 ]

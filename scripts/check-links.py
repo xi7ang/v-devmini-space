@@ -9,17 +9,25 @@ scripts/check-links.py — v 站网盘分享链接巡检
 ⚠️ 为什么不用 HTTP HEAD 看状态码：失效的网盘分享页照样返回 200，探状态码只会
    得到一堆假「正常」。本脚本走平台接口，能真正区分「还在」和「已失效」。
 
-  uc      UcPanTool sharepage/token    (pwd_id + passcode)
+⚠️ 误杀防护（2026-10-11 加，因为踩过）：
+   平台校验接口会**瞬时抖动**（迅雷有 captcha 握手、UC/夸克会限流）。一次 false
+   就把链接判死＝误下架。所以现在的规则是：
+     1) 只有「定论性无效」（接口明确回『分享不存在/链接错误/invalid』）才算失效；
+     2) 且必须**连续 ATTEMPTS 次**全部定论性无效，才判定 dead；
+     3) 校验抛异常 / 非定论性失败（captcha、限流、超时、网络）→ 一律按「不确定」处理，
+        **绝不下架**，只记进报告的 errors。
+
+  uc      UcPanTool 分享接口 sharepage/token (pwd_id + passcode)
   quark   drive-pc.quark.cn sharepage/token (pwd_id + passcode)
-  xunlei  `xunlei-pan check <url>`     (JSON success:true/false)
-  guangya GuangyaClient.share_summary  (code==0 为有效)
+  xunlei  `xunlei-pan check <url>`          (JSON success:true/false)
+  guangya GuangyaClient.share_summary       (code==0 有效)
 
 用法：
   python3 scripts/check-links.py                 巡检 + 出报告，不改数据
   python3 scripts/check-links.py --apply         失效项从 links[] 摘除并留档 deadLinks；全失效 → status=inactive
   python3 scripts/check-links.py --apply --push  随后 npm run build + git commit + push
 
-退出码：0 = 全部完好或已处理；2 = 检出失效（供外部/调度器判断）
+退出码：0 = 全部完好或已处理；2 = 检出失效
 """
 from __future__ import annotations
 import ast
@@ -44,13 +52,18 @@ QUARK_COOKIE = WS / "QuarkPanTool" / "config" / "cookies.txt"
 GX_SCRIPTS = WS / "skills" / "guangya-publisher" / "scripts"
 
 TIMEOUT = 30
-WORKERS = 6
+WORKERS = 4
+ATTEMPTS = 3            # 连续多少次「定论性无效」才判死
+RETRY_WAIT = 6          # 重试间隔（秒）
 
 QUARK_UA = ("Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) "
             "Chrome/94.0.4606.71 Safari/537.36 Core/1.94.225.400 QQBrowser/12.2.5544.400")
 
+# 「定论性无效」的特征词——命中才算数，其它一律视为抖动
+INVALID_RE = re.compile(r"分享不存在|分享链接错误|链接失效|已失效|无效|不存在|"
+                        r"share_id can not be empty|invalid_argument|not found|已删除|被删除")
 
-# ── 平台识别 ──────────────────────────────────────────────────────────
+
 def detect_platform(url: str) -> str:
     u = (url or "").lower()
     if "drive.uc.cn" in u or "fast.uc.cn" in u:
@@ -64,20 +77,33 @@ def detect_platform(url: str) -> str:
     return "unknown"
 
 
+def _pwd_of(url: str) -> str:
+    m = re.search(r"[?&](?:pwd|code)=([^&#\s]+)", url or "")
+    return m.group(1) if m else ""
+
+
 # ── uc ────────────────────────────────────────────────────────────────
-def _uc_check(url: str) -> bool:
-    """返回 True=有效。用 UcPanTool 的 sharepage/token 接口。"""
+def _uc_check(url: str) -> tuple[bool, bool, str]:
     if str(UC_DIR) not in sys.path:
         sys.path.insert(0, str(UC_DIR))
-    import importlib, asyncio
+    import importlib, httpx
     uc = importlib.import_module("uc")
     pwd_id = uc.UcPanFileManager.get_pwd_id(url)
-
-    async def _run():
-        # headless=True：cookie 失效时立即抛错，绝不启动浏览器（cron 无交互环境）
-        mgr = uc.UcPanFileManager(headless=True)
-        return await mgr.get_stoken(pwd_id)
-    return bool(asyncio.run(_run()))
+    cookie = UC_COOKIE.read_text(encoding="utf-8").strip()
+    headers = {"user-agent": uc.UC_USER_AGENT, "origin": uc.UC_REFERER, "referer": uc.UC_REFERER,
+               "accept": "application/json, text/plain, */*",
+               "accept-language": "zh-CN,zh;q=0.9",
+               "content-type": "application/json;charset=UTF-8", "cookie": cookie}
+    params = {"pr": uc.UC_PR, "fr": "pc", "uc_param_str": "",
+              "__dt": random.randint(100, 9999), "__t": str(int(time.time() * 1000))}
+    r = httpx.post(f"{uc.UC_API_BASE}/share/sharepage/token",
+                   json={"pwd_id": pwd_id, "passcode": _pwd_of(url)},
+                   params=params, headers=headers, timeout=TIMEOUT)
+    j = r.json()
+    if j.get("status") == 200 and (j.get("data") or {}).get("stoken"):
+        return True, True, "ok"
+    msg = str(j.get("message", ""))
+    return False, bool(INVALID_RE.search(msg)), msg or "unknown"
 
 
 # ── quark ─────────────────────────────────────────────────────────────
@@ -89,46 +115,53 @@ def _quark_cookie() -> str:
     return raw
 
 
-def _quark_check(url: str) -> bool:
+def _quark_check(url: str) -> tuple[bool, bool, str]:
     import httpx
     pwd_id = url.split("?")[0].split("/s/")[-1]
-    m = re.search(r"[?&](?:pwd|code)=([^&#\s]+)", url)
-    passcode = m.group(1) if m else ""
     params = {"pr": "ucpro", "fr": "pc", "uc_param_str": "",
               "__dt": random.randint(100, 9999), "__t": str(int(time.time() * 1000))}
     headers = {"user-agent": QUARK_UA, "origin": "https://pan.quark.cn",
                "referer": "https://pan.quark.cn/", "accept-language": "zh-CN,zh;q=0.9",
                "cookie": _quark_cookie()}
     r = httpx.post("https://drive-pc.quark.cn/1/clouddrive/share/sharepage/token",
-                   json={"pwd_id": pwd_id, "passcode": passcode},
+                   json={"pwd_id": pwd_id, "passcode": _pwd_of(url)},
                    params=params, headers=headers, timeout=TIMEOUT)
     j = r.json()
-    return bool((j.get("data") or {}).get("stoken"))
+    if (j.get("data") or {}).get("stoken"):
+        return True, True, "ok"
+    msg = str(j.get("message", ""))
+    return False, bool(INVALID_RE.search(msg)), msg or "unknown"
 
 
 # ── xunlei ────────────────────────────────────────────────────────────
-def _xunlei_check(url: str) -> bool:
-    """`xunlei-pan check` 输出前有一段 captcha 噪声，用正则取 success 字段。"""
+def _xunlei_check(url: str) -> tuple[bool, bool, str]:
     out = subprocess.run(["xunlei-pan", "check", url], capture_output=True, text=True,
                          timeout=TIMEOUT + 30)
     txt = out.stdout or ""
     m = re.search(r'"success"\s*:\s*(true|false)', txt)
-    return bool(m and m.group(1) == "true")
+    if not m:
+        return False, False, "no-json-response"
+    if m.group(1) == "true":
+        return True, True, "ok"
+    # success:false —— 只有明确「分享无效」才定论；captcha/网络类抖动一律不算
+    return False, bool(INVALID_RE.search(txt)), "xunlei-invalid" if INVALID_RE.search(txt) else "xunlei-inconclusive"
 
 
 # ── guangya ───────────────────────────────────────────────────────────
-def _guangya_check(url: str) -> bool:
-    sys.path.insert(0, str(GX_SCRIPTS))
+def _guangya_check(url: str) -> tuple[bool, bool, str]:
+    if str(GX_SCRIPTS) not in sys.path:
+        sys.path.insert(0, str(GX_SCRIPTS))
     import guangya_common
     key = guangya_common.extract_share_key(url)
     if not key:
-        return False
+        return False, False, "no-share-key"
     c = guangya_common.make_client()
     try:
         r = c.share_summary(key)
-        return isinstance(r, dict) and r.get("code") == 0
-    except Exception:
-        return False
+        if isinstance(r, dict) and r.get("code") == 0:
+            return True, True, "ok"
+        msg = str((r or {}).get("msg", "")) if isinstance(r, dict) else str(r)
+        return False, bool(INVALID_RE.search(msg)), msg or "unknown"
     finally:
         try:
             c.close()
@@ -141,19 +174,32 @@ CHECKERS = {"uc": _uc_check, "quark": _quark_check,
 
 
 def check_link(link: dict) -> dict:
+    """判定单个链接。dead=True 只有一种可能：连续 ATTEMPTS 次「定论性无效」。"""
     url = link.get("url") or ""
     plat = link.get("platform") or detect_platform(url)
     fn = CHECKERS.get(plat)
     if not fn:
         return {"platform": plat, "url": url, "dead": False, "reason": "unsupported"}
-    try:
-        ok = fn(url)
-        return {"platform": plat, "url": url, "dead": not ok,
-                "reason": "ok" if ok else "invalid"}
-    except Exception as e:
-        # 校验本身失败（网络/cookie/token 问题）不算「失效」，避免误下架
-        return {"platform": plat, "url": url, "dead": False,
-                "reason": f"error: {type(e).__name__}: {str(e)[:120]}"}
+
+    last = ""
+    for attempt in range(ATTEMPTS):
+        try:
+            ok, conclusive, detail = fn(url)
+        except Exception as e:
+            # 校验自身故障（cookie 失效 / 网络 / 超时）→ 不确定，绝不下架
+            return {"platform": plat, "url": url, "dead": False,
+                    "reason": f"error: {type(e).__name__}: {str(e)[:100]}"}
+        if ok:
+            return {"platform": plat, "url": url, "dead": False, "reason": "ok"}
+        last = detail
+        if not conclusive:
+            # 非定论性失败（captcha/限流/抖动）→ 立即判「不确定」
+            return {"platform": plat, "url": url, "dead": False,
+                    "reason": f"inconclusive: {detail}"}
+        if attempt < ATTEMPTS - 1:
+            time.sleep(RETRY_WAIT * (attempt + 1))
+    # 连续 ATTEMPTS 次定论性无效 → 判死
+    return {"platform": plat, "url": url, "dead": True, "reason": last}
 
 
 def main() -> int:
@@ -164,13 +210,12 @@ def main() -> int:
     if not isinstance(data, list):
         print("❌ resources.json 不是数组，中止"); return 1
 
-    # 收集待检任务
     targets = []
     for r in data:
         if r.get("status") == "inactive":
             continue
         links = r.get("links") or ([{"platform": r.get("platform"), "url": r.get("url"), "pwd": r.get("pwd")}]
-                                    if r.get("url") else [])
+                                   if r.get("url") else [])
         for l in links:
             if l and l.get("url"):
                 targets.append((r["id"], l))
@@ -186,19 +231,24 @@ def main() -> int:
             rid, l = futs[fut]
             res = fut.result()
             results.setdefault(rid, []).append(res)
-            flag = "🔴失效" if res["dead"] else ("⚠️ " + res["reason"] if res["reason"].startswith("error") else "🟢")
+            if res["dead"]:
+                flag = "🔴失效"
+            elif res["reason"].startswith(("error", "inconclusive")):
+                flag = f"⚠️ {res['reason'][:40]}"
+            else:
+                flag = "🟢"
             print(f"  [{i+1}/{len(targets)}] {l.get('platform')} {flag} {res['url'][:70]}")
 
     dead_total = sum(1 for v in results.values() for x in v if x["dead"])
-    err_total = sum(1 for v in results.values() for x in v if x["reason"].startswith("error"))
+    unc_total = sum(1 for v in results.values() for x in v
+                    if x["reason"].startswith(("error", "inconclusive")))
 
-    # 报告
     report = {
         "checkedAt": time.strftime("%Y-%m-%dT%H:%M:%S%z"),
-        "resources": len([r for r in data if r.get("status") != "inactive"]),
+        "resources": sum(1 for r in data if r.get("status") != "inactive"),
         "links": len(targets),
         "dead": dead_total,
-        "errors": err_total,
+        "uncertain": unc_total,
         "deadLinks": [{"id": rid, **x} for rid, v in results.items() for x in v if x["dead"]],
     }
     REPORT.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
@@ -238,7 +288,7 @@ def main() -> int:
         subprocess.run(["git", "push"], cwd=str(ROOT), check=True)
         print("🚀 已 build + commit + push")
 
-    print(f"📄 汇总：链接 {len(targets)} | 失效 {dead_total} | 校验异常 {err_total}")
+    print(f"📄 汇总：链接 {len(targets)} | 失效 {dead_total} | 不确定 {unc_total}")
     return 2 if dead_total else 0
 
 
