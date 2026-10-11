@@ -7,7 +7,6 @@
         <span class="rc__cover-halo" :style="haloStyle"></span>
         <span class="rc__cover-emoji">{{ catMeta(r.category).emoji }}</span>
       </template>
-      <span v-if="r.status === 'inactive'" class="rc__inactive">链接失效</span>
     </div>
     <div class="rc__name">{{ r.title }}</div>
   </a>
@@ -90,11 +89,6 @@ const haloStyle = computed(() => {
 .rc:hover .rc__cover img { transform: scale(1.05); }
 .rc__cover-halo { position: absolute; inset: -20%; z-index: 1; pointer-events: none; }
 .rc__cover-emoji { position: relative; z-index: 2; font-size: 30px; filter: drop-shadow(0 2px 8px rgba(0,0,0,.4)); }
-.rc__inactive {
-  position: absolute; inset: 0; z-index: 4;
-  display: flex; align-items: center; justify-content: center;
-  background: rgba(var(--bg-0-rgb), 0.75); color: #fb7185; font-weight: 700; font-size: 13px;
-}
 /* 底部片名（唯一信息） */
 .rc__name {
   padding: 10px 12px 12px;

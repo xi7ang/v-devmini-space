@@ -212,12 +212,16 @@ const PLATFORM_ORDER = ['quark', 'uc', 'xunlei', 'guangya', 'aliyun', 'baidu', '
 const links = computed(() => {
   const item = r.value
   if (!item) return []
-  const raw = Array.isArray(item.links) && item.links.length
+  // 只在 links 字段**整体缺失**时才回退旧的单链字段。
+  // ⚠️ links 为 []（失效链已被巡检摘除）时**绝不回退**——否则会把已失效的旧 url 重新渲染出来。
+  const raw = Array.isArray(item.links)
     ? item.links
-    : [{ platform: item.platform, url: item.url, pwd: item.pwd }]
+    : (item.url ? [{ platform: item.platform, url: item.url, pwd: item.pwd }] : [])
+  // 双保险：巡检留档在 deadLinks 里的 url 一律不渲染
+  const dead = new Set((item.deadLinks || []).map((d) => d && d.url).filter(Boolean))
   const seen = new Set()
   return raw
-    .filter((l) => l && l.url && !seen.has(l.platform) && seen.add(l.platform))
+    .filter((l) => l && l.url && !dead.has(l.url) && !seen.has(l.platform) && seen.add(l.platform))
     .sort((a, b) => PLATFORM_ORDER.indexOf(a.platform) - PLATFORM_ORDER.indexOf(b.platform))
 })
 function platformMeta(l) {
