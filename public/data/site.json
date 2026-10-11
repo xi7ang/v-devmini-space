@@ -4,7 +4,7 @@
   "slogan": "影视资源网盘聚合 · 转存即看 · 持续更新",
   "description": "V影视 影视资源网盘聚合站，聚合电影/电视剧/动漫/综艺/纪录片资源，夸克/UC/迅雷/光鸭多网盘支持，转存到自己的网盘即可下载观看。本站不提供在线播放。",
   "announcement": "",
-  "announcementModal": { "enabled": false, "title": "", "content": "" },
+  "announcementModal": { "enabled": true, "title": "站点公告", "content": "", "version": "2026-10-11-0", "items": [] },
   "qqGroup": "",
   "telegram": "",
   "androidApp": "",

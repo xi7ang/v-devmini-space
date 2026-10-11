@@ -157,7 +157,7 @@
       <section class="announcement-modal glass" role="dialog" aria-modal="true" aria-labelledby="announcement-title">
         <button class="announcement-modal__close" type="button" title="关闭" aria-label="关闭公告" @click="closeAnnouncement">✕</button>
         <div class="announcement-modal__icon">📢</div>
-        <p class="announcement-modal__eyebrow">GAMEHUB NOTICE</p>
+        <p class="announcement-modal__eyebrow">VMOVIE NOTICE</p>
         <h2 id="announcement-title">{{ announcement.title || '站点公告' }}</h2>
         <div class="announcement-socials">
           <a v-if="site?.qqGroup" :href="site.qqGroup" target="_blank" rel="noreferrer" class="announcement-social announcement-social--qq">
@@ -242,7 +242,7 @@ function linkify(text) {
     .replace(/"/g, '&quot;')
   return esc.replace(/(https?:\/\/[^\s<)】]+)/g, (u) => `<a href="${u}" target="_blank" rel="noopener" class="tl-link">${u}</a>`)
 }
-const ANNOUNCEMENT_DISMISSED_KEY = 'gamehub-announcement-dismissed'
+const ANNOUNCEMENT_DISMISSED_KEY = 'vmovie-announcement-dismissed'
 
 // 热门搜索关键词：每次打开从 hotKeywords.json 的 100+ 词中随机选 6-7 个
 const hotKeywords = ref([])
