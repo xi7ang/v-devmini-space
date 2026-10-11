@@ -161,19 +161,22 @@ const parts = computed(() => brandParts(site.value))
 .theme-toggle:hover { border-color: var(--neon-purple); box-shadow: var(--shadow-glow); }
 
 @media (max-width: 640px) {
-  .nav-link { display: none; }
+  /* 移动端也显示导航 tab（首页 / 资源库）——原来这里被 display:none 藏掉了 */
+  .nav-link { display: inline-flex; padding: 6px 8px; font-size: 13px; }
   .brand__name { font-size: 18px; }
   .site-header__inner { height: 56px; }
-  .site-nav { gap: 4px; }
+  .site-nav { gap: 2px; }
   .nav-cta { padding: 4px 9px; font-size: 11px; gap: 4px; }
-  .nav-fav { padding: 6px 9px; font-size: 12px; }
+  .nav-fav { padding: 6px 8px; font-size: 12px; }
   .cta-icon { font-size: 12px; }
   .theme-toggle { width: 32px; height: 32px; font-size: 14px; border-radius: 8px; }
 }
 @media (max-width: 400px) {
-  .brand__name { font-size: 16px; }
+  /* 极窄屏：品牌名收小、收藏只留图标，给导航 tab 腾位 */
+  .brand__name { font-size: 15px; }
+  .nav-link { padding: 5px 7px; font-size: 12.5px; }
   .nav-cta { padding: 3px 8px; font-size: 10.5px; }
-  .nav-fav { padding: 6px 8px; }
+  .nav-fav { padding: 5px 7px; }
   .nav-fav__text { display: none; }
 }
 </style>
