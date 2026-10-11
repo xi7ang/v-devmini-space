@@ -1,5 +1,17 @@
 [
   {
+    "hash": "8ef1c53",
+    "date": "2026-10-11T19:40:03+08:00",
+    "message": "chore: 每日公告：发布【2026-10-11】影视资源更新通知（11 条新资源）",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/8ef1c53dabe5f27e9883472e89ffdcebfb7a1ac1"
+  },
+  {
+    "hash": "c4231da",
+    "date": "2026-10-11T19:38:11+08:00",
+    "message": "feat(announcement): 启用首页公告弹窗（去 GameHub 品牌残留：VMOVIE NOTICE + 独立 dismiss key）",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/c4231da8fc86dd49f0dc3d4934fa1120d2a289ed"
+  },
+  {
     "hash": "62807df",
     "date": "2026-10-11T19:02:10+08:00",
     "message": "feat(nav): 移动端也显示导航 tab（首页/资源库）——去掉 640px 断点的 display:none，配紧凑样式",
@@ -166,17 +178,5 @@
     "date": "2026-10-07T20:12:05+08:00",
     "message": "feat: publish.mjs 适配影视站新schema(links[]/影视字段/自动重建索引) + admin 多网盘编辑器 + 同链接去重",
     "url": "https://github.com/xi7ang/v-devmini-space/commit/794f6f48063026be3726947f8bd3dc48f50a31bc"
-  },
-  {
-    "hash": "89b6f0a",
-    "date": "2026-10-07T20:03:53+08:00",
-    "message": "feat(covers): 118 张影视封面接入背景墙(16:9)+卡片(4:3)，来源百度图搜剧照类",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/89b6f0a687ee3bade5ac825c9a7a1c8f63d8d234"
-  },
-  {
-    "hash": "257081a",
-    "date": "2026-10-07T19:59:50+08:00",
-    "message": "chore(admin): 按影视站调整后台（年份/画质字段、分类与平台、文案去游戏化）",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/257081aa4848b9ac129e75705f71bbdac5b0fa4e"
   }
 ]
