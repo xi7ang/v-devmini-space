@@ -1,5 +1,17 @@
 [
   {
+    "hash": "be2ca61",
+    "date": "2026-10-12T23:21:36+08:00",
+    "message": "update: 伦敦合伙人 更至10.10期 -> 10.12期（强制重转 + 换链 + updatedAt 同步）",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/be2ca614018a0a36f4a60b4098a60de508d68f12"
+  },
+  {
+    "hash": "6c29d08",
+    "date": "2026-10-12T23:17:59+08:00",
+    "message": "style(detail): 移动端保持与 PC 同版式（两栏等比缩小，一屏放得下整张卡）",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/6c29d0861e225b4456c697abd089deabcfb8abb5"
+  },
+  {
     "hash": "63d9e56",
     "date": "2026-10-12T23:11:48+08:00",
     "message": "feat(home): 「最新更新」改为按资源更新时间(updatedAt)倒序",
@@ -166,17 +178,5 @@
     "date": "2026-10-11T17:56:40+08:00",
     "message": "fix(links): 回滚误判下架的迅雷链接 + 巡检加固（连续3次定论性无效才下架，抖动/限流一律不算）",
     "url": "https://github.com/xi7ang/v-devmini-space/commit/bbdea5fda9a263acdf75446c6082eed9755852d3"
-  },
-  {
-    "hash": "d4a722b",
-    "date": "2026-10-11T17:53:32+08:00",
-    "message": "chore(links): 巡检下架失效网盘链接（1 条资源）",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/d4a722be657be90f5f10460a903eb94cf65492e0"
-  },
-  {
-    "hash": "7fcef31",
-    "date": "2026-10-11T17:52:39+08:00",
-    "message": "feat(links): 新增网盘链接巡检脚本 check-links.py（按平台真实接口校验，非 HTTP 状态码）",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/7fcef31ca5a446890ea1f93fee67bced37ac4b40"
   }
 ]

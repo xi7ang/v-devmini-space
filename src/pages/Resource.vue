@@ -32,6 +32,10 @@
               </div>
 
               <h1 class="mv__title">{{ r.title }}</h1>
+            </div>
+
+            <!-- 描述 + 获取资源：横跨两栏，铺满封面下方的空白区 -->
+            <div class="mv__main">
               <p v-if="r.desc" class="mv__desc">{{ r.desc }}</p>
 
               <div class="mv__get">
@@ -842,6 +846,9 @@ watch([showQr, activeLink], async ([v]) => {
 .mv__backdrop { position: absolute; inset: 0; background-size: cover; background-position: center; filter: blur(30px) saturate(1.2); transform: scale(1.25); opacity: 0.35; }
 .mv__veil { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(var(--bg-0-rgb), 0.72), rgba(var(--bg-0-rgb), 0.96)); }
 .mv__body { position: relative; display: grid; grid-template-columns: 300px 1fr; gap: 28px; padding: 26px 28px; }
+.mv__info { align-self: start; }
+/* 描述 + 获取资源横跨两栏：不再只挤在右栏，而是铺到封面下方的空白区 */
+.mv__main { grid-column: 1 / -1; }
 .mv__poster { position: relative; aspect-ratio: 3 / 4; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-card); background: var(--bg-2); display: flex; align-items: center; justify-content: center; }
 .mv__poster img { width: 100%; height: 100%; object-fit: cover; }
 .mv__title { font-family: var(--font-display); font-size: 30px; font-weight: 700; line-height: 1.25; margin-bottom: 10px; }
