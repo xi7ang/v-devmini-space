@@ -1,5 +1,41 @@
 [
   {
+    "hash": "c5469fd",
+    "date": "2026-10-12T21:38:31+08:00",
+    "message": "fix: 蒸蒸日上 desc 回原文（补平台 payload 的 desc 覆盖了站内简介）",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/c5469fdd508b1e8f35e02d4a24724e55262fee21"
+  },
+  {
+    "hash": "464d711",
+    "date": "2026-10-12T21:34:59+08:00",
+    "message": "fix: 蒸蒸日上 封面回原件 zhengzheng-rishang.webp（补平台 payload 的 cover 覆盖了站内封面）",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/464d7116dd2362148bd00188955501fd99266878"
+  },
+  {
+    "hash": "21299e6",
+    "date": "2026-10-12T21:32:17+08:00",
+    "message": "fix: 蒸蒸日上 集数 04集 -> 08集（合并发布不更新标题，需手动改数据）",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/21299e6b88fa4382cf852337d37336eff25ad596"
+  },
+  {
+    "hash": "6e50e9f",
+    "date": "2026-10-12T21:30:30+08:00",
+    "message": "chore: 每日公告：发布【2026-10-12】影视资源更新通知（1 条新资源）",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/6e50e9fa40e158d74a4466105abb258f6fc9ff80"
+  },
+  {
+    "hash": "2ec6bce",
+    "date": "2026-10-12T21:18:19+08:00",
+    "message": "publish: 吞噬星空(新) + 蒸蒸日上(补迅雷平台合并)",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/2ec6bceaa16074f88088cb6b7859cd2e05dd0705"
+  },
+  {
+    "hash": "9b034f1",
+    "date": "2026-10-11T22:57:50+08:00",
+    "message": "refactor(announcement): 公告弹窗抽为 AnnouncementModal 组件并全站启用",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/9b034f11529139b950381132c5734ae25c4e8a5a"
+  },
+  {
     "hash": "b245a31",
     "date": "2026-10-11T20:02:17+08:00",
     "message": "publish: 提欧奥特曼 / 捉妖天师 / 魅影神捕 / 启运丹田 / 美人余（v 白名单:uc+迅雷）",
@@ -142,41 +178,5 @@
     "date": "2026-10-10T21:36:07+08:00",
     "message": "chore: 清空 v 站测试资源（resources.json 置空 + 重建 home/search-index/sitemap）",
     "url": "https://github.com/xi7ang/v-devmini-space/commit/316b7c222ebf1d07792e297d4af2717baa8c5538"
-  },
-  {
-    "hash": "94626ce",
-    "date": "2026-10-10T20:43:48+08:00",
-    "message": "copy: 全站文案由「游戏」主题改为「影视」主题（前台+后台）",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/94626ceda4ca5cf7c5dd0ebb42c3515d16622158"
-  },
-  {
-    "hash": "9efc1f1",
-    "date": "2026-10-07T21:26:00+08:00",
-    "message": "fix(icons): 网盘logo按内容裁剪撑满画布(原thumbnail只缩不放导致大片留白) + 浅色logo自动配深底 + chip改铺满",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/9efc1f18d17f7b940e81a0301bf5b0eff3617e14"
-  },
-  {
-    "hash": "aaf73e8",
-    "date": "2026-10-07T21:12:19+08:00",
-    "message": "feat(detail): 网盘图标改用品牌 logo(夸克/UC/迅雷/光鸭，来自各网盘官方图标)",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/aaf73e8a90366997453028da361b5ee1cda4fcb5"
-  },
-  {
-    "hash": "15df31b",
-    "date": "2026-10-07T20:55:36+08:00",
-    "message": "fix(detail): 详情页封面改 3:4 + 二维码/提取码跟随所点网盘卡（原取主平台，多网盘时张张相同）",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/15df31b67656d4a19d84d64466ed277def9591c5"
-  },
-  {
-    "hash": "575e759",
-    "date": "2026-10-07T20:43:05+08:00",
-    "message": "style(card): 资源卡片封面改为竖版 3:4",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/575e759fb8bdbf057bd6e02f0e5f7310f08a3a36"
-  },
-  {
-    "hash": "4961161",
-    "date": "2026-10-07T20:35:33+08:00",
-    "message": "feat(analytics): 接入自建 Umami 统计到 v.devmini.space 专属站点(website id 换新) + admin 访问统计面板切 ?site=vdev",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/4961161bf248b86b7e9d8decf159c5e876099816"
   }
 ]

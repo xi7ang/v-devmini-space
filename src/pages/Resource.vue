@@ -79,6 +79,24 @@
           </div>
         </div>
 
+        <!-- 资源列表：该分享内的视频文件（UC 文件列表，构建期生成 data/filelist.json）-->
+        <section v-if="fileEntry && fileEntry.total" class="section">
+          <h2 class="section-title">📂 资源列表</h2>
+          <div class="flist">
+            <div class="flist__head">
+              <span class="flist__src">{{ fileSourceLabel }}</span>
+              <span class="flist__count">共 {{ fileEntry.total }} 个文件 · 按名称排序</span>
+            </div>
+            <ul class="flist__list">
+              <li v-for="(f, i) in fileEntry.files" :key="i" class="flist__item">
+                <span class="flist__ico">🎬</span>
+                <span class="flist__name" :title="f.path || f.name">{{ f.name }}</span>
+                <span v-if="f.size" class="flist__size">{{ fmtSize(f.size) }}</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+
         <!-- 同分类推荐 -->
         <section v-if="related.length" class="section">
           <h2 class="section-title">🎯 同类推荐</h2>
@@ -251,6 +269,32 @@ function withCode(url, pwd, platform) {
   return base + (base.includes('?') ? '&' : '?') + key + '=' + encodeURIComponent(code) + hash
 }
 function transferUrl(l) { return withCode(l.url, l.pwd, l.platform) }
+// ── 资源列表：构建期生成的 data/filelist.json（详情页懒加载，缺文件即不渲染）──
+const fileEntry = ref(null)
+const fileSourceLabel = computed(() => (fileEntry.value?.platform === 'uc' ? 'UC网盘 · 分享内视频文件' : '分享内视频文件'))
+let filelistCache = null
+async function loadFileEntry() {
+  const id = r.value?.id
+  if (!id) return
+  try {
+    if (!filelistCache) {
+      filelistCache = await fetch(`${BASE}data/filelist.json?v=${BUILD_ID || Date.now()}`).then((x) => x.json())
+    }
+    fileEntry.value = filelistCache[id] || null
+  } catch (e) {
+    fileEntry.value = null
+  }
+}
+watch(() => r.value?.id, loadFileEntry)
+function fmtSize(n) {
+  if (!n) return ''
+  const u = ['B', 'KB', 'MB', 'GB', 'TB']
+  let i = 0
+  let v = Number(n)
+  while (v >= 1024 && i < u.length - 1) { v /= 1024; i++ }
+  return (i === 0 ? Math.round(v) : v.toFixed(1)) + ' ' + u[i]
+}
+
 const related = computed(() =>
   r.value ? state.resources.filter((x) => x.category === r.value.category && x.id !== r.value.id).slice(0, 4) : []
 )
@@ -819,4 +863,17 @@ watch([showQr, activeLink], async ([v]) => {
 .mv-card__go { flex: 0 0 auto; background: linear-gradient(135deg, var(--accent-gold), var(--accent-gold-deep)); color: #fff; font-weight: 700; font-size: 13.5px; padding: 9px 16px; border-radius: 100px; white-space: nowrap; }
 .mv__meta { display: flex; gap: 16px; flex-wrap: wrap; font-size: 12.5px; margin-top: 14px; }
 @media (max-width: 840px) { .mv__body { grid-template-columns: 1fr; padding: 18px; } .mv__poster { aspect-ratio: 3 / 4; max-width: 220px; } .mv__title { font-size: 22px; } }
+
+/* ── 资源列表（分享内文件清单）── */
+.flist { border-radius: var(--radius); border: 1px solid var(--glass-border); background: var(--glass-bg); overflow: hidden; }
+.flist__head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; padding: 14px 18px; border-bottom: 1px solid var(--glass-border); }
+.flist__src { font-weight: 700; font-size: 14px; }
+.flist__count { font-size: 12.5px; color: var(--text-low); }
+.flist__list { list-style: none; margin: 0; padding: 6px 0; max-height: 460px; overflow-y: auto; }
+.flist__item { display: flex; align-items: center; gap: 10px; padding: 7px 18px; font-size: 13.5px; }
+.flist__item:hover { background: rgba(255, 255, 255, 0.04); }
+.flist__ico { flex: 0 0 auto; }
+.flist__name { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.flist__size { flex: 0 0 auto; font-size: 12px; color: var(--text-low); font-variant-numeric: tabular-nums; }
+@media (max-width: 640px) { .flist__list { max-height: 320px; } .flist__item { padding: 6px 12px; } }
 </style>

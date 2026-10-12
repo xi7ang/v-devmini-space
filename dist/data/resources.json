@@ -1,5 +1,44 @@
 [
  {
+  "id": "anime-202610-0010",
+  "title": "吞噬星空 更至245集 [4K][国漫/科幻]",
+  "enTitle": "",
+  "category": "anime",
+  "tags": [
+   "吞噬星空",
+   "国漫",
+   "科幻",
+   "4K"
+  ],
+  "platform": "uc",
+  "url": "https://drive.uc.cn/s/66334b264bff4",
+  "pwd": null,
+  "links": [
+   {
+    "platform": "uc",
+    "url": "https://drive.uc.cn/s/66334b264bff4",
+    "pwd": null
+   },
+   {
+    "platform": "xunlei",
+    "url": "https://pan.xunlei.com/s/VP3kFfqIkJ0UeWiK58tdPNwZA1?pwd=y6qs",
+    "pwd": "y6qs"
+   }
+  ],
+  "size": "",
+  "sizeBytes": null,
+  "quality": "4K",
+  "year": null,
+  "cover": "/covers/tunshi-xingkong.webp",
+  "desc": "某一天，地球上出现了不明来由的 RR 病毒，将世界卷入灾难之中。受到感染的动物变异成为可怕的怪兽，大举入侵，人类面临毁灭之际筑起了围墙，成立基地市作为人类最后的堡垒。人类在这一段时间经历的磨难，被称为“大涅槃时期”。",
+  "status": "active",
+  "featured": false,
+  "addedAt": "2026-10-12T13:17:56+08:00",
+  "updatedAt": "2026-10-12T13:17:56+08:00",
+  "month": "202610",
+  "steamAppID": null
+ },
+ {
   "id": "tv-202610-0011",
   "title": "美人余 (2026) 更至08集 [4K][都市情感]",
   "enTitle": "",
@@ -1025,7 +1064,7 @@
  },
  {
   "id": "tv-202610-0001",
-  "title": "蒸蒸日上 (2026) 更至04集 [4K][剧情/律政][韩东君/高叶]",
+  "title": "蒸蒸日上 (2026) 更至08集 [4K][剧情/律政][韩东君/高叶]",
   "enTitle": "",
   "category": "tv",
   "tags": [
@@ -1045,6 +1084,11 @@
     "platform": "uc",
     "url": "https://drive.uc.cn/s/a69fcf49e8c34",
     "pwd": null
+   },
+   {
+    "platform": "xunlei",
+    "url": "https://pan.xunlei.com/s/VP3kFgWZ6FbbBNP1lMqkpp3_A1?pwd=b6ws",
+    "pwd": "b6ws"
    }
   ],
   "size": "",
@@ -1056,7 +1100,7 @@
   "status": "active",
   "featured": false,
   "addedAt": "2026-10-10T14:37:43+08:00",
-  "updatedAt": "2026-10-10T14:37:43+08:00",
+  "updatedAt": "2026-10-12T13:17:56+08:00",
   "month": "202610",
   "steamAppID": null
  }
