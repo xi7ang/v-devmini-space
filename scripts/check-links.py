@@ -307,12 +307,26 @@ def main() -> int:
         RES.write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
         print(f"🩹 已处理 {changed} 条资源（失效链接移入 deadLinks，全失效则置 inactive）")
 
-    if push and changed:
+    # 数据变动后顺带刷新详情页「资源列表」（UC 文件列表）；失败不阻断发布
+    fl_changed = False
+    if apply_mode:
+        fl = ROOT / "public" / "data" / "filelist.json"
+        before = fl.read_bytes() if fl.exists() else b""
+        try:
+            subprocess.run([sys.executable, str(ROOT / "scripts" / "gen-filelist.py")],
+                           cwd=str(ROOT), check=True)
+        except Exception as e:  # noqa: BLE001
+            print(f"⚠️ gen-filelist 刷新失败（不阻断发布）: {e}")
+        after = fl.read_bytes() if fl.exists() else b""
+        fl_changed = before != after
+        print(f"🗂 资源列表刷新：{'已更新' if fl_changed else '无变化'}")
+
+    if push and (changed or fl_changed):
         subprocess.run(["npm", "run", "build"], cwd=str(ROOT), check=True)
         subprocess.run(["git", "add", "-A"], cwd=str(ROOT), check=True)
-        subprocess.run(["git", "commit", "-m",
-                        f"chore(links): 巡检下架失效网盘链接（{changed} 条资源）"],
-                       cwd=str(ROOT), check=True)
+        msg = (f"chore(links): 巡检下架失效网盘链接（{changed} 条资源）" if changed
+               else "chore(filelist): 刷新详情页「资源列表」数据")
+        subprocess.run(["git", "commit", "-m", msg], cwd=str(ROOT), check=True)
         subprocess.run(["git", "push"], cwd=str(ROOT), check=True)
         print("🚀 已 build + commit + push")
 

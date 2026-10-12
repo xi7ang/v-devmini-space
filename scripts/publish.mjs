@@ -259,6 +259,17 @@ function main() {
     }
   }
 
+  // 详情页「资源列表」：刷新本条资源的 UC 文件清单（非关键路径，失败只告警不阻断）。
+  // 只跑本条（--only）省时；全量刷新交给巡检脚本 check-links.py。
+  if (!args.noGen && item.id) {
+    try {
+      execFileSync('python3', [path.join('scripts', 'gen-filelist.py'), '--only', item.id], { cwd: ROOT, stdio: 'pipe' })
+      console.log(`[publish] filelist 已刷新：${item.id}`)
+    } catch (e) {
+      console.error(`[publish] gen-filelist 失败（不阻断，可稍后重跑）: ${String(e.message).slice(0, 200)}`)
+    }
+  }
+
   console.log(`[publish] ${created ? '新增' : '合并'} OK → "${item.title}" | ${item.category} | ${item.links.map((l) => PLATFORM_LABELS[l.platform] || l.platform).join('+')} | 总计 ${list.length} 条`)
 
   if (args.push) {
