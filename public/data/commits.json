@@ -1,5 +1,11 @@
 [
   {
+    "hash": "e57e596",
+    "date": "2026-10-12T23:25:15+08:00",
+    "message": "style(detail): 资源描述与获取资源横跨两栏，铺满封面下方空白",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/e57e59640fa3b729568942bece8a85af285326da"
+  },
+  {
     "hash": "be2ca61",
     "date": "2026-10-12T23:21:36+08:00",
     "message": "update: 伦敦合伙人 更至10.10期 -> 10.12期（强制重转 + 换链 + updatedAt 同步）",
@@ -172,11 +178,5 @@
     "date": "2026-10-11T18:23:30+08:00",
     "message": "chore(links): 巡检下架失效网盘链接（2 条资源）",
     "url": "https://github.com/xi7ang/v-devmini-space/commit/61a9684998442cd792ad4449a525d39310314d09"
-  },
-  {
-    "hash": "bbdea5f",
-    "date": "2026-10-11T17:56:40+08:00",
-    "message": "fix(links): 回滚误判下架的迅雷链接 + 巡检加固（连续3次定论性无效才下架，抖动/限流一律不算）",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/bbdea5fda9a263acdf75446c6082eed9755852d3"
   }
 ]

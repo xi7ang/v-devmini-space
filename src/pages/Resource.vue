@@ -23,19 +23,18 @@
               </template>
             </div>
 
-            <div class="mv__info">
-              <div class="flex gap-sm wrap mb-md">
-                <span class="badge" :style="catBadgeStyle">{{ cat?.emoji }} {{ cat?.name }}</span>
-                <span v-if="r.year" class="badge">{{ r.year }}</span>
-                <span v-if="r.quality" class="badge badge--gold">{{ r.quality }}</span>
-                <span v-for="t in r.tags" :key="t" class="badge">#{{ t }}</span>
+            <div class="mv__col">
+              <div class="mv__info">
+                <h1 class="mv__title">{{ r.title }}</h1>
+                <div class="flex gap-sm wrap mv__badges">
+                  <span class="badge" :style="catBadgeStyle">{{ cat?.emoji }} {{ cat?.name }}</span>
+                  <span v-if="r.year" class="badge">{{ r.year }}</span>
+                  <span v-if="r.quality" class="badge badge--gold">{{ r.quality }}</span>
+                  <span v-for="t in r.tags" :key="t" class="badge">#{{ t }}</span>
+                </div>
               </div>
 
-              <h1 class="mv__title">{{ r.title }}</h1>
-            </div>
-
-            <!-- 描述 + 获取资源：横跨两栏，铺满封面下方的空白区 -->
-            <div class="mv__main">
+              <div class="mv__main">
               <p v-if="r.desc" class="mv__desc">{{ r.desc }}</p>
 
               <div class="mv__get">
@@ -78,6 +77,7 @@
               <div class="mv__meta text-low">
                 <span v-if="r.size">大小：{{ r.size }}</span>
                 <span>更新：{{ fmtFull(r.updatedAt) }}</span>
+                </div>
               </div>
             </div>
           </div>
@@ -846,9 +846,8 @@ watch([showQr, activeLink], async ([v]) => {
 .mv__backdrop { position: absolute; inset: 0; background-size: cover; background-position: center; filter: blur(30px) saturate(1.2); transform: scale(1.25); opacity: 0.35; }
 .mv__veil { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(var(--bg-0-rgb), 0.72), rgba(var(--bg-0-rgb), 0.96)); }
 .mv__body { position: relative; display: grid; grid-template-columns: 300px 1fr; gap: 28px; padding: 26px 28px; }
-.mv__info { align-self: start; }
-/* 描述 + 获取资源横跨两栏：不再只挤在右栏，而是铺到封面下方的空白区 */
-.mv__main { grid-column: 1 / -1; }
+.mv__col { min-width: 0; }                 /* PC：右栏容器（标题+标签 / 描述+获取资源 依次堆叠，与改版前一致） */
+.mv__badges { margin-bottom: 16px; }       /* 标签栏挪到标题下面 */
 .mv__poster { position: relative; aspect-ratio: 3 / 4; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-card); background: var(--bg-2); display: flex; align-items: center; justify-content: center; }
 .mv__poster img { width: 100%; height: 100%; object-fit: cover; }
 .mv__title { font-family: var(--font-display); font-size: 30px; font-weight: 700; line-height: 1.25; margin-bottom: 10px; }
@@ -873,8 +872,13 @@ watch([showQr, activeLink], async ([v]) => {
 @media (max-width: 840px) {
   .mv { margin-bottom: var(--space-md); }
   .mv__body { grid-template-columns: 118px minmax(0, 1fr); gap: 12px; padding: 12px 14px; }
-  .mv__poster { aspect-ratio: 3 / 4; max-width: none; }
-  .mv__info .badge { font-size: 10.5px; padding: 2px 7px; }
+  .mv__poster { grid-column: 1; grid-row: 1; aspect-ratio: 3 / 4; max-width: none; }
+  /* 移动端才把右栏「拆开」：标题+标签留在右侧，描述+获取资源横跨两栏铺满封面下方 */
+  .mv__col { display: contents; }
+  .mv__info { grid-column: 2; grid-row: 1; min-width: 0; }
+  .mv__main { grid-column: 1 / -1; grid-row: 2; }
+  .mv__badges { margin-bottom: 9px; }
+  .mv__badges .badge { font-size: 10.5px; padding: 2px 7px; }
   .mv__title { font-size: 16px; line-height: 1.28; margin-bottom: 6px; }
   .mv__desc {
     font-size: 11.5px; line-height: 1.5; margin-bottom: 9px;
