@@ -6,7 +6,7 @@
   "error": "ConnectTimeout: _ssl.c:990: The handshake operation timed out",
   "generatedAt": "2026-10-12T22:10:12+0800"
  },
- "_generatedAt": "2026-10-13T00:21:09+0800",
+ "_generatedAt": "2026-10-13T00:23:30+0800",
  "tv-202610-0011": {
   "platform": "uc",
   "total": 5,
@@ -4412,7 +4412,7 @@
  },
  "tv-202610-0001": {
   "platform": "uc",
-  "total": 4,
+  "total": 8,
   "files": [
    {
     "name": "01~4K.mp4",
@@ -4433,9 +4433,29 @@
     "name": "04~4K.mp4",
     "path": "04~4K.mp4",
     "size": 909714721
+   },
+   {
+    "name": "05~4K.mp4",
+    "path": "05~4K.mp4",
+    "size": 874663923
+   },
+   {
+    "name": "06~4K.mp4",
+    "path": "06~4K.mp4",
+    "size": 883598486
+   },
+   {
+    "name": "07~4K.mp4",
+    "path": "07~4K.mp4",
+    "size": 936309312
+   },
+   {
+    "name": "08~4K.mp4",
+    "path": "08~4K.mp4",
+    "size": 915573261
    }
   ],
-  "generatedAt": "2026-10-12T22:10:12+0800"
+  "generatedAt": "2026-10-13T00:23:30+0800"
  },
  "variety-202610-0010": {
   "platform": "uc",
