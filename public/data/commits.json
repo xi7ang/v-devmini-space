@@ -1,5 +1,11 @@
 [
   {
+    "hash": "68fd669",
+    "date": "2026-10-12T23:51:16+08:00",
+    "message": "feat: 收藏按钮改用爱心(♡/♥)；移除首页「更新日历」板块",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/68fd66957a4e6f1311a39ffcbf7b8357875b20b3"
+  },
+  {
     "hash": "784d06d",
     "date": "2026-10-12T23:45:07+08:00",
     "message": "fix(detail): 收藏按钮 PC 与标题同行尾部（内联流转）；移动端移到封面右上角",
@@ -172,11 +178,5 @@
     "date": "2026-10-11T19:38:11+08:00",
     "message": "feat(announcement): 启用首页公告弹窗（去 GameHub 品牌残留：VMOVIE NOTICE + 独立 dismiss key）",
     "url": "https://github.com/xi7ang/v-devmini-space/commit/c4231da8fc86dd49f0dc3d4934fa1120d2a289ed"
-  },
-  {
-    "hash": "62807df",
-    "date": "2026-10-11T19:02:10+08:00",
-    "message": "feat(nav): 移动端也显示导航 tab（首页/资源库）——去掉 640px 断点的 display:none，配紧凑样式",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/62807df04b0bbf0e752716b4df35c5c78298bd0f"
   }
 ]

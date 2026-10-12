@@ -147,8 +147,12 @@ onMounted(load)
 .follow-card__off:hover { color: #fb7185; border-color: rgba(244, 63, 94, 0.45); }
 
 /* 收藏卡片 + 取消按钮 */
+/* 与首页「最新更新」同类卡片保持一致的排列：
+   首页的卡片是 .rc-grid 的**直接子元素**，会被 grid 拉伸到整行等高；
+   收藏页多了一层 .fav-item 包裹，之前没拉伸 → 同行卡片高度参差不齐。
+   给包裹层用 grid，内部卡片就能像首页那样撑满单元格。 */
 .rc-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
-.fav-item { position: relative; }
+.fav-item { position: relative; display: grid; }
 .fav-item__del {
   position: absolute;
   top: 8px;
