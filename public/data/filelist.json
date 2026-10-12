@@ -6,7 +6,7 @@
   "error": "ConnectTimeout: _ssl.c:990: The handshake operation timed out",
   "generatedAt": "2026-10-12T22:10:12+0800"
  },
- "_generatedAt": "2026-10-12T22:59:45+0800",
+ "_generatedAt": "2026-10-12T23:21:22+0800",
  "tv-202610-0011": {
   "platform": "uc",
   "total": 5,
@@ -4170,7 +4170,7 @@
  },
  "variety-202610-0001": {
   "platform": "uc",
-  "total": 46,
+  "total": 47,
   "files": [
    {
     "name": "2026.04.25-第3期.mp4",
@@ -4401,9 +4401,14 @@
     "name": "2026.10.10-第10期.mp4",
     "path": "2026.10.10-第10期.mp4",
     "size": 2388399539
+   },
+   {
+    "name": "2026.10.12-超长营业第10期.mp4",
+    "path": "2026.10.12-超长营业第10期.mp4",
+    "size": 900966082
    }
   ],
-  "generatedAt": "2026-10-12T22:10:12+0800"
+  "generatedAt": "2026-10-12T23:21:22+0800"
  },
  "tv-202610-0001": {
   "platform": "uc",
