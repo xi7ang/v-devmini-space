@@ -11,8 +11,14 @@
     "enabled": true,
     "title": "站点公告",
     "content": "",
-    "version": "2026-10-11-1",
+    "version": "2026-10-12-3",
     "items": [
+      {
+        "date": "2026-10-12",
+        "tag": "更新",
+        "title": "【2026-10-12】影视资源更新通知",
+        "content": "嘿，今天的更新到了！🐧\n\n🎬《吞噬星空》更至245集（动漫）\n罗峰继续冲，4K 画质，追更的兄弟直接上车 👉 https://v.devmini.space/resource.html?id=hj7vsx\n\n资源挂了或者找不到，来群里喊一声，看到就补~"
+      },
       {
         "date": "2026-10-11",
         "tag": "更新",
