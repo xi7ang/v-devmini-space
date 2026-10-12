@@ -418,6 +418,8 @@ onMounted(async () => {
 @media (max-width: 768px) {
   .stats { grid-template-columns: repeat(2, 1fr); }
   .cat-grid, .rc-grid { grid-template-columns: repeat(2, 1fr); }
+  /* 移动端两侧再留一点空隙：容器本身 16px，卡片贴边显得拥挤 */
+  .rc-grid { padding: 0 8px; }
 }
 @media (max-width: 480px) {
   .rc-grid { grid-template-columns: repeat(2, 1fr); }

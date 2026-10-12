@@ -1,5 +1,11 @@
 [
   {
+    "hash": "fd67d4f",
+    "date": "2026-10-12T23:55:48+08:00",
+    "message": "style(favorites): 收藏卡片单元格拉伸，排列与首页「最新更新」一致",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/fd67d4f39a9aa07ba94dd711a2a153d3539e96c1"
+  },
+  {
     "hash": "68fd669",
     "date": "2026-10-12T23:51:16+08:00",
     "message": "feat: 收藏按钮改用爱心(♡/♥)；移除首页「更新日历」板块",
@@ -172,11 +178,5 @@
     "date": "2026-10-11T19:40:03+08:00",
     "message": "chore: 每日公告：发布【2026-10-11】影视资源更新通知（11 条新资源）",
     "url": "https://github.com/xi7ang/v-devmini-space/commit/8ef1c53dabe5f27e9883472e89ffdcebfb7a1ac1"
-  },
-  {
-    "hash": "c4231da",
-    "date": "2026-10-11T19:38:11+08:00",
-    "message": "feat(announcement): 启用首页公告弹窗（去 GameHub 品牌残留：VMOVIE NOTICE + 独立 dismiss key）",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/c4231da8fc86dd49f0dc3d4934fa1120d2a289ed"
   }
 ]

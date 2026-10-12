@@ -185,7 +185,8 @@ onMounted(load)
   .follow-list { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 768px) {
-  .rc-grid { grid-template-columns: repeat(2, 1fr); }
+  /* 与首页「最新更新 / 影视推荐」一致：移动端两侧留空隙，不贴边 */
+  .rc-grid { grid-template-columns: repeat(2, 1fr); padding: 0 8px; }
 }
 @media (max-width: 480px) {
   .rc-grid { grid-template-columns: repeat(2, 1fr); }
