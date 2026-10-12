@@ -1,5 +1,40 @@
 [
  {
+  "id": "variety-202610-0013",
+  "title": "毛雪汪 (2026) 更至10.12期 [综艺/生活观察][毛不易/李雪琴]",
+  "enTitle": "",
+  "category": "variety",
+  "tags": [
+   "毛雪汪",
+   "综艺",
+   "生活观察",
+   "毛不易",
+   "李雪琴"
+  ],
+  "platform": "uc",
+  "url": "https://drive.uc.cn/s/3033f1effa1c4",
+  "pwd": null,
+  "links": [
+   {
+    "platform": "uc",
+    "url": "https://drive.uc.cn/s/3033f1effa1c4",
+    "pwd": null
+   }
+  ],
+  "size": "",
+  "sizeBytes": null,
+  "quality": "",
+  "year": 2026,
+  "cover": "/covers/maoxuewang.webp",
+  "desc": "老友赴约，让我们一起唠唠日常、分享趣事，在轻松热聊的氛围中，收获最简单的快乐和温暖吧！米饭始终陪在铁汁们身边~",
+  "status": "active",
+  "featured": false,
+  "addedAt": "2026-10-12T14:52:43+08:00",
+  "updatedAt": "2026-10-12T14:52:43+08:00",
+  "month": "202610",
+  "steamAppID": null
+ },
+ {
   "id": "variety-202610-0012",
   "title": "现在就出发 第四季 (2026) 更至10.12期 [旅行/综艺]",
   "enTitle": "",

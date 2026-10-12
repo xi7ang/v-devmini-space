@@ -1,5 +1,41 @@
 [
   {
+    "hash": "6ac4fb6",
+    "date": "2026-10-12T22:51:15+08:00",
+    "message": "publish: 我家那闺女 / 舞蹈新风暴 / 现在就出发S4（v 白名单:uc）+ 3 封面",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/6ac4fb6e1cbafb3e4f0eb83303fe9530d58fd28d"
+  },
+  {
+    "hash": "14adc26",
+    "date": "2026-10-12T22:51:13+08:00",
+    "message": "publish: 现在就出发 第四季 (2026) 更至10.12期 [旅行/综艺]",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/14adc26a26d4bde3549a7c44eb5db535da8caaa2"
+  },
+  {
+    "hash": "b46105e",
+    "date": "2026-10-12T22:51:07+08:00",
+    "message": "publish: 舞蹈新风暴 (2026) 更至10.12期 [综艺/真人秀/竞演]",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/b46105ec578178427ff6a3529b40a2e33ce47a96"
+  },
+  {
+    "hash": "d7beb0e",
+    "date": "2026-10-12T22:51:02+08:00",
+    "message": "publish: 我家那闺女 (2026) 更至10.12期 [综艺/真人秀]",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/d7beb0ec99d1e97c256791b01ea36ac4576def8d"
+  },
+  {
+    "hash": "4ab501e",
+    "date": "2026-10-12T22:17:27+08:00",
+    "message": "chore(scripts): 发布/巡检后顺带刷新详情页「资源列表」(gen-filelist)",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/4ab501e38f26830687f746958834e3667f11d0dc"
+  },
+  {
+    "hash": "c22c2ea",
+    "date": "2026-10-12T22:12:10+08:00",
+    "message": "feat(详情页): 新增「资源列表」栏目（UC 文件列表，仅视频，按名称排序）",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/c22c2ea4be48d2dd7acd3b0c5f87e1553bc41f29"
+  },
+  {
     "hash": "c5469fd",
     "date": "2026-10-12T21:38:31+08:00",
     "message": "fix: 蒸蒸日上 desc 回原文（补平台 payload 的 desc 覆盖了站内简介）",
@@ -142,41 +178,5 @@
     "date": "2026-10-10T23:04:08+08:00",
     "message": "publish: 后西游记 S1 / 一路向海的少年 / 梦想改造家 S13 / 无可替代",
     "url": "https://github.com/xi7ang/v-devmini-space/commit/62f569df10628124fed49ed48944e36e2be2cddd"
-  },
-  {
-    "hash": "6aa78a0",
-    "date": "2026-10-10T22:55:50+08:00",
-    "message": "publish: 伦敦合伙人 (2026) 更至10.10期 [综艺/经营体验][合伙人 伦敦篇]",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/6aa78a0ba635ee3f9abf0bac2265e00cc75beda0"
-  },
-  {
-    "hash": "4767c45",
-    "date": "2026-10-10T22:38:15+08:00",
-    "message": "publish: 蒸蒸日上 (2026) 更至04集 [4K][剧情/律政][韩东君/高叶]",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/4767c457e777b3c0845d3145958c92b0c6904923"
-  },
-  {
-    "hash": "74ec9d3",
-    "date": "2026-10-10T21:51:55+08:00",
-    "message": "fix(changelog): commits.json 改由本仓库 git log 生成（原为 GameHub 遗留）+ CI fetch-depth:0",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/74ec9d317cca06982cc04757363efc23218fef7c"
-  },
-  {
-    "hash": "50f59aa",
-    "date": "2026-10-10T21:49:04+08:00",
-    "message": "feat: 补齐 favorites.html / changelog.html 两页（对齐 GameHub 实现）",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/50f59aabb79f257101c88d9999acc4538b9f289e"
-  },
-  {
-    "hash": "12b2c0f",
-    "date": "2026-10-10T21:40:17+08:00",
-    "message": "chore: 删除无引用的资源封面 public/covers + dist/covers（118 张；movie-covers 背景墙保留）",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/12b2c0f294e881e94d256c486cca0fa69936900b"
-  },
-  {
-    "hash": "316b7c2",
-    "date": "2026-10-10T21:36:07+08:00",
-    "message": "chore: 清空 v 站测试资源（resources.json 置空 + 重建 home/search-index/sitemap）",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/316b7c222ebf1d07792e297d4af2717baa8c5538"
   }
 ]
