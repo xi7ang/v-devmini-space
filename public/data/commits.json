@@ -1,5 +1,17 @@
 [
   {
+    "hash": "12d3cd2",
+    "date": "2026-10-12T23:08:49+08:00",
+    "message": "fix: 原地更新的条目同步 updatedAt（一路向海的少年 / 蒸蒸日上）",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/12d3cd22d2022da0a33a711a15145669ca37907b"
+  },
+  {
+    "hash": "476a7ba",
+    "date": "2026-10-12T23:01:14+08:00",
+    "message": "chore(home): 热门搜索词库只保留片名（去掉标签/画质词）",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/476a7ba1ed5d3f5a3219536ce4b6446b65e75025"
+  },
+  {
     "hash": "3e49df9",
     "date": "2026-10-12T22:59:58+08:00",
     "message": "update: 一路向海的少年 更至10.10期 -> 10.12期（强制重转 + 换链；源分享原地更新，注册表误跳过）",
@@ -166,17 +178,5 @@
     "date": "2026-10-11T17:41:12+08:00",
     "message": "publish: 都市古仙医 / 楚离 / 死刑将至 / 她似野火 / 不可靠近的他（多盘过滤:仅 uc/迅雷）",
     "url": "https://github.com/xi7ang/v-devmini-space/commit/40a2714a233ea0551a10f4da08dc4875e6f488e1"
-  },
-  {
-    "hash": "eac010b",
-    "date": "2026-10-11T17:29:57+08:00",
-    "message": "publish: 爱情来了 / 闲着干嘛呢 / 认识的哥哥 / 恶魔王座 / 惊人的星期六 / Doctor X（韩综韩剧泰剧日剧 6 条）",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/eac010b3c5006ba27b716a4485cc8035472a9359"
-  },
-  {
-    "hash": "d90bab5",
-    "date": "2026-10-11T00:42:41+08:00",
-    "message": "publish: 恋爱充电中 (2026) 韩剧",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/d90bab5bbc5a9a4a900e12ffce1d3154bced49f8"
   }
 ]

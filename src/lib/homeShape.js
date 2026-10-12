@@ -43,7 +43,14 @@ export function buildHomeShape(resources) {
     String(b.addedAt || '').localeCompare(String(a.addedAt || ''))
   )
 
-  const latest = sorted.slice(0, 12).map(slimCard)
+  // 「最新更新」按**资源更新时间** updatedAt 倒序（不是入库时间 addedAt）：
+  // 同一资源补集/换链/改标题后，它会顶到最前——这才符合“最新更新”的语义。
+  // 其余聚合（本周上新榜 recentCards、追更 catRecent、日历 dailyCounts）仍沿用 addedAt。
+  const byUpdated = [...list].sort((a, b) =>
+    String(b.updatedAt || b.addedAt || '').localeCompare(String(a.updatedAt || a.addedAt || ''))
+  )
+
+  const latest = byUpdated.slice(0, 12).map(slimCard)
   const recentCards = sorted.slice(0, RECENT_CARDS).map(slimCard)
 
   // 追分类用：近 CAT_RECENT_DAYS 天各分类的 addedAt（倒序）
