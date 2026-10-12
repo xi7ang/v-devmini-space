@@ -1,5 +1,17 @@
 [
   {
+    "hash": "3e49df9",
+    "date": "2026-10-12T22:59:58+08:00",
+    "message": "update: 一路向海的少年 更至10.10期 -> 10.12期（强制重转 + 换链；源分享原地更新，注册表误跳过）",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/3e49df9a7386cf6f364bac9e5b0e0c13663e54dd"
+  },
+  {
+    "hash": "0b2fff5",
+    "date": "2026-10-12T22:53:10+08:00",
+    "message": "feat(home): 最新更新置顶+限8卡+获取更多；热搜词库改为随资源动态生成；移动端封面居中；背景墙降速",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/0b2fff5a6c08fb29a990853ca629081288875524"
+  },
+  {
     "hash": "c1dba44",
     "date": "2026-10-12T22:52:50+08:00",
     "message": "publish: 毛雪汪（v 白名单:uc）+ 封面",
@@ -166,17 +178,5 @@
     "date": "2026-10-11T00:42:41+08:00",
     "message": "publish: 恋爱充电中 (2026) 韩剧",
     "url": "https://github.com/xi7ang/v-devmini-space/commit/d90bab5bbc5a9a4a900e12ffce1d3154bced49f8"
-  },
-  {
-    "hash": "78f4ffc",
-    "date": "2026-10-11T00:23:59+08:00",
-    "message": "publish: 你好，星期六 / 密室大逃脱S8 / 花儿与少年 / 大夏守墓人",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/78f4ffc35baa2eeed39a95cf2962c08ec43bb3a3"
-  },
-  {
-    "hash": "6ee1d59",
-    "date": "2026-10-10T23:50:28+08:00",
-    "message": "publish: 无可替代 补迅雷平台（UC+迅雷）",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/6ee1d5948c25f95be0ee3237768b9aeb7f7fdcb6"
   }
 ]

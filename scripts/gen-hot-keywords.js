@@ -2,11 +2,10 @@
 /**
  * scripts/gen-hot-keywords.js — 生成首页「热门搜索」关键词库
  *
- * 用户口径（2026-10-12）：热词库**只能包含 v 站已有的资源关键词**，站上搜不到的词不许出现；
- * 且要随资源更新**动态刷新**。本脚本从 public/data/resources.json 派生候选词：
- *   1) 资源名（剥年份 / 更至N集 / 画质标签）；
- *   2) 标题方括号里的标签词、以及 tags 字段；
- * 过滤掉画质/规格类（4K、1080P、HDR…）和过短/纯数字的词。
+ * 用户口径（2026-10-12）：热词库**只放片名**（不要标签词/画质词），且**只能包含 v 站已有的资源关键词**，
+ * 站上搜不到的词不许出现；并随资源更新**动态刷新**。本脚本从 public/data/resources.json 派生候选词：
+ *   只取资源名（剥年份 / 更至N集 / 方括号里的画质与分类标签）。
+ * 过滤掉过短/纯数字的词。
  *
  * 保留人工策展：已有的 hotKeywords.json 里**仍然能被站上资源命中**的词，原序保留在前；
  * 已被删掉的资源对应的旧词自动剔除。新派生的词按“资源新旧”追加在后。
@@ -35,22 +34,20 @@ const GENERIC = new Set([
 
 const norm = (s) => String(s || '').toLowerCase().replace(/[\s\-_·、,，。!！?？|/\\~`'"：:（）()\[\]【】]/g, '')
 
-/** 从一条资源派生候选词（保持出现顺序） */
+/** 从一条资源派生候选词（只取片名） */
 function candidatesOf(item) {
   const out = []
   const title = String(item.title || '')
-  const brackets = [...title.matchAll(/[\[【]([^\]】]+)[\]】]/g)].map((m) => m[1])
-  let name = title
+  const name = title
     .replace(/[\[【][^\]】]*[\]】]/g, ' ')
     .replace(/[（(]\s*20\d{2}\s*[)）]/g, ' ')
-    .replace(/更至\s*\d+\s*[集期]|更新至?\s*\d+\s*[集期]|全\s*\d+\s*集|超前完结|完结|第\s*[0-9一二三四五六七八九十]+\s*季/g, ' ')
+    .replace(/(?<![\dA-Za-z])20\d{2}(?![\dA-Za-z])/g, ' ')
+    .replace(/更至\s*\d+(?:\.\d+)?\s*[集期]|更新至?\s*\d+(?:\.\d+)?\s*[集期]|全\s*\d+\s*集|超前完结|完结|第\s*[0-9一二三四五六七八九十]+\s*季/g, ' ')
     .replace(/[·、,，。!！?？|/\\~`'"：:]/g, ' ')
     .replace(/\s+/g, ' ')
     .trim()
   if (name) out.push(name)
-  for (const b of brackets) for (const t of b.split(/[\/·、,，\s]+/)) out.push(t)
-  for (const t of item.tags || []) out.push(String(t))
-  return out.map((s) => s.trim()).filter(Boolean)
+  return out
 }
 
 function keep(kw) {
@@ -73,18 +70,9 @@ function main() {
     return k.length >= 2 && hay.some((h) => h.includes(k))
   }
 
-  // 1) 人工策展里仍有效的词，原序保留
-  let curated = []
-  try {
-    const old = JSON.parse(fs.readFileSync(HOT, 'utf8'))
-    curated = (Array.isArray(old?.keywords) ? old.keywords : []).filter((k) => typeof k === 'string' && keep(k))
-  } catch { /* 没有旧文件 */ }
-  const dropped = curated.filter((k) => !hit(k))
-  const kept = curated.filter((k) => hit(k))
-
-  // 2) 从现有资源派生
-  const seen = new Set(kept.map(norm))
-  const derived = []
+  // 只放片名：全部从现有资源派生（不再携带旧词库里的标签词/画质词）
+  const seen = new Set()
+  const keywords = []
   const byNewest = [...items].sort((a, b) => String(b.addedAt || '').localeCompare(String(a.addedAt || '')))
   for (const it of byNewest) {
     for (const c of candidatesOf(it)) {
@@ -92,14 +80,11 @@ function main() {
       const n = norm(c)
       if (seen.has(n)) continue
       seen.add(n)
-      derived.push(c)
+      keywords.push(c)
     }
   }
-
-  const keywords = [...kept, ...derived].slice(0, MAX)
-
-  if (dropped.length) console.log(`[hot] 剔除失效词 ${dropped.length} 个（站上已无对应资源）: ${dropped.slice(0, 12).join(', ')}${dropped.length > 12 ? ' …' : ''}`)
-  console.log(`[hot] 保留策展词 ${kept.length} | 新增派生词 ${derived.length} | 合计 ${keywords.length}`)
+  keywords.splice(MAX)
+  console.log(`[hot] 片名热词 ${keywords.length} 个（只放片名；旧库里的标签词已丢弃）`)
 
   if (checkOnly) return
   fs.writeFileSync(HOT, JSON.stringify({ keywords }, null, 2) + '\n')
