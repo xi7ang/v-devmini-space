@@ -1,5 +1,11 @@
 [
   {
+    "hash": "e3e8830",
+    "date": "2026-10-12T23:39:02+08:00",
+    "message": "feat(detail): 详情页加收藏按钮（PC 标题尾部 / 移动端标签栏下方）",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/e3e8830e65d4809e0e3a0379e69dba99a7d3356b"
+  },
+  {
     "hash": "654fa44",
     "date": "2026-10-12T23:30:03+08:00",
     "message": "style(detail): PC 恢复原版式（右栏堆叠）；移动端描述+获取资源横跨两栏；标签栏移到标题下方",
@@ -172,11 +178,5 @@
     "date": "2026-10-11T18:58:29+08:00",
     "message": "fix(detail): 失效网盘组件在详情页不再渲染（去旧单链回退+过滤deadLinks）+ 移除卡片'链接失效'遮罩",
     "url": "https://github.com/xi7ang/v-devmini-space/commit/aa8130e0b2e6a53341acd2d98679b02ffbd68ca0"
-  },
-  {
-    "hash": "bbbfbdb",
-    "date": "2026-10-11T18:24:03+08:00",
-    "message": "chore: 忽略 __pycache__（上一条误入库的 .pyc）",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/bbbfbdb0f6f45a72721509deb13aacc6ccd31c35"
   }
 ]

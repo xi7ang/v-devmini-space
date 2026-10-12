@@ -21,6 +21,17 @@
                 <span class="detail__cover-halo" :style="haloStyle"></span>
                 <span class="detail__cover-emoji">{{ cat?.emoji }}</span>
               </template>
+              <!-- 收藏（移动端：封面右上角） -->
+              <button
+                class="mv__fav mv__fav--overlay"
+                :class="{ 'is-on': favored }"
+                :aria-pressed="favored"
+                :title="favored ? '取消收藏' : '收藏这个资源'"
+                @click="onToggleFav"
+              >
+                <span class="mv__fav-ico">{{ favored ? '★' : '☆' }}</span>
+                <span class="mv__fav-txt">收藏</span>
+              </button>
             </div>
 
             <div class="mv__col">
@@ -45,17 +56,6 @@
                   <span v-if="r.quality" class="badge badge--gold">{{ r.quality }}</span>
                   <span v-for="t in r.tags" :key="t" class="badge">#{{ t }}</span>
                 </div>
-                <!-- 收藏（移动端：标签栏下面） -->
-                <button
-                  class="mv__fav mv__fav--mobile"
-                  :class="{ 'is-on': favored }"
-                  :aria-pressed="favored"
-                  :title="favored ? '取消收藏' : '收藏这个资源'"
-                  @click="onToggleFav"
-                >
-                  <span class="mv__fav-ico">{{ favored ? '★' : '☆' }}</span>
-                  <span class="mv__fav-txt">{{ favored ? '已收藏' : '收藏' }}</span>
-                </button>
               </div>
 
               <div class="mv__main">
@@ -872,8 +872,10 @@ watch([showQr, activeLink], async ([v]) => {
 .mv__body { position: relative; display: grid; grid-template-columns: 300px 1fr; gap: 28px; padding: 26px 28px; }
 .mv__col { min-width: 0; }                 /* PC：右栏容器（标题+标签 / 描述+获取资源 依次堆叠，与改版前一致） */
 .mv__badges { margin-bottom: 16px; }       /* 标签栏挪到标题下面 */
-.mv__titlerow { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 10px; }
-.mv__titlerow .mv__title { margin-bottom: 0; }
+/* 标题行：标题与收藏按钮**同一行内流转**，按钮跟在标题文本尾部，不会另起一行 */
+.mv__titlerow { margin-bottom: 10px; }
+.mv__titlerow .mv__title { display: inline; margin-bottom: 0; }
+.mv__titlerow .mv__fav { margin-left: 12px; vertical-align: middle; }
 .mv__fav {
   display: inline-flex; align-items: center; gap: 6px;
   padding: 7px 15px; border-radius: 100px;
@@ -883,7 +885,15 @@ watch([showQr, activeLink], async ([v]) => {
 }
 .mv__fav:hover { border-color: var(--accent-gold); color: var(--accent-gold); }
 .mv__fav.is-on { border-color: var(--accent-gold); color: var(--accent-gold); background: rgba(201, 154, 91, 0.14); }
-.mv__fav--mobile { display: none; }
+/* 移动端：收藏按钮压在资源封面右上角 */
+.mv__fav--overlay {
+  position: absolute; top: 8px; right: 8px; z-index: 2; display: none;
+  padding: 6px 9px; font-size: 16px; line-height: 1;
+  background: rgba(0, 0, 0, 0.42); border-color: rgba(255, 255, 255, 0.22); color: #fff;
+  backdrop-filter: blur(6px);
+}
+.mv__fav--overlay .mv__fav-txt { display: none; }
+.mv__fav--overlay.is-on { color: var(--accent-gold); border-color: var(--accent-gold); }
 .mv__poster { position: relative; aspect-ratio: 3 / 4; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-card); background: var(--bg-2); display: flex; align-items: center; justify-content: center; }
 .mv__poster img { width: 100%; height: 100%; object-fit: cover; }
 .mv__title { font-family: var(--font-display); font-size: 30px; font-weight: 700; line-height: 1.25; margin-bottom: 10px; }
@@ -917,7 +927,7 @@ watch([showQr, activeLink], async ([v]) => {
   .mv__badges .badge { font-size: 10.5px; padding: 2px 7px; }
   .mv__titlerow { margin-bottom: 6px; }
   .mv__fav--pc { display: none; }
-  .mv__fav--mobile { display: inline-flex; margin-bottom: 10px; padding: 6px 13px; font-size: 12px; }
+  .mv__fav--overlay { display: inline-flex; }
   .mv__title { font-size: 16px; line-height: 1.28; margin-bottom: 6px; }
   .mv__desc {
     font-size: 11.5px; line-height: 1.5; margin-bottom: 9px;
