@@ -1,5 +1,23 @@
 [
   {
+    "hash": "bb28285",
+    "date": "2026-10-13T00:23:32+08:00",
+    "message": "fix: 蒸蒸日上 换 UC 链接为 08 集新副本 + updatedAt 同步（04集旧副本→08集）",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/bb28285e4db485c343f3d77cb16bda116055c8cf"
+  },
+  {
+    "hash": "d24ec51",
+    "date": "2026-10-13T00:21:21+08:00",
+    "message": "feat: 新增 心动的信号 第九季 (UC) / 喜剧之王 (UC) + 封面",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/d24ec51b881ea03ae291d536305e31c35d823565"
+  },
+  {
+    "hash": "1e7156f",
+    "date": "2026-10-13T00:00:43+08:00",
+    "message": "style(mobile): 资源卡片移动端两侧留 8px 空隙（首页最新更新/影视推荐、我的收藏）",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/1e7156fb4160f7280eb9122229c570434d0700a8"
+  },
+  {
     "hash": "fd67d4f",
     "date": "2026-10-12T23:55:48+08:00",
     "message": "style(favorites): 收藏卡片单元格拉伸，排列与首页「最新更新」一致",
@@ -160,23 +178,5 @@
     "date": "2026-10-11T22:57:50+08:00",
     "message": "refactor(announcement): 公告弹窗抽为 AnnouncementModal 组件并全站启用",
     "url": "https://github.com/xi7ang/v-devmini-space/commit/9b034f11529139b950381132c5734ae25c4e8a5a"
-  },
-  {
-    "hash": "b245a31",
-    "date": "2026-10-11T20:02:17+08:00",
-    "message": "publish: 提欧奥特曼 / 捉妖天师 / 魅影神捕 / 启运丹田 / 美人余（v 白名单:uc+迅雷）",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/b245a31479eee7dfefc9cb667fbc86684d7a5b69"
-  },
-  {
-    "hash": "702762b",
-    "date": "2026-10-11T19:46:58+08:00",
-    "message": "feat(announcement): 公告弹窗最新一条默认展开（showAnnouncement 时置 expandedIdx=0）",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/702762b9ff4f0a1455c3f02d20344545dd666a91"
-  },
-  {
-    "hash": "8ef1c53",
-    "date": "2026-10-11T19:40:03+08:00",
-    "message": "chore: 每日公告：发布【2026-10-11】影视资源更新通知（11 条新资源）",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/8ef1c53dabe5f27e9883472e89ffdcebfb7a1ac1"
   }
 ]

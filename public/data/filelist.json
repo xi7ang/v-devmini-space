@@ -1,12 +1,12 @@
 {
  "anime-202610-0010": {
-  "platform": "uc",
+  "platform": null,
   "total": 0,
   "files": [],
-  "error": "ConnectTimeout: _ssl.c:990: The handshake operation timed out",
-  "generatedAt": "2026-10-12T22:10:12+0800"
+  "error": "无 UC 链接",
+  "generatedAt": "2026-10-13T05:31:00+0800"
  },
- "_generatedAt": "2026-10-13T00:23:30+0800",
+ "_generatedAt": "2026-10-13T05:31:00+0800",
  "tv-202610-0011": {
   "platform": "uc",
   "total": 5,
@@ -37,7 +37,7 @@
     "size": 695464850
    }
   ],
-  "generatedAt": "2026-10-12T22:10:12+0800"
+  "generatedAt": "2026-10-13T05:31:00+0800"
  },
  "anime-202610-0009": {
   "platform": "uc",
@@ -209,7 +209,7 @@
     "size": 269629618
    }
   ],
-  "generatedAt": "2026-10-12T22:10:12+0800"
+  "generatedAt": "2026-10-13T05:31:00+0800"
  },
  "tv-202610-0010": {
   "platform": "uc",
@@ -271,14 +271,14 @@
     "size": 1160873819
    }
   ],
-  "generatedAt": "2026-10-12T22:10:12+0800"
+  "generatedAt": "2026-10-13T05:31:00+0800"
  },
  "movie-202610-0001": {
   "platform": null,
   "total": 0,
   "files": [],
   "error": "无 UC 链接",
-  "generatedAt": "2026-10-12T22:10:12+0800"
+  "generatedAt": "2026-10-13T05:31:00+0800"
  },
  "anime-202610-0008": {
   "platform": "uc",
@@ -355,35 +355,35 @@
     "size": 534625388
    }
   ],
-  "generatedAt": "2026-10-12T22:10:12+0800"
+  "generatedAt": "2026-10-13T05:31:00+0800"
  },
  "tv-202610-0009": {
   "platform": null,
   "total": 0,
   "files": [],
   "error": "无 UC 链接",
-  "generatedAt": "2026-10-12T22:10:12+0800"
+  "generatedAt": "2026-10-13T05:31:00+0800"
  },
  "tv-202610-0008": {
   "platform": null,
   "total": 0,
   "files": [],
   "error": "无 UC 链接",
-  "generatedAt": "2026-10-12T22:10:12+0800"
+  "generatedAt": "2026-10-13T05:31:00+0800"
  },
  "anime-202610-0007": {
   "platform": null,
   "total": 0,
   "files": [],
   "error": "无 UC 链接",
-  "generatedAt": "2026-10-12T22:10:12+0800"
+  "generatedAt": "2026-10-13T05:31:00+0800"
  },
  "anime-202610-0006": {
   "platform": null,
   "total": 0,
   "files": [],
   "error": "无 UC 链接",
-  "generatedAt": "2026-10-12T22:10:12+0800"
+  "generatedAt": "2026-10-13T05:31:00+0800"
  },
  "anime-202610-0005": {
   "platform": "uc",
@@ -865,7 +865,7 @@
     "size": 239499927
    }
   ],
-  "generatedAt": "2026-10-12T22:10:12+0800"
+  "generatedAt": "2026-10-13T05:31:00+0800"
  },
  "tv-202610-0007": {
   "platform": "uc",
@@ -887,7 +887,7 @@
     "size": 1353300833
    }
   ],
-  "generatedAt": "2026-10-12T22:10:12+0800"
+  "generatedAt": "2026-10-13T05:31:00+0800"
  },
  "variety-202610-0009": {
   "platform": "uc",
@@ -1644,7 +1644,7 @@
     "size": 3285822222
    }
   ],
-  "generatedAt": "2026-10-12T22:10:12+0800"
+  "generatedAt": "2026-10-13T05:31:00+0800"
  },
  "tv-202610-0006": {
   "platform": "uc",
@@ -1661,7 +1661,7 @@
     "size": 543093344
    }
   ],
-  "generatedAt": "2026-10-12T22:10:12+0800"
+  "generatedAt": "2026-10-13T05:31:00+0800"
  },
  "variety-202610-0008": {
   "platform": "uc",
@@ -2168,7 +2168,7 @@
     "size": 2482719771
    }
   ],
-  "generatedAt": "2026-10-12T22:10:12+0800"
+  "generatedAt": "2026-10-13T05:31:00+0800"
  },
  "variety-202610-0007": {
   "platform": "uc",
@@ -2675,7 +2675,7 @@
     "size": 3439872266
    }
   ],
-  "generatedAt": "2026-10-12T22:10:12+0800"
+  "generatedAt": "2026-10-13T05:31:00+0800"
  },
  "tv-202610-0005": {
   "platform": "uc",
@@ -2782,7 +2782,7 @@
     "size": 1729372444
    }
   ],
-  "generatedAt": "2026-10-12T22:10:12+0800"
+  "generatedAt": "2026-10-13T05:31:00+0800"
  },
  "tv-202610-0004": {
   "platform": "uc",
@@ -2839,7 +2839,7 @@
     "size": 1128193548
    }
   ],
-  "generatedAt": "2026-10-12T22:10:12+0800"
+  "generatedAt": "2026-10-13T05:31:00+0800"
  },
  "anime-202610-0004": {
   "platform": "uc",
@@ -2876,14 +2876,14 @@
     "size": 95639347
    }
   ],
-  "generatedAt": "2026-10-12T22:10:12+0800"
+  "generatedAt": "2026-10-13T05:31:00+0800"
  },
  "variety-202610-0006": {
   "platform": "uc",
   "total": 0,
   "files": [],
   "error": "分享地址已失效",
-  "generatedAt": "2026-10-12T22:10:12+0800"
+  "generatedAt": "2026-10-13T05:31:00+0800"
  },
  "variety-202610-0005": {
   "platform": "uc",
@@ -3205,7 +3205,7 @@
     "size": 456388870
    }
   ],
-  "generatedAt": "2026-10-12T22:10:12+0800"
+  "generatedAt": "2026-10-13T05:31:00+0800"
  },
  "variety-202610-0004": {
   "platform": "uc",
@@ -3512,14 +3512,14 @@
     "size": 831886430
    }
   ],
-  "generatedAt": "2026-10-12T22:10:12+0800"
+  "generatedAt": "2026-10-13T05:31:00+0800"
  },
  "anime-202610-0003": {
   "platform": "uc",
   "total": 0,
   "files": [],
   "error": "分享内无文件或已失效",
-  "generatedAt": "2026-10-12T22:10:12+0800"
+  "generatedAt": "2026-10-13T05:31:00+0800"
  },
  "anime-202610-0002": {
   "platform": "uc",
@@ -3771,14 +3771,14 @@
     "size": 74693377
    }
   ],
-  "generatedAt": "2026-10-12T22:10:12+0800"
+  "generatedAt": "2026-10-13T05:31:00+0800"
  },
  "anime-202610-0001": {
   "platform": "uc",
   "total": 0,
   "files": [],
   "error": "分享地址已失效",
-  "generatedAt": "2026-10-12T22:10:12+0800"
+  "generatedAt": "2026-10-13T05:31:00+0800"
  },
  "tv-202610-0003": {
   "platform": "uc",
@@ -3800,7 +3800,7 @@
     "size": 728951232
    }
   ],
-  "generatedAt": "2026-10-12T22:10:12+0800"
+  "generatedAt": "2026-10-13T05:31:00+0800"
  },
  "variety-202610-0003": {
   "platform": "uc",
@@ -3832,7 +3832,7 @@
     "size": 836409735
    }
   ],
-  "generatedAt": "2026-10-12T22:10:12+0800"
+  "generatedAt": "2026-10-13T05:31:00+0800"
  },
  "variety-202610-0002": {
   "platform": "uc",
@@ -4094,7 +4094,7 @@
     "size": 108184267
    }
   ],
-  "generatedAt": "2026-10-12T22:59:45+0800"
+  "generatedAt": "2026-10-13T05:31:00+0800"
  },
  "tv-202610-0002": {
   "platform": "uc",
@@ -4166,7 +4166,7 @@
     "size": 267238053
    }
   ],
-  "generatedAt": "2026-10-12T22:10:12+0800"
+  "generatedAt": "2026-10-13T05:31:00+0800"
  },
  "variety-202610-0001": {
   "platform": "uc",
@@ -4408,7 +4408,7 @@
     "size": 900966082
    }
   ],
-  "generatedAt": "2026-10-12T23:21:22+0800"
+  "generatedAt": "2026-10-13T05:31:00+0800"
  },
  "tv-202610-0001": {
   "platform": "uc",
@@ -4455,14 +4455,14 @@
     "size": 915573261
    }
   ],
-  "generatedAt": "2026-10-13T00:23:30+0800"
+  "generatedAt": "2026-10-13T05:31:00+0800"
  },
  "variety-202610-0010": {
   "platform": "uc",
   "total": 0,
   "files": [],
   "error": "分享地址已失效",
-  "generatedAt": "2026-10-12T22:51:01+0800"
+  "generatedAt": "2026-10-13T05:31:00+0800"
  },
  "variety-202610-0011": {
   "platform": "uc",
@@ -4579,14 +4579,14 @@
     "size": 624412450
    }
   ],
-  "generatedAt": "2026-10-12T22:51:05+0800"
+  "generatedAt": "2026-10-13T05:31:00+0800"
  },
  "variety-202610-0012": {
   "platform": "uc",
   "total": 0,
   "files": [],
   "error": "分享地址已失效",
-  "generatedAt": "2026-10-12T22:51:09+0800"
+  "generatedAt": "2026-10-13T05:31:00+0800"
  },
  "variety-202610-0013": {
   "platform": "uc",
@@ -4968,7 +4968,7 @@
     "size": 491314591
    }
   ],
-  "generatedAt": "2026-10-12T22:52:44+0800"
+  "generatedAt": "2026-10-13T05:31:00+0800"
  },
  "variety-202610-0014": {
   "platform": "uc",
@@ -5035,7 +5035,7 @@
     "size": 599203630
    }
   ],
-  "generatedAt": "2026-10-13T00:21:05+0800"
+  "generatedAt": "2026-10-13T05:31:00+0800"
  },
  "tv-202610-0012": {
   "platform": "uc",
@@ -5127,6 +5127,6 @@
     "size": 1005948965
    }
   ],
-  "generatedAt": "2026-10-13T00:21:09+0800"
+  "generatedAt": "2026-10-13T05:31:00+0800"
  }
 }

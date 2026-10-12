@@ -116,25 +116,26 @@
   "platform": "uc",
   "url": "https://drive.uc.cn/s/3d98027273ae4",
   "pwd": null,
-  "links": [
-   {
-    "platform": "uc",
-    "url": "https://drive.uc.cn/s/3d98027273ae4",
-    "pwd": null
-   }
-  ],
+  "links": [],
   "size": "",
   "sizeBytes": null,
   "quality": "",
   "year": 2026,
   "cover": "/covers/xianzaijiuchufa.webp",
   "desc": "这是一档户外真人秀，由沈腾、白敬亭、贾冰、胡先煦、王安宇、范丞丞、黄景瑜、王楚然作为常驻嘉宾。这一季，再次出发，跨山越海，顺水而行，前往海南蜈支洲岛、四川九寨沟等地，在自然中寻找生命力不同的样子。",
-  "status": "active",
+  "status": "inactive",
   "featured": false,
   "addedAt": "2026-10-12T14:50:51+08:00",
-  "updatedAt": "2026-10-12T14:51:09+08:00",
+  "updatedAt": "2026-10-13T05:31:00+08:00",
   "month": "202610",
-  "steamAppID": null
+  "steamAppID": null,
+  "deadLinks": [
+   {
+    "platform": "uc",
+    "url": "https://drive.uc.cn/s/3d98027273ae4",
+    "pwd": null
+   }
+  ]
  },
  {
   "id": "variety-202610-0011",
@@ -184,25 +185,26 @@
   "platform": "uc",
   "url": "https://drive.uc.cn/s/b98912a2e37a4",
   "pwd": null,
-  "links": [
-   {
-    "platform": "uc",
-    "url": "https://drive.uc.cn/s/b98912a2e37a4",
-    "pwd": null
-   }
-  ],
+  "links": [],
   "size": "",
   "sizeBytes": null,
   "quality": "",
   "year": 2026,
   "cover": "/covers/wojianaguinv.webp",
   "desc": "节目延续“好好爱自己”的主题，聚焦更广阔的职业图景与生活样本。通过她们真实的独居生活切片，展现当代女性的自我探索，持续传递积极向上的女性力量。",
-  "status": "active",
+  "status": "inactive",
   "featured": false,
   "addedAt": "2026-10-12T14:50:44+08:00",
-  "updatedAt": "2026-10-12T14:51:00+08:00",
+  "updatedAt": "2026-10-13T05:31:00+08:00",
   "month": "202610",
-  "steamAppID": null
+  "steamAppID": null,
+  "deadLinks": [
+   {
+    "platform": "uc",
+    "url": "https://drive.uc.cn/s/b98912a2e37a4",
+    "pwd": null
+   }
+  ]
  },
  {
   "id": "anime-202610-0010",
@@ -215,15 +217,10 @@
    "科幻",
    "4K"
   ],
-  "platform": "uc",
-  "url": "https://drive.uc.cn/s/66334b264bff4",
-  "pwd": null,
+  "platform": "xunlei",
+  "url": "https://pan.xunlei.com/s/VP3kFfqIkJ0UeWiK58tdPNwZA1?pwd=y6qs",
+  "pwd": "y6qs",
   "links": [
-   {
-    "platform": "uc",
-    "url": "https://drive.uc.cn/s/66334b264bff4",
-    "pwd": null
-   },
    {
     "platform": "xunlei",
     "url": "https://pan.xunlei.com/s/VP3kFfqIkJ0UeWiK58tdPNwZA1?pwd=y6qs",
@@ -239,9 +236,16 @@
   "status": "active",
   "featured": false,
   "addedAt": "2026-10-12T13:17:56+08:00",
-  "updatedAt": "2026-10-12T13:17:56+08:00",
+  "updatedAt": "2026-10-13T05:31:00+08:00",
   "month": "202610",
-  "steamAppID": null
+  "steamAppID": null,
+  "deadLinks": [
+   {
+    "platform": "uc",
+    "url": "https://drive.uc.cn/s/66334b264bff4",
+    "pwd": null
+   }
+  ]
  },
  {
   "id": "tv-202610-0011",
