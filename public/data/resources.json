@@ -1,5 +1,106 @@
 [
  {
+  "id": "variety-202610-0012",
+  "title": "现在就出发 第四季 (2026) 更至10.12期 [旅行/综艺]",
+  "enTitle": "",
+  "category": "variety",
+  "tags": [
+   "现在就出发",
+   "综艺",
+   "旅行"
+  ],
+  "platform": "uc",
+  "url": "https://drive.uc.cn/s/3d98027273ae4",
+  "pwd": null,
+  "links": [
+   {
+    "platform": "uc",
+    "url": "https://drive.uc.cn/s/3d98027273ae4",
+    "pwd": null
+   }
+  ],
+  "size": "",
+  "sizeBytes": null,
+  "quality": "",
+  "year": 2026,
+  "cover": "/covers/xianzaijiuchufa.webp",
+  "desc": "这是一档户外真人秀，由沈腾、白敬亭、贾冰、胡先煦、王安宇、范丞丞、黄景瑜、王楚然作为常驻嘉宾。这一季，再次出发，跨山越海，顺水而行，前往海南蜈支洲岛、四川九寨沟等地，在自然中寻找生命力不同的样子。",
+  "status": "active",
+  "featured": false,
+  "addedAt": "2026-10-12T14:50:51+08:00",
+  "updatedAt": "2026-10-12T14:50:51+08:00",
+  "month": "202610",
+  "steamAppID": null
+ },
+ {
+  "id": "variety-202610-0011",
+  "title": "舞蹈新风暴 (2026) 更至10.12期 [综艺/真人秀/竞演]",
+  "enTitle": "",
+  "category": "variety",
+  "tags": [
+   "舞蹈新风暴",
+   "综艺",
+   "真人秀",
+   "竞演"
+  ],
+  "platform": "uc",
+  "url": "https://drive.uc.cn/s/df8291c2df9f4",
+  "pwd": null,
+  "links": [
+   {
+    "platform": "uc",
+    "url": "https://drive.uc.cn/s/df8291c2df9f4",
+    "pwd": null
+   }
+  ],
+  "size": "",
+  "sizeBytes": null,
+  "quality": "",
+  "year": 2026,
+  "cover": "/covers/wudaoxinfengbao.webp",
+  "desc": "这是一档舞蹈剧场×大屏直播×短视频互动的舞蹈竞演真人秀，由顶尖舞者迎战12期极限主题挑战，全程无剪辑直播。",
+  "status": "active",
+  "featured": false,
+  "addedAt": "2026-10-12T14:50:47+08:00",
+  "updatedAt": "2026-10-12T14:50:47+08:00",
+  "month": "202610",
+  "steamAppID": null
+ },
+ {
+  "id": "variety-202610-0010",
+  "title": "我家那闺女 (2026) 更至10.12期 [综艺/真人秀]",
+  "enTitle": "",
+  "category": "variety",
+  "tags": [
+   "我家那闺女",
+   "综艺",
+   "真人秀",
+   "2026"
+  ],
+  "platform": "uc",
+  "url": "https://drive.uc.cn/s/b98912a2e37a4",
+  "pwd": null,
+  "links": [
+   {
+    "platform": "uc",
+    "url": "https://drive.uc.cn/s/b98912a2e37a4",
+    "pwd": null
+   }
+  ],
+  "size": "",
+  "sizeBytes": null,
+  "quality": "",
+  "year": 2026,
+  "cover": "/covers/wojianaguinv.webp",
+  "desc": "节目延续“好好爱自己”的主题，聚焦更广阔的职业图景与生活样本。通过她们真实的独居生活切片，展现当代女性的自我探索，持续传递积极向上的女性力量。",
+  "status": "active",
+  "featured": false,
+  "addedAt": "2026-10-12T14:50:44+08:00",
+  "updatedAt": "2026-10-12T14:51:00+08:00",
+  "month": "202610",
+  "steamAppID": null
+ },
+ {
   "id": "anime-202610-0010",
   "title": "吞噬星空 更至245集 [4K][国漫/科幻]",
   "enTitle": "",
