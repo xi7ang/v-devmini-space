@@ -41,7 +41,7 @@ const DEFAULT_COVERS = Array.from({ length: 16 }, (_, i) => ({
 
 const covers = ref([...DEFAULT_COVERS])
 const rowCount = ref(12)
-const rowSpeed = 600
+const rowSpeed = 900
 
 onMounted(async () => {
   try {

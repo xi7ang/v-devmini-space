@@ -23,19 +23,25 @@
       </div>
     </section>
 
+    <!-- 最新更新：置顶展示，至多 8 个 -->
+    <section class="container section">
+      <h2 class="section-title">🆕 最新更新</h2>
+      <div class="rc-grid">
+        <ResourceCard v-for="r in latest" :key="r.id" :r="r" />
+      </div>
+      <div class="section-more">
+        <a href="/category.html" class="more-btn">获取更多 →</a>
+      </div>
+    </section>
+
     <!-- 影视推荐：每次打开随机从有封面的资源中选 8 个 -->
     <section v-if="featured.length" class="container section">
       <h2 class="section-title">🎬 影视推荐</h2>
       <div class="rc-grid">
         <ResourceCard v-for="r in featured" :key="r.id" :r="r" />
       </div>
-    </section>
-
-    <!-- 最新资源 -->
-    <section class="container section">
-      <h2 class="section-title">🆕 最新更新</h2>
-      <div class="rc-grid">
-        <ResourceCard v-for="r in latest" :key="r.id" :r="r" />
+      <div class="section-more">
+        <a href="/category.html" class="more-btn">获取更多 →</a>
       </div>
     </section>
 
@@ -208,7 +214,7 @@ function pickRandomFeatured() {
   }
   featured.value = arr.slice(0, 8)
 }
-const latest = computed(() => state.home?.latest || [])
+const latest = computed(() => (state.home?.latest || []).slice(0, 8))
 
 // ── 留存模块（数据全部来自 home.json 的轻量聚合，不触发全量加载）──
 function dayKeyOf(d) {
@@ -581,4 +587,19 @@ onMounted(async () => {
   .cal { gap: 2px; }
   .retain-card { padding: 18px 14px 14px; }
 }
+
+/* 栏目末尾的「获取更多」入口 */
+.section-more { display: flex; justify-content: center; margin-top: 18px; }
+.more-btn {
+  display: inline-block;
+  padding: 9px 22px;
+  border-radius: 100px;
+  border: 1px solid var(--glass-border);
+  background: var(--glass-bg);
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--accent-gold);
+  transition: all 0.2s;
+}
+.more-btn:hover { border-color: var(--accent-gold); box-shadow: var(--shadow-glow); transform: translateY(-1px); }
 </style>

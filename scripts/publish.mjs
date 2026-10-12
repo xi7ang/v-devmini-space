@@ -250,7 +250,7 @@ function main() {
   fs.writeFileSync(DATA, JSON.stringify(list, null, 1))
 
   if (!args.noGen) {
-    for (const s of ['gen-search-index.js', 'gen-home.js']) {
+    for (const s of ['gen-search-index.js', 'gen-home.js', 'gen-hot-keywords.js']) {
       try {
         execFileSync('node', [path.join('scripts', s)], { cwd: ROOT, stdio: 'pipe' })
       } catch (e) {

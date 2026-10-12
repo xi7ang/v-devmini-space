@@ -862,7 +862,7 @@ watch([showQr, activeLink], async ([v]) => {
 .mv-card__line b { color: var(--accent-gold); }
 .mv-card__go { flex: 0 0 auto; background: linear-gradient(135deg, var(--accent-gold), var(--accent-gold-deep)); color: #fff; font-weight: 700; font-size: 13.5px; padding: 9px 16px; border-radius: 100px; white-space: nowrap; }
 .mv__meta { display: flex; gap: 16px; flex-wrap: wrap; font-size: 12.5px; margin-top: 14px; }
-@media (max-width: 840px) { .mv__body { grid-template-columns: 1fr; padding: 18px; } .mv__poster { aspect-ratio: 3 / 4; max-width: 220px; } .mv__title { font-size: 22px; } }
+@media (max-width: 840px) { .mv__body { grid-template-columns: 1fr; padding: 18px; } .mv__poster { aspect-ratio: 3 / 4; max-width: 220px; justify-self: center; margin: 0 auto; } .mv__title { font-size: 22px; } }
 
 /* ── 资源列表（分享内文件清单）── */
 .flist { border-radius: var(--radius); border: 1px solid var(--glass-border); background: var(--glass-bg); overflow: hidden; }

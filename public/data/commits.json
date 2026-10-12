@@ -1,5 +1,17 @@
 [
   {
+    "hash": "c1dba44",
+    "date": "2026-10-12T22:52:50+08:00",
+    "message": "publish: 毛雪汪（v 白名单:uc）+ 封面",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/c1dba44cc997f28b6dd63fccc9032d8b1f3052a4"
+  },
+  {
+    "hash": "98daf25",
+    "date": "2026-10-12T22:52:47+08:00",
+    "message": "publish: 毛雪汪 (2026) 更至10.12期 [综艺/生活观察][毛不易/李雪琴]",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/98daf258133cc877dcdfe34b017e5aef82065459"
+  },
+  {
     "hash": "6ac4fb6",
     "date": "2026-10-12T22:51:15+08:00",
     "message": "publish: 我家那闺女 / 舞蹈新风暴 / 现在就出发S4（v 白名单:uc）+ 3 封面",
@@ -166,17 +178,5 @@
     "date": "2026-10-10T23:50:28+08:00",
     "message": "publish: 无可替代 补迅雷平台（UC+迅雷）",
     "url": "https://github.com/xi7ang/v-devmini-space/commit/6ee1d5948c25f95be0ee3237768b9aeb7f7fdcb6"
-  },
-  {
-    "hash": "6504838",
-    "date": "2026-10-10T23:35:20+08:00",
-    "message": "publish: 择日飞升 / 光阴之外 / 斗破苍穹（国漫）",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/650483806c5ac34c277172161022b650b512e511"
-  },
-  {
-    "hash": "62f569d",
-    "date": "2026-10-10T23:04:08+08:00",
-    "message": "publish: 后西游记 S1 / 一路向海的少年 / 梦想改造家 S13 / 无可替代",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/62f569df10628124fed49ed48944e36e2be2cddd"
   }
 ]
