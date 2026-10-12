@@ -1,5 +1,11 @@
 [
   {
+    "hash": "63d9e56",
+    "date": "2026-10-12T23:11:48+08:00",
+    "message": "feat(home): 「最新更新」改为按资源更新时间(updatedAt)倒序",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/63d9e56e19a32a5d9f065d8bb24e2f4d8963f579"
+  },
+  {
     "hash": "12d3cd2",
     "date": "2026-10-12T23:08:49+08:00",
     "message": "fix: 原地更新的条目同步 updatedAt（一路向海的少年 / 蒸蒸日上）",
@@ -172,11 +178,5 @@
     "date": "2026-10-11T17:52:39+08:00",
     "message": "feat(links): 新增网盘链接巡检脚本 check-links.py（按平台真实接口校验，非 HTTP 状态码）",
     "url": "https://github.com/xi7ang/v-devmini-space/commit/7fcef31ca5a446890ea1f93fee67bced37ac4b40"
-  },
-  {
-    "hash": "40a2714",
-    "date": "2026-10-11T17:41:12+08:00",
-    "message": "publish: 都市古仙医 / 楚离 / 死刑将至 / 她似野火 / 不可靠近的他（多盘过滤:仅 uc/迅雷）",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/40a2714a233ea0551a10f4da08dc4875e6f488e1"
   }
 ]

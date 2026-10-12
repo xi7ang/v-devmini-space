@@ -862,7 +862,34 @@ watch([showQr, activeLink], async ([v]) => {
 .mv-card__line b { color: var(--accent-gold); }
 .mv-card__go { flex: 0 0 auto; background: linear-gradient(135deg, var(--accent-gold), var(--accent-gold-deep)); color: #fff; font-weight: 700; font-size: 13.5px; padding: 9px 16px; border-radius: 100px; white-space: nowrap; }
 .mv__meta { display: flex; gap: 16px; flex-wrap: wrap; font-size: 12.5px; margin-top: 14px; }
-@media (max-width: 840px) { .mv__body { grid-template-columns: 1fr; padding: 18px; } .mv__poster { aspect-ratio: 3 / 4; max-width: 220px; justify-self: center; margin: 0 auto; } .mv__title { font-size: 22px; } }
+/* 移动端：保持与 PC 同一版式（左封面 + 右信息、两栏网格），整体等比缩小，一屏放得下整张卡 */
+@media (max-width: 840px) {
+  .mv { margin-bottom: var(--space-md); }
+  .mv__body { grid-template-columns: 118px minmax(0, 1fr); gap: 12px; padding: 12px 14px; }
+  .mv__poster { aspect-ratio: 3 / 4; max-width: none; }
+  .mv__info .badge { font-size: 10.5px; padding: 2px 7px; }
+  .mv__title { font-size: 16px; line-height: 1.28; margin-bottom: 6px; }
+  .mv__desc {
+    font-size: 11.5px; line-height: 1.5; margin-bottom: 9px;
+    display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .mv__get { padding: 10px 11px; }
+  .mv__get-head { gap: 6px; margin-bottom: 8px; }
+  .mv__get-title { font-size: 13px; }
+  .mv__get-sub { font-size: 10.5px; }
+  .mv__cards { gap: 8px; }
+  .mv-card { gap: 9px; padding: 8px 10px; border-radius: 10px; }
+  .mv-card__ico { width: 30px; height: 30px; font-size: 14px; border-radius: 9px; }
+  .mv-card__name { font-size: 12.5px; }
+  .mv-card__line { font-size: 10.5px; }
+  .mv-card__go { font-size: 11px; padding: 6px 11px; }
+  .mv__meta { font-size: 11px; margin-top: 8px; gap: 10px; }
+}
+@media (max-width: 400px) {
+  .mv__body { grid-template-columns: 96px minmax(0, 1fr); gap: 10px; padding: 10px 12px; }
+  .mv__title { font-size: 15px; }
+  .mv-card__ico { width: 26px; height: 26px; font-size: 13px; }
+}
 
 /* ── 资源列表（分享内文件清单）── */
 .flist { border-radius: var(--radius); border: 1px solid var(--glass-border); background: var(--glass-bg); overflow: hidden; }
