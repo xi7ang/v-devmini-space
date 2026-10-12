@@ -1,5 +1,11 @@
 [
   {
+    "hash": "784d06d",
+    "date": "2026-10-12T23:45:07+08:00",
+    "message": "fix(detail): 收藏按钮 PC 与标题同行尾部（内联流转）；移动端移到封面右上角",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/784d06dfb5bb8aec40da52f1ae422d9453349371"
+  },
+  {
     "hash": "e3e8830",
     "date": "2026-10-12T23:39:02+08:00",
     "message": "feat(detail): 详情页加收藏按钮（PC 标题尾部 / 移动端标签栏下方）",
@@ -172,11 +178,5 @@
     "date": "2026-10-11T19:02:10+08:00",
     "message": "feat(nav): 移动端也显示导航 tab（首页/资源库）——去掉 640px 断点的 display:none，配紧凑样式",
     "url": "https://github.com/xi7ang/v-devmini-space/commit/62807df04b0bbf0e752716b4df35c5c78298bd0f"
-  },
-  {
-    "hash": "aa8130e",
-    "date": "2026-10-11T18:58:29+08:00",
-    "message": "fix(detail): 失效网盘组件在详情页不再渲染（去旧单链回退+过滤deadLinks）+ 移除卡片'链接失效'遮罩",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/aa8130e0b2e6a53341acd2d98679b02ffbd68ca0"
   }
 ]

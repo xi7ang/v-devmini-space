@@ -29,7 +29,7 @@
                 :title="favored ? '取消收藏' : '收藏这个资源'"
                 @click="onToggleFav"
               >
-                <span class="mv__fav-ico">{{ favored ? '★' : '☆' }}</span>
+                <span class="mv__fav-ico">{{ favored ? '♥' : '♡' }}</span>
                 <span class="mv__fav-txt">收藏</span>
               </button>
             </div>
@@ -46,7 +46,7 @@
                     :title="favored ? '取消收藏' : '收藏这个资源'"
                     @click="onToggleFav"
                   >
-                    <span class="mv__fav-ico">{{ favored ? '★' : '☆' }}</span>
+                    <span class="mv__fav-ico">{{ favored ? '♥' : '♡' }}</span>
                     <span class="mv__fav-txt">{{ favored ? '已收藏' : '收藏' }}</span>
                   </button>
                 </div>
