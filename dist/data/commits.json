@@ -1,5 +1,17 @@
 [
   {
+    "hash": "f96d499",
+    "date": "2026-10-13T22:44:28+08:00",
+    "message": "feat: 新增 此处通往繁星/玉簟秋 + 四条更新换链改集数（魅影神捕23/美人余12/喜剧之王18/蒸蒸日上10）",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/f96d4992ae6af0aef0daf77bd12bbe56128a620a"
+  },
+  {
+    "hash": "626dc78",
+    "date": "2026-10-13T05:31:59+08:00",
+    "message": "chore(links): 巡检下架失效网盘链接（3 条资源）",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/626dc78bd779b760f85b15a7faada37b24b4f0b0"
+  },
+  {
     "hash": "bb28285",
     "date": "2026-10-13T00:23:32+08:00",
     "message": "fix: 蒸蒸日上 换 UC 链接为 08 集新副本 + updatedAt 同步（04集旧副本→08集）",
@@ -166,17 +178,5 @@
     "date": "2026-10-12T21:30:30+08:00",
     "message": "chore: 每日公告：发布【2026-10-12】影视资源更新通知（1 条新资源）",
     "url": "https://github.com/xi7ang/v-devmini-space/commit/6e50e9fa40e158d74a4466105abb258f6fc9ff80"
-  },
-  {
-    "hash": "2ec6bce",
-    "date": "2026-10-12T21:18:19+08:00",
-    "message": "publish: 吞噬星空(新) + 蒸蒸日上(补迅雷平台合并)",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/2ec6bceaa16074f88088cb6b7859cd2e05dd0705"
-  },
-  {
-    "hash": "9b034f1",
-    "date": "2026-10-11T22:57:50+08:00",
-    "message": "refactor(announcement): 公告弹窗抽为 AnnouncementModal 组件并全站启用",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/9b034f11529139b950381132c5734ae25c4e8a5a"
   }
 ]
