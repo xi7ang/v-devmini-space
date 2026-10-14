@@ -1,5 +1,11 @@
 [
   {
+    "hash": "ce279f8",
+    "date": "2026-10-14T05:32:29+08:00",
+    "message": "chore(filelist): 刷新详情页「资源列表」数据",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/ce279f89576dec24a213745a2b0aa465f321a462"
+  },
+  {
     "hash": "f96d499",
     "date": "2026-10-13T22:44:28+08:00",
     "message": "feat: 新增 此处通往繁星/玉簟秋 + 四条更新换链改集数（魅影神捕23/美人余12/喜剧之王18/蒸蒸日上10）",
@@ -172,11 +178,5 @@
     "date": "2026-10-12T21:32:17+08:00",
     "message": "fix: 蒸蒸日上 集数 04集 -> 08集（合并发布不更新标题，需手动改数据）",
     "url": "https://github.com/xi7ang/v-devmini-space/commit/21299e6b88fa4382cf852337d37336eff25ad596"
-  },
-  {
-    "hash": "6e50e9f",
-    "date": "2026-10-12T21:30:30+08:00",
-    "message": "chore: 每日公告：发布【2026-10-12】影视资源更新通知（1 条新资源）",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/6e50e9fa40e158d74a4466105abb258f6fc9ff80"
   }
 ]
