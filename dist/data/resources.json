@@ -1,5 +1,143 @@
 [
  {
+  "id": "tv-202610-0016",
+  "title": "欲望的陷阱 (2026) 1080P 简中字幕 更新37集 [日日剧]",
+  "enTitle": "",
+  "category": "tv",
+  "tags": [
+   "欲望的陷阱",
+   "日日剧",
+   "张瑞希",
+   "全惠媛",
+   "1080P",
+   "简中字幕"
+  ],
+  "platform": "uc",
+  "url": "https://drive.uc.cn/s/02aeb0b1f0c14",
+  "pwd": null,
+  "links": [
+   {
+    "platform": "uc",
+    "url": "https://drive.uc.cn/s/02aeb0b1f0c14",
+    "pwd": null
+   }
+  ],
+  "size": "",
+  "sizeBytes": null,
+  "quality": "1080P",
+  "year": 2026,
+  "cover": "/covers/yuwangdexianjing.webp",
+  "desc": "剧集讲述遭诬陷杀人而人生被夺走的女人，对抗巨大的欲望，并复原人生的复仇剧。",
+  "status": "active",
+  "featured": false,
+  "addedAt": "2026-10-15T07:11:36+08:00",
+  "updatedAt": "2026-10-15T07:11:36+08:00",
+  "month": "202610",
+  "steamAppID": null
+ },
+ {
+  "id": "tv-202610-0015",
+  "title": "妈妈发疯了 (2026) 1080P 简中字幕 更新13集 [日日剧]",
+  "enTitle": "",
+  "category": "tv",
+  "tags": [
+   "妈妈发疯了",
+   "日日剧",
+   "郑敏儿",
+   "董夏",
+   "1080P",
+   "简中字幕"
+  ],
+  "platform": "uc",
+  "url": "https://drive.uc.cn/s/d79e1fd2edb24",
+  "pwd": null,
+  "links": [
+   {
+    "platform": "uc",
+    "url": "https://drive.uc.cn/s/d79e1fd2edb24",
+    "pwd": null
+   }
+  ],
+  "size": "",
+  "sizeBytes": null,
+  "quality": "1080P",
+  "year": 2026,
+  "cover": "/covers/mamafafengle.webp",
+  "desc": "讲述了一位为家人奉献一生的母亲（金熙贞 饰）决定开启独立人生，与她那群不断闯祸、“如同仇人般”的孩子们之间发生的激烈冲突与搞笑日常。",
+  "status": "active",
+  "featured": false,
+  "addedAt": "2026-10-15T07:11:32+08:00",
+  "updatedAt": "2026-10-15T07:11:32+08:00",
+  "month": "202610",
+  "steamAppID": null
+ },
+ {
+  "id": "variety-202610-0016",
+  "title": "不想睡的星期五 (2026) 更至10.14期 [综艺/生活]",
+  "enTitle": "",
+  "category": "variety",
+  "tags": [
+   "不想睡的星期五",
+   "综艺",
+   "生活"
+  ],
+  "platform": "uc",
+  "url": "https://drive.uc.cn/s/eb4b7afaa9fb4",
+  "pwd": null,
+  "links": [
+   {
+    "platform": "uc",
+    "url": "https://drive.uc.cn/s/eb4b7afaa9fb4",
+    "pwd": null
+   }
+  ],
+  "size": "",
+  "sizeBytes": null,
+  "quality": "",
+  "year": 2026,
+  "cover": "/covers/buxiangshui-xingqiwu.webp",
+  "desc": "让每个星期五都成为打工人的“情感代餐”；全新定义周五夜生活，为当代年轻人打造一档“周五夜晚放松指南”！",
+  "status": "active",
+  "featured": false,
+  "addedAt": "2026-10-15T07:11:29+08:00",
+  "updatedAt": "2026-10-15T07:11:29+08:00",
+  "month": "202610",
+  "steamAppID": null
+ },
+ {
+  "id": "variety-202610-0015",
+  "title": "下一顺位是她 第2季 (2026) 更至10.14期 [体育竞技/综艺]",
+  "enTitle": "",
+  "category": "variety",
+  "tags": [
+   "下一顺位是她",
+   "综艺",
+   "体育竞技"
+  ],
+  "platform": "uc",
+  "url": "https://drive.uc.cn/s/ae4ffeb4fc914",
+  "pwd": null,
+  "links": [
+   {
+    "platform": "uc",
+    "url": "https://drive.uc.cn/s/ae4ffeb4fc914",
+    "pwd": null
+   }
+  ],
+  "size": "",
+  "sizeBytes": null,
+  "quality": "",
+  "year": 2026,
+  "cover": "/covers/xiayishunwei.webp",
+  "desc": "由腾讯体育、NBA、布鲁克林篮网联合出品，是一档NBA职业啦啦队竞演选拔节目。第二季以女性舞者为中心，通过舞台竞技和成长叙事记录选手参与选拔的过程。",
+  "status": "active",
+  "featured": false,
+  "addedAt": "2026-10-15T07:02:28+08:00",
+  "updatedAt": "2026-10-15T07:02:28+08:00",
+  "month": "202610",
+  "steamAppID": null
+ },
+ {
   "id": "tv-202610-0014",
   "title": "玉簟秋 (2026) 更至06集 [4K][近代/剧情][丞磊/徐若晗/张丰毅/徐帆]",
   "enTitle": "",
@@ -926,7 +1064,7 @@
  },
  {
   "id": "anime-202610-0004",
-  "title": "大夏守墓人 (2026) 更至06集 [都市奇幻/国漫]",
+  "title": "大夏守墓人 (2026) 更至07集 [都市奇幻/国漫]",
   "enTitle": "",
   "category": "anime",
   "tags": [
@@ -935,12 +1073,12 @@
    "都市奇幻"
   ],
   "platform": "uc",
-  "url": "https://drive.uc.cn/s/92d89ca1d4864",
+  "url": "https://drive.uc.cn/s/a6c546172f024",
   "pwd": null,
   "links": [
    {
     "platform": "uc",
-    "url": "https://drive.uc.cn/s/92d89ca1d4864",
+    "url": "https://drive.uc.cn/s/a6c546172f024",
     "pwd": null
    }
   ],
@@ -953,7 +1091,7 @@
   "status": "active",
   "featured": false,
   "addedAt": "2026-10-10T16:23:40+08:00",
-  "updatedAt": "2026-10-10T16:23:40+08:00",
+  "updatedAt": "2026-10-15T07:11:40+08:00",
   "month": "202610",
   "steamAppID": null
  },

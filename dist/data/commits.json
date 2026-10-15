@@ -1,5 +1,29 @@
 [
   {
+    "hash": "4069903",
+    "date": "2026-10-15T21:30:46+08:00",
+    "message": "chore: 每日公告：发布【2026-10-15】影视资源更新通知（4 条新资源）",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/4069903b09710cc809a9535515f0df9c0f04026a"
+  },
+  {
+    "hash": "d46291b",
+    "date": "2026-10-15T15:11:55+08:00",
+    "message": "feat: 新增 不想睡的星期五/妈妈发疯了/欲望的陷阱 + 大夏守墓人 06→07集换链",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/d46291b69aefa1570bedb24f8c1e970469fe69fb"
+  },
+  {
+    "hash": "983207b",
+    "date": "2026-10-15T15:02:33+08:00",
+    "message": "feat: 新增 下一顺位是她 第2季 (UC) + 封面",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/983207bd6ae3cbae425350fcdcb0c12d58aa6173"
+  },
+  {
+    "hash": "3678e1d",
+    "date": "2026-10-15T05:32:32+08:00",
+    "message": "chore(filelist): 刷新详情页「资源列表」数据",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/3678e1d8445219f3b41a30e4992cab8710c46c01"
+  },
+  {
     "hash": "ce279f8",
     "date": "2026-10-14T05:32:29+08:00",
     "message": "chore(filelist): 刷新详情页「资源列表」数据",
@@ -154,29 +178,5 @@
     "date": "2026-10-12T22:17:27+08:00",
     "message": "chore(scripts): 发布/巡检后顺带刷新详情页「资源列表」(gen-filelist)",
     "url": "https://github.com/xi7ang/v-devmini-space/commit/4ab501e38f26830687f746958834e3667f11d0dc"
-  },
-  {
-    "hash": "c22c2ea",
-    "date": "2026-10-12T22:12:10+08:00",
-    "message": "feat(详情页): 新增「资源列表」栏目（UC 文件列表，仅视频，按名称排序）",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/c22c2ea4be48d2dd7acd3b0c5f87e1553bc41f29"
-  },
-  {
-    "hash": "c5469fd",
-    "date": "2026-10-12T21:38:31+08:00",
-    "message": "fix: 蒸蒸日上 desc 回原文（补平台 payload 的 desc 覆盖了站内简介）",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/c5469fdd508b1e8f35e02d4a24724e55262fee21"
-  },
-  {
-    "hash": "464d711",
-    "date": "2026-10-12T21:34:59+08:00",
-    "message": "fix: 蒸蒸日上 封面回原件 zhengzheng-rishang.webp（补平台 payload 的 cover 覆盖了站内封面）",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/464d7116dd2362148bd00188955501fd99266878"
-  },
-  {
-    "hash": "21299e6",
-    "date": "2026-10-12T21:32:17+08:00",
-    "message": "fix: 蒸蒸日上 集数 04集 -> 08集（合并发布不更新标题，需手动改数据）",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/21299e6b88fa4382cf852337d37336eff25ad596"
   }
 ]
