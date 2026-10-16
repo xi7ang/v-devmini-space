@@ -47,25 +47,26 @@
   "platform": "uc",
   "url": "https://drive.uc.cn/s/6916268530674",
   "pwd": null,
-  "links": [
-   {
-    "platform": "uc",
-    "url": "https://drive.uc.cn/s/6916268530674",
-    "pwd": null
-   }
-  ],
+  "links": [],
   "size": "",
   "sizeBytes": null,
   "quality": "",
   "year": 2026,
   "cover": "/covers/xindongshuangchongzou.webp",
   "desc": "节目邀请4男4女共8位单身青年携8位妈妈，开启13天旅居交友之旅，采用“儿女追爱、妈妈辅助”模式。通过纪实手法记录男女嘉宾心动碰撞与代际沟通，从“爱情温度+家庭厚度+现实深度”三个维度展开叙事。",
-  "status": "active",
+  "status": "inactive",
   "featured": false,
   "addedAt": "2026-10-16T02:53:28+08:00",
-  "updatedAt": "2026-10-16T02:53:28+08:00",
+  "updatedAt": "2026-10-17T05:30:37+08:00",
   "month": "202610",
-  "steamAppID": null
+  "steamAppID": null,
+  "deadLinks": [
+   {
+    "platform": "uc",
+    "url": "https://drive.uc.cn/s/6916268530674",
+    "pwd": null
+   }
+  ]
  },
  {
   "id": "tv-202610-0016",

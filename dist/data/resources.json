@@ -1,7 +1,76 @@
 [
  {
+  "id": "variety-202610-0018",
+  "title": "超人回来了 (2026) 1080P 简中字幕 更新639期 [韩综]",
+  "enTitle": "",
+  "category": "variety",
+  "tags": [
+   "超人回来了",
+   "韩综",
+   "亲子",
+   "1080P",
+   "简中字幕"
+  ],
+  "platform": "uc",
+  "url": "https://drive.uc.cn/s/0994809e07964",
+  "pwd": null,
+  "links": [
+   {
+    "platform": "uc",
+    "url": "https://drive.uc.cn/s/0994809e07964",
+    "pwd": null
+   }
+  ],
+  "size": "",
+  "sizeBytes": null,
+  "quality": "1080P",
+  "year": 2026,
+  "cover": "/covers/chaorenhuilailiao.webp",
+  "desc": "KBS 亲子综艺《快乐星期天》——父亲带着孩子，在没有妈妈的情况下度过 48 小时。",
+  "status": "active",
+  "featured": false,
+  "addedAt": "2026-10-16T02:53:31+08:00",
+  "updatedAt": "2026-10-16T02:53:31+08:00",
+  "month": "202610",
+  "steamAppID": null
+ },
+ {
+  "id": "variety-202610-0017",
+  "title": "心动双重奏 (2026) 更至10.15期 [恋爱/综艺]",
+  "enTitle": "",
+  "category": "variety",
+  "tags": [
+   "心动双重奏",
+   "综艺",
+   "恋爱"
+  ],
+  "platform": "uc",
+  "url": "https://drive.uc.cn/s/6916268530674",
+  "pwd": null,
+  "links": [],
+  "size": "",
+  "sizeBytes": null,
+  "quality": "",
+  "year": 2026,
+  "cover": "/covers/xindongshuangchongzou.webp",
+  "desc": "节目邀请4男4女共8位单身青年携8位妈妈，开启13天旅居交友之旅，采用“儿女追爱、妈妈辅助”模式。通过纪实手法记录男女嘉宾心动碰撞与代际沟通，从“爱情温度+家庭厚度+现实深度”三个维度展开叙事。",
+  "status": "inactive",
+  "featured": false,
+  "addedAt": "2026-10-16T02:53:28+08:00",
+  "updatedAt": "2026-10-17T05:30:37+08:00",
+  "month": "202610",
+  "steamAppID": null,
+  "deadLinks": [
+   {
+    "platform": "uc",
+    "url": "https://drive.uc.cn/s/6916268530674",
+    "pwd": null
+   }
+  ]
+ },
+ {
   "id": "tv-202610-0016",
-  "title": "欲望的陷阱 (2026) 1080P 简中字幕 更新37集 [日日剧]",
+  "title": "欲望的陷阱 (2026) 1080P 简中字幕 更新38集 [日日剧]",
   "enTitle": "",
   "category": "tv",
   "tags": [
@@ -13,12 +82,12 @@
    "简中字幕"
   ],
   "platform": "uc",
-  "url": "https://drive.uc.cn/s/02aeb0b1f0c14",
+  "url": "https://drive.uc.cn/s/4f568430a32a4",
   "pwd": null,
   "links": [
    {
     "platform": "uc",
-    "url": "https://drive.uc.cn/s/02aeb0b1f0c14",
+    "url": "https://drive.uc.cn/s/4f568430a32a4",
     "pwd": null
    }
   ],
@@ -31,13 +100,13 @@
   "status": "active",
   "featured": false,
   "addedAt": "2026-10-15T07:11:36+08:00",
-  "updatedAt": "2026-10-15T07:11:36+08:00",
+  "updatedAt": "2026-10-16T02:53:35+08:00",
   "month": "202610",
   "steamAppID": null
  },
  {
   "id": "tv-202610-0015",
-  "title": "妈妈发疯了 (2026) 1080P 简中字幕 更新13集 [日日剧]",
+  "title": "妈妈发疯了 (2026) 1080P 简中字幕 更新14集 [日日剧]",
   "enTitle": "",
   "category": "tv",
   "tags": [
@@ -49,12 +118,12 @@
    "简中字幕"
   ],
   "platform": "uc",
-  "url": "https://drive.uc.cn/s/d79e1fd2edb24",
+  "url": "https://drive.uc.cn/s/023b41ce5be64",
   "pwd": null,
   "links": [
    {
     "platform": "uc",
-    "url": "https://drive.uc.cn/s/d79e1fd2edb24",
+    "url": "https://drive.uc.cn/s/023b41ce5be64",
     "pwd": null
    }
   ],
@@ -67,7 +136,7 @@
   "status": "active",
   "featured": false,
   "addedAt": "2026-10-15T07:11:32+08:00",
-  "updatedAt": "2026-10-15T07:11:32+08:00",
+  "updatedAt": "2026-10-16T02:53:35+08:00",
   "month": "202610",
   "steamAppID": null
  },
@@ -1381,7 +1450,7 @@
  },
  {
   "id": "variety-202610-0002",
-  "title": "一路向海的少年 (2026) 更至10.12期 [综艺/旅行/成长]",
+  "title": "一路向海的少年 (2026) 更至10.15期 [综艺/旅行/成长]",
   "enTitle": "",
   "category": "variety",
   "tags": [
@@ -1391,12 +1460,12 @@
    "成长"
   ],
   "platform": "uc",
-  "url": "https://drive.uc.cn/s/3e465f1043e64",
+  "url": "https://drive.uc.cn/s/484f275728264",
   "pwd": null,
   "links": [
    {
     "platform": "uc",
-    "url": "https://drive.uc.cn/s/3e465f1043e64",
+    "url": "https://drive.uc.cn/s/484f275728264",
     "pwd": null
    }
   ],
@@ -1409,7 +1478,7 @@
   "status": "active",
   "featured": false,
   "addedAt": "2026-10-10T15:02:44+08:00",
-  "updatedAt": "2026-10-12T14:59:58+08:00",
+  "updatedAt": "2026-10-16T02:53:35+08:00",
   "month": "202610",
   "steamAppID": null
  },

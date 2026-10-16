@@ -1,5 +1,29 @@
 [
   {
+    "hash": "0ab2708",
+    "date": "2026-10-16T21:30:40+08:00",
+    "message": "chore: 每日公告：发布【2026-10-16】影视资源更新通知（2 条新资源）",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/0ab270872bb051ef1aea2ede83ee2c1cb912c05b"
+  },
+  {
+    "hash": "d3b8982",
+    "date": "2026-10-16T10:54:56+08:00",
+    "message": "chore: 移除未使用的封面文件 yiluxianghai-shaonian.webp（条目实际用 yiluxianghai.webp）",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/d3b898251afb39666f5c694e033c9524f48b0e25"
+  },
+  {
+    "hash": "23c1883",
+    "date": "2026-10-16T10:53:42+08:00",
+    "message": "feat: 新增 心动双重奏/超人回来了 + 更新 一路向海/欲望的陷阱38/妈妈发疯了14",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/23c188309e301c2de996dbeb3bae7ae866316a7d"
+  },
+  {
+    "hash": "442fd77",
+    "date": "2026-10-16T05:31:38+08:00",
+    "message": "chore(filelist): 刷新详情页「资源列表」数据",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/442fd77ac781f38a5812f86fb3672d0d7d29d56d"
+  },
+  {
     "hash": "4069903",
     "date": "2026-10-15T21:30:46+08:00",
     "message": "chore: 每日公告：发布【2026-10-15】影视资源更新通知（4 条新资源）",
@@ -154,29 +178,5 @@
     "date": "2026-10-12T22:51:15+08:00",
     "message": "publish: 我家那闺女 / 舞蹈新风暴 / 现在就出发S4（v 白名单:uc）+ 3 封面",
     "url": "https://github.com/xi7ang/v-devmini-space/commit/6ac4fb6e1cbafb3e4f0eb83303fe9530d58fd28d"
-  },
-  {
-    "hash": "14adc26",
-    "date": "2026-10-12T22:51:13+08:00",
-    "message": "publish: 现在就出发 第四季 (2026) 更至10.12期 [旅行/综艺]",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/14adc26a26d4bde3549a7c44eb5db535da8caaa2"
-  },
-  {
-    "hash": "b46105e",
-    "date": "2026-10-12T22:51:07+08:00",
-    "message": "publish: 舞蹈新风暴 (2026) 更至10.12期 [综艺/真人秀/竞演]",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/b46105ec578178427ff6a3529b40a2e33ce47a96"
-  },
-  {
-    "hash": "d7beb0e",
-    "date": "2026-10-12T22:51:02+08:00",
-    "message": "publish: 我家那闺女 (2026) 更至10.12期 [综艺/真人秀]",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/d7beb0ec99d1e97c256791b01ea36ac4576def8d"
-  },
-  {
-    "hash": "4ab501e",
-    "date": "2026-10-12T22:17:27+08:00",
-    "message": "chore(scripts): 发布/巡检后顺带刷新详情页「资源列表」(gen-filelist)",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/4ab501e38f26830687f746958834e3667f11d0dc"
   }
 ]
