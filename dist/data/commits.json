@@ -1,5 +1,23 @@
 [
   {
+    "hash": "0e54af8",
+    "date": "2026-10-17T21:30:44+08:00",
+    "message": "chore: 每日公告：发布【2026-10-17】影视资源更新通知（4 条新资源）",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/0e54af8a83396507e18f5588fe3c8d1de4868856"
+  },
+  {
+    "hash": "8c00240",
+    "date": "2026-10-17T10:52:22+08:00",
+    "message": "feat: 新增 嫁金钗/醉梦/第二次初恋/杯雪·一战成名 + 封面",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/8c00240aaf0eaa970512b3aa1dea37604405d50f"
+  },
+  {
+    "hash": "b81e2a2",
+    "date": "2026-10-17T05:31:48+08:00",
+    "message": "chore(links): 巡检下架失效网盘链接（1 条资源）",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/b81e2a2ac3256166ad8cf9c26a4f6dbbcfd01bee"
+  },
+  {
     "hash": "0ab2708",
     "date": "2026-10-16T21:30:40+08:00",
     "message": "chore: 每日公告：发布【2026-10-16】影视资源更新通知（2 条新资源）",
@@ -160,23 +178,5 @@
     "date": "2026-10-12T22:53:10+08:00",
     "message": "feat(home): 最新更新置顶+限8卡+获取更多；热搜词库改为随资源动态生成；移动端封面居中；背景墙降速",
     "url": "https://github.com/xi7ang/v-devmini-space/commit/0b2fff5a6c08fb29a990853ca629081288875524"
-  },
-  {
-    "hash": "c1dba44",
-    "date": "2026-10-12T22:52:50+08:00",
-    "message": "publish: 毛雪汪（v 白名单:uc）+ 封面",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/c1dba44cc997f28b6dd63fccc9032d8b1f3052a4"
-  },
-  {
-    "hash": "98daf25",
-    "date": "2026-10-12T22:52:47+08:00",
-    "message": "publish: 毛雪汪 (2026) 更至10.12期 [综艺/生活观察][毛不易/李雪琴]",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/98daf258133cc877dcdfe34b017e5aef82065459"
-  },
-  {
-    "hash": "6ac4fb6",
-    "date": "2026-10-12T22:51:15+08:00",
-    "message": "publish: 我家那闺女 / 舞蹈新风暴 / 现在就出发S4（v 白名单:uc）+ 3 封面",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/6ac4fb6e1cbafb3e4f0eb83303fe9530d58fd28d"
   }
 ]

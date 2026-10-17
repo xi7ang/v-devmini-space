@@ -1,16 +1,8 @@
 {
-  "checkedAt": "2026-10-17T05:30:37+0800",
-  "resources": 41,
-  "links": 48,
-  "dead": 1,
-  "uncertain": 0,
-  "deadLinks": [
-    {
-      "id": "variety-202610-0017",
-      "platform": "uc",
-      "url": "https://drive.uc.cn/s/6916268530674",
-      "dead": true,
-      "reason": "分享地址已失效"
-    }
-  ]
+  "checkedAt": "2026-10-18T05:31:12+0800",
+  "resources": 44,
+  "links": 51,
+  "dead": 0,
+  "uncertain": 8,
+  "deadLinks": []
 }
