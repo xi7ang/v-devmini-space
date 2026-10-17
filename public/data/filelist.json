@@ -6,7 +6,7 @@
   "error": "无 UC 链接",
   "generatedAt": "2026-10-17T05:30:38+0800"
  },
- "_generatedAt": "2026-10-17T05:30:38+0800",
+ "_generatedAt": "2026-10-17T10:52:15+0800",
  "tv-202610-0011": {
   "platform": "uc",
   "total": 8,
@@ -6189,5 +6189,73 @@
    }
   ],
   "generatedAt": "2026-10-17T05:30:38+0800"
+ },
+ "tv-202610-0017": {
+  "platform": "uc",
+  "total": 4,
+  "files": [
+   {
+    "name": "01 4K.mkv",
+    "path": "01 4K.mkv",
+    "size": 1366285829
+   },
+   {
+    "name": "02 4K.mp4",
+    "path": "02 4K.mp4",
+    "size": 1411163609
+   },
+   {
+    "name": "03 4K.mkv",
+    "path": "03 4K.mkv",
+    "size": 1491196205
+   },
+   {
+    "name": "04 4K.mp4",
+    "path": "04 4K.mp4",
+    "size": 1585050920
+   }
+  ],
+  "generatedAt": "2026-10-17T10:51:58+0800"
+ },
+ "tv-202610-0018": {
+  "platform": "uc",
+  "total": 4,
+  "files": [
+   {
+    "name": "01 4K高码率.mp4",
+    "path": "01 4K高码率.mp4",
+    "size": 2019842331
+   },
+   {
+    "name": "02 4K高码率.mp4",
+    "path": "02 4K高码率.mp4",
+    "size": 1987240280
+   },
+   {
+    "name": "03 4K高码率.mp4",
+    "path": "03 4K高码率.mp4",
+    "size": 1829013879
+   },
+   {
+    "name": "04 4K.mp4",
+    "path": "04 4K.mp4",
+    "size": 1262853796
+   }
+  ],
+  "generatedAt": "2026-10-17T10:52:11+0800"
+ },
+ "tv-202610-0019": {
+  "platform": null,
+  "total": 0,
+  "files": [],
+  "error": "无 UC 链接",
+  "generatedAt": "2026-10-17T10:52:14+0800"
+ },
+ "movie-202610-0002": {
+  "platform": null,
+  "total": 0,
+  "files": [],
+  "error": "无 UC 链接",
+  "generatedAt": "2026-10-17T10:52:15+0800"
  }
 }
