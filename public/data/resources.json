@@ -1,5 +1,39 @@
 [
  {
+  "id": "variety-202610-0019",
+  "title": "一站到底·少年季 第二季(2026) 更至10.16期 [知识竞技/综艺]",
+  "enTitle": "",
+  "category": "variety",
+  "tags": [
+   "一站到底",
+   "少年季",
+   "综艺",
+   "知识竞技"
+  ],
+  "platform": "uc",
+  "url": "https://drive.uc.cn/s/e4dcf350b1aa4",
+  "pwd": null,
+  "links": [
+   {
+    "platform": "uc",
+    "url": "https://drive.uc.cn/s/e4dcf350b1aa4",
+    "pwd": null
+   }
+  ],
+  "size": "",
+  "sizeBytes": null,
+  "quality": "",
+  "year": 2026,
+  "cover": "/covers/yizhandaodi-shaonian.webp",
+  "desc": "这是一档江苏卫视推出的少年益智科普答题节目。节目分为抢位赛、团队轮答赛、项目挑战赛三个环节，分别考察少年们个人素质、团队协作与综合破题能力。",
+  "status": "active",
+  "featured": false,
+  "addedAt": "2026-10-18T12:00:28+08:00",
+  "updatedAt": "2026-10-18T12:00:28+08:00",
+  "month": "202610",
+  "steamAppID": null
+ },
+ {
   "id": "movie-202610-0002",
   "title": "杯雪·一战成名 (2026) 4K HDR",
   "enTitle": "",
@@ -278,7 +312,7 @@
  },
  {
   "id": "variety-202610-0016",
-  "title": "不想睡的星期五 (2026) 更至10.14期 [综艺/生活]",
+  "title": "不想睡的星期五 (2026) 更至10.17期 [综艺/生活]",
   "enTitle": "",
   "category": "variety",
   "tags": [
@@ -287,12 +321,12 @@
    "生活"
   ],
   "platform": "uc",
-  "url": "https://drive.uc.cn/s/eb4b7afaa9fb4",
+  "url": "https://drive.uc.cn/s/e4296c40986d4",
   "pwd": null,
   "links": [
    {
     "platform": "uc",
-    "url": "https://drive.uc.cn/s/eb4b7afaa9fb4",
+    "url": "https://drive.uc.cn/s/e4296c40986d4",
     "pwd": null
    }
   ],
@@ -305,7 +339,7 @@
   "status": "active",
   "featured": false,
   "addedAt": "2026-10-15T07:11:29+08:00",
-  "updatedAt": "2026-10-15T07:11:29+08:00",
+  "updatedAt": "2026-10-18T12:00:32+08:00",
   "month": "202610",
   "steamAppID": null
  },
@@ -1201,7 +1235,7 @@
  },
  {
   "id": "tv-202610-0005",
-  "title": "爱情来了 (2026) 更新20集 [1080P][韩剧/家庭]",
+  "title": "爱情来了 (2026) 更新22集 [1080P][韩剧/家庭]",
   "enTitle": "",
   "category": "tv",
   "tags": [
@@ -1211,12 +1245,12 @@
    "1080P"
   ],
   "platform": "uc",
-  "url": "https://drive.uc.cn/s/3b6e4abf0d274",
+  "url": "https://drive.uc.cn/s/d16cda88776d4",
   "pwd": null,
   "links": [
    {
     "platform": "uc",
-    "url": "https://drive.uc.cn/s/3b6e4abf0d274",
+    "url": "https://drive.uc.cn/s/d16cda88776d4",
     "pwd": null
    }
   ],
@@ -1229,7 +1263,7 @@
   "status": "active",
   "featured": false,
   "addedAt": "2026-10-11T09:29:09+08:00",
-  "updatedAt": "2026-10-11T09:29:09+08:00",
+  "updatedAt": "2026-10-18T12:00:32+08:00",
   "month": "202610",
   "steamAppID": null
  },
@@ -1552,7 +1586,7 @@
  },
  {
   "id": "variety-202610-0003",
-  "title": "梦想改造家 第13季 (2026) 更至10.9期 [家装/生活/综艺]",
+  "title": "梦想改造家 第13季 (2026) 更至10.16期 [家装/生活/综艺]",
   "enTitle": "",
   "category": "variety",
   "tags": [
@@ -1562,12 +1596,12 @@
    "生活"
   ],
   "platform": "uc",
-  "url": "https://drive.uc.cn/s/61e273eb7d104",
+  "url": "https://drive.uc.cn/s/a7c499e823af4",
   "pwd": null,
   "links": [
    {
     "platform": "uc",
-    "url": "https://drive.uc.cn/s/61e273eb7d104",
+    "url": "https://drive.uc.cn/s/a7c499e823af4",
     "pwd": null
    }
   ],
@@ -1580,7 +1614,7 @@
   "status": "active",
   "featured": false,
   "addedAt": "2026-10-10T15:03:04+08:00",
-  "updatedAt": "2026-10-10T15:03:04+08:00",
+  "updatedAt": "2026-10-18T12:00:32+08:00",
   "month": "202610",
   "steamAppID": null
  },
@@ -1655,7 +1689,7 @@
  },
  {
   "id": "variety-202610-0001",
-  "title": "伦敦合伙人 (2026) 更至10.12期 [综艺/经营体验][合伙人 伦敦篇]",
+  "title": "伦敦合伙人 (2026) 更至10.17期 [综艺/经营体验][合伙人 伦敦篇]",
   "enTitle": "",
   "category": "variety",
   "tags": [
@@ -1665,12 +1699,12 @@
    "伦敦篇"
   ],
   "platform": "uc",
-  "url": "https://drive.uc.cn/s/aefefc1bb97b4",
+  "url": "https://drive.uc.cn/s/fd00011d0dd14",
   "pwd": null,
   "links": [
    {
     "platform": "uc",
-    "url": "https://drive.uc.cn/s/aefefc1bb97b4",
+    "url": "https://drive.uc.cn/s/fd00011d0dd14",
     "pwd": null
    }
   ],
@@ -1683,7 +1717,7 @@
   "status": "active",
   "featured": false,
   "addedAt": "2026-10-10T14:55:49+08:00",
-  "updatedAt": "2026-10-12T15:21:10+08:00",
+  "updatedAt": "2026-10-18T12:00:32+08:00",
   "month": "202610",
   "steamAppID": null
  },
