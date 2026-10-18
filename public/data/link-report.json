@@ -1,8 +1,8 @@
 {
-  "checkedAt": "2026-10-18T05:31:12+0800",
-  "resources": 44,
-  "links": 51,
+  "checkedAt": "2026-10-19T05:30:59+0800",
+  "resources": 45,
+  "links": 52,
   "dead": 0,
-  "uncertain": 8,
+  "uncertain": 5,
   "deadLinks": []
 }

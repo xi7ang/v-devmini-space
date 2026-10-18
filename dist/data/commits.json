@@ -1,5 +1,23 @@
 [
   {
+    "hash": "4741602",
+    "date": "2026-10-18T21:31:24+08:00",
+    "message": "chore: 每日公告：发布【2026-10-18】影视资源更新通知（1 条新资源）",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/4741602fd93620b145feb7ae51b469222a2109b9"
+  },
+  {
+    "hash": "aff8505",
+    "date": "2026-10-18T20:00:44+08:00",
+    "message": "feat: 新增 一站到底·少年季S2 + 更新 伦敦合伙人/不想睡的星期五/梦想改造家/爱情来了",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/aff85059f81dd26ef708d6cf169c20f92ce38e8c"
+  },
+  {
+    "hash": "09a7b3a",
+    "date": "2026-10-18T05:32:25+08:00",
+    "message": "chore(filelist): 刷新详情页「资源列表」数据",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/09a7b3acd5a75659b2fc2ea84baca7a38fe0afd5"
+  },
+  {
     "hash": "0e54af8",
     "date": "2026-10-17T21:30:44+08:00",
     "message": "chore: 每日公告：发布【2026-10-17】影视资源更新通知（4 条新资源）",
@@ -160,23 +178,5 @@
     "date": "2026-10-12T23:08:49+08:00",
     "message": "fix: 原地更新的条目同步 updatedAt（一路向海的少年 / 蒸蒸日上）",
     "url": "https://github.com/xi7ang/v-devmini-space/commit/12d3cd22d2022da0a33a711a15145669ca37907b"
-  },
-  {
-    "hash": "476a7ba",
-    "date": "2026-10-12T23:01:14+08:00",
-    "message": "chore(home): 热门搜索词库只保留片名（去掉标签/画质词）",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/476a7ba1ed5d3f5a3219536ce4b6446b65e75025"
-  },
-  {
-    "hash": "3e49df9",
-    "date": "2026-10-12T22:59:58+08:00",
-    "message": "update: 一路向海的少年 更至10.10期 -> 10.12期（强制重转 + 换链；源分享原地更新，注册表误跳过）",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/3e49df9a7386cf6f364bac9e5b0e0c13663e54dd"
-  },
-  {
-    "hash": "0b2fff5",
-    "date": "2026-10-12T22:53:10+08:00",
-    "message": "feat(home): 最新更新置顶+限8卡+获取更多；热搜词库改为随资源动态生成；移动端封面居中；背景墙降速",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/0b2fff5a6c08fb29a990853ca629081288875524"
   }
 ]
