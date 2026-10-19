@@ -1,5 +1,11 @@
 [
   {
+    "hash": "c2c34c9",
+    "date": "2026-10-19T05:32:15+08:00",
+    "message": "chore(filelist): 刷新详情页「资源列表」数据",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/c2c34c9251a7270ca51f9ea509c28f58a67c0102"
+  },
+  {
     "hash": "4741602",
     "date": "2026-10-18T21:31:24+08:00",
     "message": "chore: 每日公告：发布【2026-10-18】影视资源更新通知（1 条新资源）",
@@ -172,11 +178,5 @@
     "date": "2026-10-12T23:11:48+08:00",
     "message": "feat(home): 「最新更新」改为按资源更新时间(updatedAt)倒序",
     "url": "https://github.com/xi7ang/v-devmini-space/commit/63d9e56e19a32a5d9f065d8bb24e2f4d8963f579"
-  },
-  {
-    "hash": "12d3cd2",
-    "date": "2026-10-12T23:08:49+08:00",
-    "message": "fix: 原地更新的条目同步 updatedAt（一路向海的少年 / 蒸蒸日上）",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/12d3cd22d2022da0a33a711a15145669ca37907b"
   }
 ]
