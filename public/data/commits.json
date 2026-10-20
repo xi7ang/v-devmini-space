@@ -1,5 +1,29 @@
 [
   {
+    "hash": "8268c74",
+    "date": "2026-10-20T21:31:45+08:00",
+    "message": "chore: 每日公告：发布【2026-10-20】影视资源更新通知（1 条新资源）",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/8268c747746f27d37d8a39116fd95af74d53b96f"
+  },
+  {
+    "hash": "64ee449",
+    "date": "2026-10-20T12:43:48+08:00",
+    "message": "chore: 移除未使用的封面 yudianqiu.webp（条目实际用 yudian-qiu.webp）",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/64ee44917c53d239f248bbce07b39ca6d74fb583"
+  },
+  {
+    "hash": "addbc86",
+    "date": "2026-10-20T12:43:19+08:00",
+    "message": "feat: 新增 璀璨之城 + 更新 玉簟秋EP15/嫁金钗EP10/醉梦EP10",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/addbc86575e337e2f3b463b56b9d3d9ab751e0a3"
+  },
+  {
+    "hash": "e39c4e4",
+    "date": "2026-10-20T05:31:48+08:00",
+    "message": "chore(filelist): 刷新详情页「资源列表」数据",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/e39c4e40ca010a194e31a6bde90ed6aa07aa094b"
+  },
+  {
     "hash": "c2c34c9",
     "date": "2026-10-19T05:32:15+08:00",
     "message": "chore(filelist): 刷新详情页「资源列表」数据",
@@ -154,29 +178,5 @@
     "date": "2026-10-12T23:30:03+08:00",
     "message": "style(detail): PC 恢复原版式（右栏堆叠）；移动端描述+获取资源横跨两栏；标签栏移到标题下方",
     "url": "https://github.com/xi7ang/v-devmini-space/commit/654fa440568d8f13eaabb948bb449bbdddff4b1a"
-  },
-  {
-    "hash": "e57e596",
-    "date": "2026-10-12T23:25:15+08:00",
-    "message": "style(detail): 资源描述与获取资源横跨两栏，铺满封面下方空白",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/e57e59640fa3b729568942bece8a85af285326da"
-  },
-  {
-    "hash": "be2ca61",
-    "date": "2026-10-12T23:21:36+08:00",
-    "message": "update: 伦敦合伙人 更至10.10期 -> 10.12期（强制重转 + 换链 + updatedAt 同步）",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/be2ca614018a0a36f4a60b4098a60de508d68f12"
-  },
-  {
-    "hash": "6c29d08",
-    "date": "2026-10-12T23:17:59+08:00",
-    "message": "style(detail): 移动端保持与 PC 同版式（两栏等比缩小，一屏放得下整张卡）",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/6c29d0861e225b4456c697abd089deabcfb8abb5"
-  },
-  {
-    "hash": "63d9e56",
-    "date": "2026-10-12T23:11:48+08:00",
-    "message": "feat(home): 「最新更新」改为按资源更新时间(updatedAt)倒序",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/63d9e56e19a32a5d9f065d8bb24e2f4d8963f579"
   }
 ]
