@@ -6,7 +6,7 @@
   "error": "无 UC 链接",
   "generatedAt": "2026-10-20T05:30:34+0800"
  },
- "_generatedAt": "2026-10-20T05:30:34+0800",
+ "_generatedAt": "2026-10-20T12:43:16+0800",
  "tv-202610-0011": {
   "platform": "uc",
   "total": 6,
@@ -5038,60 +5038,40 @@
  },
  "tv-202610-0014": {
   "platform": "uc",
-  "total": 10,
+  "total": 6,
   "files": [
    {
-    "name": "01~4K.HEVC.AAC.mp4",
-    "path": "01~4K.HEVC.AAC.mp4",
-    "size": 1077374340
+    "name": "11.mkv",
+    "path": "11.mkv",
+    "size": 790583389
    },
    {
-    "name": "02~4K.HEVC.AAC.mp4",
-    "path": "02~4K.HEVC.AAC.mp4",
-    "size": 1146960374
+    "name": "12.mkv",
+    "path": "12.mkv",
+    "size": 786096002
    },
    {
-    "name": "03~4K.HEVC.AAC.mp4",
-    "path": "03~4K.HEVC.AAC.mp4",
-    "size": 1180532291
+    "name": "14.mkv",
+    "path": "14.mkv",
+    "size": 2073003307
    },
    {
-    "name": "04~4K.HEVC.AAC.mp4",
-    "path": "04~4K.HEVC.AAC.mp4",
-    "size": 1103645639
+    "name": "14.mkv",
+    "path": "14.mkv",
+    "size": 702828519
    },
    {
-    "name": "05.mp4",
-    "path": "05.mp4",
-    "size": 896375499
+    "name": "15.mkv",
+    "path": "15.mkv",
+    "size": 2151932335
    },
    {
-    "name": "05~4K.HEVC.AAC.mp4",
-    "path": "05~4K.HEVC.AAC.mp4",
-    "size": 1177296239
-   },
-   {
-    "name": "06.mp4",
-    "path": "06.mp4",
-    "size": 797113414
-   },
-   {
-    "name": "06~4K.HEVC.AAC.mp4",
-    "path": "06~4K.HEVC.AAC.mp4",
-    "size": 1178950948
-   },
-   {
-    "name": "片头.mp4",
-    "path": "片头.mp4",
-    "size": 45798600
-   },
-   {
-    "name": "片尾.mp4",
-    "path": "片尾.mp4",
-    "size": 64770413
+    "name": "15.mkv",
+    "path": "15.mkv",
+    "size": 728231061
    }
   ],
-  "generatedAt": "2026-10-20T05:30:34+0800"
+  "generatedAt": "2026-10-20T12:43:11+0800"
  },
  "variety-202610-0015": {
   "platform": "uc",
@@ -6127,37 +6107,82 @@
  },
  "tv-202610-0017": {
   "platform": "uc",
-  "total": 0,
-  "files": [],
-  "error": "分享内无文件或已失效",
-  "generatedAt": "2026-10-20T05:30:34+0800"
+  "total": 2,
+  "files": [
+   {
+    "name": "09.mkv",
+    "path": "09.mkv",
+    "size": 1954429535
+   },
+   {
+    "name": "10.mkv",
+    "path": "10.mkv",
+    "size": 1921060740
+   }
+  ],
+  "generatedAt": "2026-10-20T12:43:13+0800"
  },
  "tv-202610-0018": {
   "platform": "uc",
-  "total": 4,
+  "total": 11,
   "files": [
    {
-    "name": "01 4K高码率.mp4",
-    "path": "01 4K高码率.mp4",
-    "size": 2019842331
+    "name": "01.mkv",
+    "path": "01.mkv",
+    "size": 1886084445
    },
    {
-    "name": "02 4K高码率.mp4",
-    "path": "02 4K高码率.mp4",
-    "size": 1987240280
+    "name": "02.mkv",
+    "path": "02.mkv",
+    "size": 1566770251
    },
    {
-    "name": "03 4K高码率.mp4",
-    "path": "03 4K高码率.mp4",
-    "size": 1829013879
+    "name": "03.mkv",
+    "path": "03.mkv",
+    "size": 1625504306
    },
    {
-    "name": "04 4K.mp4",
-    "path": "04 4K.mp4",
-    "size": 1262853796
+    "name": "04.mkv",
+    "path": "04.mkv",
+    "size": 1674694659
+   },
+   {
+    "name": "05.mkv",
+    "path": "05.mkv",
+    "size": 1763933509
+   },
+   {
+    "name": "06.mkv",
+    "path": "06.mkv",
+    "size": 1517881480
+   },
+   {
+    "name": "07.mkv",
+    "path": "07.mkv",
+    "size": 1572293221
+   },
+   {
+    "name": "08.mkv",
+    "path": "08.mkv",
+    "size": 1627601058
+   },
+   {
+    "name": "09.mkv",
+    "path": "09.mkv",
+    "size": 1486860008
+   },
+   {
+    "name": "10.mkv",
+    "path": "10.mkv",
+    "size": 1567589904
+   },
+   {
+    "name": "10.mp4",
+    "path": "10.mp4",
+    "size": 1040781931
    }
   ],
-  "generatedAt": "2026-10-20T05:30:34+0800"
+  "generatedAt": "2026-10-20T12:43:16+0800"
  },
  "tv-202610-0019": {
   "platform": null,
@@ -6229,5 +6254,72 @@
    }
   ],
   "generatedAt": "2026-10-20T05:30:34+0800"
+ },
+ "tv-202610-0020": {
+  "platform": "uc",
+  "total": 12,
+  "files": [
+   {
+    "name": "01国语.mkv",
+    "path": "01国语.mkv",
+    "size": 424550454
+   },
+   {
+    "name": "01粤语.mkv",
+    "path": "01粤语.mkv",
+    "size": 424579959
+   },
+   {
+    "name": "02国语.mkv",
+    "path": "02国语.mkv",
+    "size": 369065744
+   },
+   {
+    "name": "02粤语.mkv",
+    "path": "02粤语.mkv",
+    "size": 369096536
+   },
+   {
+    "name": "03国语.mkv",
+    "path": "03国语.mkv",
+    "size": 371801192
+   },
+   {
+    "name": "03粤语.mkv",
+    "path": "03粤语.mkv",
+    "size": 371787566
+   },
+   {
+    "name": "04国语.mkv",
+    "path": "04国语.mkv",
+    "size": 368333674
+   },
+   {
+    "name": "04粤语.mkv",
+    "path": "04粤语.mkv",
+    "size": 368315913
+   },
+   {
+    "name": "05国语.mkv",
+    "path": "05国语.mkv",
+    "size": 409641630
+   },
+   {
+    "name": "05粤语.mkv",
+    "path": "05粤语.mkv",
+    "size": 409635845
+   },
+   {
+    "name": "06国语.mkv",
+    "path": "06国语.mkv",
+    "size": 391902300
+   },
+   {
+    "name": "06粤语.mkv",
+    "path": "06粤语.mkv",
+    "size": 391897313
+   }
+  ],
+  "generatedAt": "2026-10-20T12:43:07+0800"
  }
 }

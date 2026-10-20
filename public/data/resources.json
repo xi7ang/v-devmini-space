@@ -1,5 +1,40 @@
 [
  {
+  "id": "tv-202610-0020",
+  "title": "璀璨之城 (2026) 更新EP06 [港剧][张智霖/吴卓羲]",
+  "enTitle": "",
+  "category": "tv",
+  "tags": [
+   "璀璨之城",
+   "港剧",
+   "张智霖",
+   "吴卓羲",
+   "剧情"
+  ],
+  "platform": "uc",
+  "url": "https://drive.uc.cn/s/684f92c5b52a4",
+  "pwd": null,
+  "links": [
+   {
+    "platform": "uc",
+    "url": "https://drive.uc.cn/s/684f92c5b52a4",
+    "pwd": null
+   }
+  ],
+  "size": "",
+  "sizeBytes": null,
+  "quality": "",
+  "year": 2026,
+  "cover": "/covers/cuicanzhicheng.webp",
+  "desc": "尚利鋒集團主席官志琛在澳門雄霸一方，這商界巨人安排兩子官孝賢、官孝君出任集團聯席行政總裁、平起平坐。孝賢一直視孝君為眼中釘，為瓦解孝君和其夫人王雪瑩的強大團夥，孝賢宣佈與香港檢控官洪海允成婚。海允與雪瑩本是閨密，出身於十月初五街，但雪瑩為嫁入豪門奪去海允的情人孝君。孝賢就是要利用海允心中的仇恨，化成攻擊孝君夫婦的利器。在家族各人看似充滿機心的環境中，孝君卻堅守正義，奮力抵抗着孝賢的步步進逼……",
+  "status": "active",
+  "featured": false,
+  "addedAt": "2026-10-20T04:43:06+08:00",
+  "updatedAt": "2026-10-20T04:43:06+08:00",
+  "month": "202610",
+  "steamAppID": null
+ },
+ {
   "id": "variety-202610-0019",
   "title": "一站到底·少年季 第二季(2026) 更至10.16期 [知识竞技/综艺]",
   "enTitle": "",
@@ -104,7 +139,7 @@
  },
  {
   "id": "tv-202610-0018",
-  "title": "醉梦 (2026) 4K 更新至04集",
+  "title": "醉梦 (2026) 4K 更新EP10",
   "enTitle": "",
   "category": "tv",
   "tags": [
@@ -114,12 +149,12 @@
    "悬疑"
   ],
   "platform": "uc",
-  "url": "https://drive.uc.cn/s/e7655245dac54",
+  "url": "https://drive.uc.cn/s/7dbea56860c14",
   "pwd": null,
   "links": [
    {
     "platform": "uc",
-    "url": "https://drive.uc.cn/s/e7655245dac54",
+    "url": "https://drive.uc.cn/s/7dbea56860c14",
     "pwd": null
    }
   ],
@@ -132,13 +167,13 @@
   "status": "active",
   "featured": false,
   "addedAt": "2026-10-17T02:52:11+08:00",
-  "updatedAt": "2026-10-17T02:52:11+08:00",
+  "updatedAt": "2026-10-20T04:43:10+08:00",
   "month": "202610",
   "steamAppID": null
  },
  {
   "id": "tv-202610-0017",
-  "title": "嫁金钗 (2026) 4K更新至04集",
+  "title": "嫁金钗 (2026) 4K更新EP10",
   "enTitle": "",
   "category": "tv",
   "tags": [
@@ -147,12 +182,12 @@
    "4K"
   ],
   "platform": "uc",
-  "url": "https://drive.uc.cn/s/34a4d02886624",
+  "url": "https://drive.uc.cn/s/9e5883e8adb74",
   "pwd": null,
   "links": [
    {
     "platform": "uc",
-    "url": "https://drive.uc.cn/s/34a4d02886624",
+    "url": "https://drive.uc.cn/s/9e5883e8adb74",
     "pwd": null
    }
   ],
@@ -165,7 +200,7 @@
   "status": "active",
   "featured": false,
   "addedAt": "2026-10-17T02:51:57+08:00",
-  "updatedAt": "2026-10-17T02:51:57+08:00",
+  "updatedAt": "2026-10-20T04:43:10+08:00",
   "month": "202610",
   "steamAppID": null
  },
@@ -378,7 +413,7 @@
  },
  {
   "id": "tv-202610-0014",
-  "title": "玉簟秋 (2026) 更至06集 [4K][近代/剧情][丞磊/徐若晗/张丰毅/徐帆]",
+  "title": "玉簟秋 (2026) 更新EP15 [4K][近代/剧情][丞磊/徐若晗/张丰毅/徐帆]",
   "enTitle": "",
   "category": "tv",
   "tags": [
@@ -391,12 +426,12 @@
    "徐若晗"
   ],
   "platform": "uc",
-  "url": "https://drive.uc.cn/s/0dcb5876f6b24",
+  "url": "https://drive.uc.cn/s/4dac52a123fb4",
   "pwd": null,
   "links": [
    {
     "platform": "uc",
-    "url": "https://drive.uc.cn/s/0dcb5876f6b24",
+    "url": "https://drive.uc.cn/s/4dac52a123fb4",
     "pwd": null
    }
   ],
@@ -409,7 +444,7 @@
   "status": "active",
   "featured": false,
   "addedAt": "2026-10-13T14:43:28+08:00",
-  "updatedAt": "2026-10-13T14:43:28+08:00",
+  "updatedAt": "2026-10-20T04:43:10+08:00",
   "month": "202610",
   "steamAppID": null
  },
