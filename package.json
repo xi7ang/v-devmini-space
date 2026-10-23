@@ -13,7 +13,8 @@
     "gen-home": "node scripts/gen-home.js",
     "gen-sitemap": "node scripts/gen-sitemap.js",
     "prebuild": "node scripts/gen-search-index.js && node scripts/gen-commits.js && node scripts/gen-home.js",
-    "publish": "node scripts/publish.mjs"
+    "publish": "node scripts/publish.mjs",
+    "validate": "node scripts/validate.js"
   },
   "dependencies": {
     "qrcode": "^1.5.4",

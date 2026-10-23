@@ -103,6 +103,48 @@ res.forEach((r, i) => {
   }
 })
 
+// ── announcementModal.watermark ──
+// 2026-10-24：v 站此前从未把 watermark 写进 site.json，公告任务全靠 items 日期回退推断。
+// 回退能兜一次，兜不住永远——写入侧漏字段必须让构建失败，而不是让下游猜。
+const am = site.announcementModal
+check(am && typeof am === 'object', 'site.json 缺 announcementModal')
+if (am && typeof am === 'object') {
+  check(Array.isArray(am.items), 'announcementModal.items 必须是数组')
+  check(
+    typeof am.version === 'string' && /^\d{4}-\d{2}-\d{2}-\d+$/.test(am.version),
+    `announcementModal.version 必须形如 YYYY-MM-DD-N: ${am.version}`,
+  )
+  const items = Array.isArray(am.items) ? am.items : []
+  items.forEach((it, i) => {
+    check(/^\d{4}-\d{2}-\d{2}$/.test(it.date || ''), `公告[${i}] date 非法: ${it.date}`)
+    check(!!it.title, `公告[${i}] 缺 title`)
+  })
+  if (items.length > 0) {
+    const wmRaw = am.watermark
+    check(
+      typeof wmRaw === 'string' && ISO_RE.test(wmRaw),
+      `announcementModal.watermark 缺失或格式非法（已有 ${items.length} 条公告，写入侧必须落盘）: ${wmRaw}`,
+    )
+    if (typeof wmRaw === 'string' && ISO_RE.test(wmRaw)) {
+      const wm = Date.parse(wmRaw)
+      check(Number.isFinite(wm), `announcementModal.watermark 无法解析: ${wmRaw}`)
+      check(wm <= Date.now() + 86400000, `announcementModal.watermark 在未来: ${wmRaw}`)
+      // 水位必须至少覆盖最新一期公告提到的资源，否则同一批会被重复播报
+      const ids0 = [...String(items[0].content || '').matchAll(/id=([0-9a-f]{12})/g)].map((m) => m[1])
+      const covered = ids0.map((id) => res.find((r) => r.id === id)).filter(Boolean)
+      if (covered.length) {
+        const maxAdded = covered.map((r) => r.addedAt).sort().pop()
+        check(
+          wm >= Date.parse(maxAdded),
+          `announcementModal.watermark(${wmRaw}) 落后于最新一期已播报资源(${maxAdded})，会导致重复播报`,
+        )
+      } else if (ids0.length) {
+        warn.push(`最新一期公告引用的 ${ids0.length} 个 id 不在 resources.json 中，水位覆盖性未校验`)
+      }
+    }
+  }
+}
+
 function parseSize(s) {
   const m = String(s).match(/^([\d.]+)\s*(B|KB|MB|GB|TB)?$/i)
   if (!m) return null
