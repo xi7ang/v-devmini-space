@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://pan.devmini.space/</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -37,6 +37,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://pan.devmini.space/resource.html?id=in6akt</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://pan.devmini.space/resource.html?id=gp92q0</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://pan.devmini.space/resource.html?id=gz8oez</loc>
     <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
@@ -68,7 +80,7 @@
   </url>
   <url>
     <loc>https://pan.devmini.space/resource.html?id=7tiwl2</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -116,7 +128,7 @@
   </url>
   <url>
     <loc>https://pan.devmini.space/resource.html?id=bfdqlp</loc>
-    <lastmod>2026-10-20</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
