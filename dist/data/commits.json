@@ -1,5 +1,65 @@
 [
   {
+    "hash": "a737fff",
+    "date": "2026-10-24T03:01:30+08:00",
+    "message": "feat(validate): 公告水位 watermark 加写入校验",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/a737fff231e45c85cfe43f0bb4a23c0918930bea"
+  },
+  {
+    "hash": "e9d510b",
+    "date": "2026-10-24T02:50:35+08:00",
+    "message": "chore: 每日公告：发布【2026-10-24】影视资源更新通知（2 条新资源）",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/e9d510b2fb0bd5c8227d5a6613efbab8ca61b9c4"
+  },
+  {
+    "hash": "252370c",
+    "date": "2026-10-23T22:25:00+08:00",
+    "message": "data: 新增 蜡笔小新/狂王2；更新 玉簟秋EP22、第二次初恋24集完结（加UC）",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/252370cfab965128394a7d4f0f7dbd9f6b5db55d"
+  },
+  {
+    "hash": "00923e3",
+    "date": "2026-10-22T11:23:51+08:00",
+    "message": "data: 更新 大夏守墓人EP10 / 欲望的陷阱42集 / 妈妈发疯了18集（换链）",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/00923e3b5b3365a7109bf8b594e296bf643a968e"
+  },
+  {
+    "hash": "832c8b6",
+    "date": "2026-10-21T21:32:08+08:00",
+    "message": "chore: 每日公告：发布【2026-10-21】影视资源更新通知（2 条新资源）",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/832c8b679ba1fe12af90bdace62c58fae9c129a9"
+  },
+  {
+    "hash": "b6b8d72",
+    "date": "2026-10-21T15:19:36+08:00",
+    "message": "feat: 新增 都市古仙医2 (更新至03集) + 封面",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/b6b8d72fdc38f5ea24e9aa1da2452f6223868fa0"
+  },
+  {
+    "hash": "14f1b91",
+    "date": "2026-10-21T15:16:40+08:00",
+    "message": "feat: 新增 大理寺日志3 (更新至05集) + 封面",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/14f1b911b6e365677a11f1113f77b5b5ba4eba5c"
+  },
+  {
+    "hash": "50c8412",
+    "date": "2026-10-21T15:12:15+08:00",
+    "message": "chore: 重建 sitemap（大夏守墓人更新）",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/50c8412b4f23e0324afa687354bba6671c0daa1a"
+  },
+  {
+    "hash": "8f5ec98",
+    "date": "2026-10-21T15:12:10+08:00",
+    "message": "data: 大夏守墓人 更新至EP09（换链，保留原封面）",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/8f5ec98551a1a9c9524f53fcacbbde7428028755"
+  },
+  {
+    "hash": "f3ab9ab",
+    "date": "2026-10-21T05:32:07+08:00",
+    "message": "chore(filelist): 刷新详情页「资源列表」数据",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/f3ab9ab630b147356d41926b28b7d64c6b095ec1"
+  },
+  {
     "hash": "8268c74",
     "date": "2026-10-20T21:31:45+08:00",
     "message": "chore: 每日公告：发布【2026-10-20】影视资源更新通知（1 条新资源）",
@@ -118,65 +178,5 @@
     "date": "2026-10-14T05:32:29+08:00",
     "message": "chore(filelist): 刷新详情页「资源列表」数据",
     "url": "https://github.com/xi7ang/v-devmini-space/commit/ce279f89576dec24a213745a2b0aa465f321a462"
-  },
-  {
-    "hash": "f96d499",
-    "date": "2026-10-13T22:44:28+08:00",
-    "message": "feat: 新增 此处通往繁星/玉簟秋 + 四条更新换链改集数（魅影神捕23/美人余12/喜剧之王18/蒸蒸日上10）",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/f96d4992ae6af0aef0daf77bd12bbe56128a620a"
-  },
-  {
-    "hash": "626dc78",
-    "date": "2026-10-13T05:31:59+08:00",
-    "message": "chore(links): 巡检下架失效网盘链接（3 条资源）",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/626dc78bd779b760f85b15a7faada37b24b4f0b0"
-  },
-  {
-    "hash": "bb28285",
-    "date": "2026-10-13T00:23:32+08:00",
-    "message": "fix: 蒸蒸日上 换 UC 链接为 08 集新副本 + updatedAt 同步（04集旧副本→08集）",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/bb28285e4db485c343f3d77cb16bda116055c8cf"
-  },
-  {
-    "hash": "d24ec51",
-    "date": "2026-10-13T00:21:21+08:00",
-    "message": "feat: 新增 心动的信号 第九季 (UC) / 喜剧之王 (UC) + 封面",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/d24ec51b881ea03ae291d536305e31c35d823565"
-  },
-  {
-    "hash": "1e7156f",
-    "date": "2026-10-13T00:00:43+08:00",
-    "message": "style(mobile): 资源卡片移动端两侧留 8px 空隙（首页最新更新/影视推荐、我的收藏）",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/1e7156fb4160f7280eb9122229c570434d0700a8"
-  },
-  {
-    "hash": "fd67d4f",
-    "date": "2026-10-12T23:55:48+08:00",
-    "message": "style(favorites): 收藏卡片单元格拉伸，排列与首页「最新更新」一致",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/fd67d4f39a9aa07ba94dd711a2a153d3539e96c1"
-  },
-  {
-    "hash": "68fd669",
-    "date": "2026-10-12T23:51:16+08:00",
-    "message": "feat: 收藏按钮改用爱心(♡/♥)；移除首页「更新日历」板块",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/68fd66957a4e6f1311a39ffcbf7b8357875b20b3"
-  },
-  {
-    "hash": "784d06d",
-    "date": "2026-10-12T23:45:07+08:00",
-    "message": "fix(detail): 收藏按钮 PC 与标题同行尾部（内联流转）；移动端移到封面右上角",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/784d06dfb5bb8aec40da52f1ae422d9453349371"
-  },
-  {
-    "hash": "e3e8830",
-    "date": "2026-10-12T23:39:02+08:00",
-    "message": "feat(detail): 详情页加收藏按钮（PC 标题尾部 / 移动端标签栏下方）",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/e3e8830e65d4809e0e3a0379e69dba99a7d3356b"
-  },
-  {
-    "hash": "654fa44",
-    "date": "2026-10-12T23:30:03+08:00",
-    "message": "style(detail): PC 恢复原版式（右栏堆叠）；移动端描述+获取资源横跨两栏；标签栏移到标题下方",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/654fa440568d8f13eaabb948bb449bbdddff4b1a"
   }
 ]
