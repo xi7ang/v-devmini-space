@@ -1,5 +1,11 @@
 [
   {
+    "hash": "2560266",
+    "date": "2026-10-24T05:32:00+08:00",
+    "message": "chore(filelist): 刷新详情页「资源列表」数据",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/2560266676e9cd8dea806fc0f8de553f51b3cf20"
+  },
+  {
     "hash": "a737fff",
     "date": "2026-10-24T03:01:30+08:00",
     "message": "feat(validate): 公告水位 watermark 加写入校验",
@@ -172,11 +178,5 @@
     "date": "2026-10-15T05:32:32+08:00",
     "message": "chore(filelist): 刷新详情页「资源列表」数据",
     "url": "https://github.com/xi7ang/v-devmini-space/commit/3678e1d8445219f3b41a30e4992cab8710c46c01"
-  },
-  {
-    "hash": "ce279f8",
-    "date": "2026-10-14T05:32:29+08:00",
-    "message": "chore(filelist): 刷新详情页「资源列表」数据",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/ce279f89576dec24a213745a2b0aa465f321a462"
   }
 ]
