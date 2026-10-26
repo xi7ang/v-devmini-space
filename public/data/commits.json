@@ -1,5 +1,11 @@
 [
   {
+    "hash": "28d1c89",
+    "date": "2026-10-26T05:32:17+08:00",
+    "message": "chore(filelist): 刷新详情页「资源列表」数据",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/28d1c897c1bc196719fdd77f2b9c3fdffbcca9aa"
+  },
+  {
     "hash": "2c9cd28",
     "date": "2026-10-25T05:31:59+08:00",
     "message": "chore(filelist): 刷新详情页「资源列表」数据",
@@ -172,11 +178,5 @@
     "date": "2026-10-15T15:11:55+08:00",
     "message": "feat: 新增 不想睡的星期五/妈妈发疯了/欲望的陷阱 + 大夏守墓人 06→07集换链",
     "url": "https://github.com/xi7ang/v-devmini-space/commit/d46291b69aefa1570bedb24f8c1e970469fe69fb"
-  },
-  {
-    "hash": "983207b",
-    "date": "2026-10-15T15:02:33+08:00",
-    "message": "feat: 新增 下一顺位是她 第2季 (UC) + 封面",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/983207bd6ae3cbae425350fcdcb0c12d58aa6173"
   }
 ]
