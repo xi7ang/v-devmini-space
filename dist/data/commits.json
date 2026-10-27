@@ -1,5 +1,11 @@
 [
   {
+    "hash": "c79227e",
+    "date": "2026-10-27T05:31:59+08:00",
+    "message": "chore(filelist): 刷新详情页「资源列表」数据",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/c79227e16f352120efa217a4ce74e209a8ba0aa1"
+  },
+  {
     "hash": "28d1c89",
     "date": "2026-10-26T05:32:17+08:00",
     "message": "chore(filelist): 刷新详情页「资源列表」数据",
@@ -172,11 +178,5 @@
     "date": "2026-10-15T21:30:46+08:00",
     "message": "chore: 每日公告：发布【2026-10-15】影视资源更新通知（4 条新资源）",
     "url": "https://github.com/xi7ang/v-devmini-space/commit/4069903b09710cc809a9535515f0df9c0f04026a"
-  },
-  {
-    "hash": "d46291b",
-    "date": "2026-10-15T15:11:55+08:00",
-    "message": "feat: 新增 不想睡的星期五/妈妈发疯了/欲望的陷阱 + 大夏守墓人 06→07集换链",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/d46291b69aefa1570bedb24f8c1e970469fe69fb"
   }
 ]
