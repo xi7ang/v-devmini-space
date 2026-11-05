@@ -1,5 +1,11 @@
 [
   {
+    "hash": "eeb1d2a",
+    "date": "2026-11-01T05:32:04+08:00",
+    "message": "chore(filelist): 刷新详情页「资源列表」数据",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/eeb1d2a3392a727c8c17973f4018dd9d819e4594"
+  },
+  {
     "hash": "1d0e295",
     "date": "2026-10-31T21:30:22+08:00",
     "message": "chore: 每日公告：发布【2026-10-31】影视资源更新通知（1 条新资源）",
@@ -172,11 +178,5 @@
     "date": "2026-10-17T05:31:48+08:00",
     "message": "chore(links): 巡检下架失效网盘链接（1 条资源）",
     "url": "https://github.com/xi7ang/v-devmini-space/commit/b81e2a2ac3256166ad8cf9c26a4f6dbbcfd01bee"
-  },
-  {
-    "hash": "0ab2708",
-    "date": "2026-10-16T21:30:40+08:00",
-    "message": "chore: 每日公告：发布【2026-10-16】影视资源更新通知（2 条新资源）",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/0ab270872bb051ef1aea2ede83ee2c1cb912c05b"
   }
 ]
