@@ -4,15 +4,15 @@
   "total": 0,
   "files": [],
   "error": "无 UC 链接",
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
- "_generatedAt": "2026-11-05T18:57:46+0800",
+ "_generatedAt": "2026-11-08T17:46:48+0800",
  "tv-202610-0011": {
   "platform": "uc",
   "total": 0,
   "files": [],
   "error": "分享内无文件或已失效",
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "anime-202610-0009": {
   "platform": "uc",
@@ -184,21 +184,21 @@
     "size": 269629618
    }
   ],
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "tv-202610-0010": {
   "platform": "uc",
   "total": 0,
   "files": [],
   "error": "分享内无文件或已失效",
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "movie-202610-0001": {
   "platform": null,
   "total": 0,
   "files": [],
   "error": "无 UC 链接",
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "anime-202610-0008": {
   "platform": "uc",
@@ -275,35 +275,35 @@
     "size": 534625388
    }
   ],
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "tv-202610-0009": {
   "platform": null,
   "total": 0,
   "files": [],
   "error": "无 UC 链接",
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "tv-202610-0008": {
   "platform": null,
   "total": 0,
   "files": [],
   "error": "无 UC 链接",
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "anime-202610-0007": {
   "platform": null,
   "total": 0,
   "files": [],
   "error": "无 UC 链接",
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "anime-202610-0006": {
   "platform": null,
   "total": 0,
   "files": [],
   "error": "无 UC 链接",
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "anime-202610-0005": {
   "platform": "uc",
@@ -785,7 +785,7 @@
     "size": 239499927
    }
   ],
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "tv-202610-0007": {
   "platform": "uc",
@@ -807,7 +807,7 @@
     "size": 1353300833
    }
   ],
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "variety-202610-0009": {
   "platform": "uc",
@@ -1564,7 +1564,7 @@
     "size": 3285822222
    }
   ],
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "tv-202610-0006": {
   "platform": "uc",
@@ -1581,7 +1581,7 @@
     "size": 543093344
    }
   ],
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "variety-202610-0008": {
   "platform": "uc",
@@ -2088,7 +2088,7 @@
     "size": 2482719771
    }
   ],
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "variety-202610-0007": {
   "platform": "uc",
@@ -2595,7 +2595,7 @@
     "size": 3439872266
    }
   ],
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "tv-202610-0005": {
   "platform": "uc",
@@ -2712,7 +2712,7 @@
     "size": 1776303617
    }
   ],
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "tv-202610-0004": {
   "platform": "uc",
@@ -2769,91 +2769,21 @@
     "size": 1128193548
    }
   ],
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "anime-202610-0004": {
   "platform": "uc",
-  "total": 14,
-  "files": [
-   {
-    "name": "01.mkv",
-    "path": "01.mkv",
-    "size": 228505013
-   },
-   {
-    "name": "02.mkv",
-    "path": "02.mkv",
-    "size": 135962786
-   },
-   {
-    "name": "03.mkv",
-    "path": "03.mkv",
-    "size": 109501218
-   },
-   {
-    "name": "04.mkv",
-    "path": "04.mkv",
-    "size": 132437622
-   },
-   {
-    "name": "05.mkv",
-    "path": "05.mkv",
-    "size": 115539875
-   },
-   {
-    "name": "06.mkv",
-    "path": "06.mkv",
-    "size": 117973703
-   },
-   {
-    "name": "07.mkv",
-    "path": "07.mkv",
-    "size": 133836141
-   },
-   {
-    "name": "08.mkv",
-    "path": "08.mkv",
-    "size": 128998886
-   },
-   {
-    "name": "09.mkv",
-    "path": "09.mkv",
-    "size": 119418711
-   },
-   {
-    "name": "10.mkv",
-    "path": "10.mkv",
-    "size": 145420308
-   },
-   {
-    "name": "11.mkv",
-    "path": "11.mkv",
-    "size": 105955335
-   },
-   {
-    "name": "12.mkv",
-    "path": "12.mkv",
-    "size": 113778446
-   },
-   {
-    "name": "13.mkv",
-    "path": "13.mkv",
-    "size": 80102852
-   },
-   {
-    "name": "14.mkv",
-    "path": "14.mkv",
-    "size": 115476474
-   }
-  ],
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "total": 0,
+  "files": [],
+  "error": "分享内无文件或已失效",
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "variety-202610-0006": {
   "platform": "uc",
   "total": 0,
   "files": [],
   "error": "分享地址已失效",
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "variety-202610-0005": {
   "platform": "uc",
@@ -3175,7 +3105,7 @@
     "size": 456388870
    }
   ],
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "variety-202610-0004": {
   "platform": "uc",
@@ -3547,14 +3477,14 @@
     "size": 940709310
    }
   ],
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "anime-202610-0003": {
   "platform": "uc",
   "total": 0,
   "files": [],
   "error": "分享内无文件或已失效",
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "anime-202610-0002": {
   "platform": "uc",
@@ -3806,21 +3736,21 @@
     "size": 74693377
    }
   ],
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "anime-202610-0001": {
   "platform": "uc",
   "total": 0,
   "files": [],
   "error": "分享地址已失效",
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "tv-202610-0003": {
   "platform": "uc",
   "total": 0,
   "files": [],
   "error": "分享内无文件或已失效",
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "variety-202610-0003": {
   "platform": "uc",
@@ -3862,14 +3792,14 @@
     "size": 1101389353
    }
   ],
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "variety-202610-0002": {
   "platform": "uc",
   "total": 0,
   "files": [],
   "error": "分享内无文件或已失效",
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "tv-202610-0002": {
   "platform": "uc",
@@ -3941,7 +3871,7 @@
     "size": 267238053
    }
   ],
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "variety-202610-0001": {
   "platform": "uc",
@@ -4193,21 +4123,21 @@
     "size": 2287789872
    }
   ],
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "tv-202610-0001": {
   "platform": "uc",
   "total": 0,
   "files": [],
   "error": "分享内无文件或已失效",
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "variety-202610-0010": {
   "platform": "uc",
   "total": 0,
   "files": [],
   "error": "分享地址已失效",
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "variety-202610-0011": {
   "platform": "uc",
@@ -4324,14 +4254,14 @@
     "size": 624412450
    }
   ],
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "variety-202610-0012": {
   "platform": "uc",
   "total": 0,
   "files": [],
   "error": "分享地址已失效",
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "variety-202610-0013": {
   "platform": "uc",
@@ -4713,21 +4643,21 @@
     "size": 491314591
    }
   ],
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "variety-202610-0014": {
   "platform": "uc",
   "total": 0,
   "files": [],
   "error": "分享内无文件或已失效",
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "tv-202610-0012": {
   "platform": "uc",
   "total": 0,
   "files": [],
   "error": "分享内无文件或已失效",
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "tv-202610-0013": {
   "platform": "uc",
@@ -4769,14 +4699,14 @@
     "size": 1177714887
    }
   ],
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "tv-202610-0014": {
   "platform": "uc",
   "total": 0,
   "files": [],
   "error": "分享内无文件或已失效",
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "variety-202610-0015": {
   "platform": "uc",
@@ -4813,7 +4743,7 @@
     "size": 946420194
    }
   ],
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "variety-202610-0016": {
   "platform": "uc",
@@ -5060,7 +4990,7 @@
     "size": 860021854
    }
   ],
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "tv-202610-0015": {
   "platform": "uc",
@@ -5157,7 +5087,7 @@
     "size": 765022448
    }
   ],
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "tv-202610-0016": {
   "platform": "uc",
@@ -5374,14 +5304,14 @@
     "size": 910305294
    }
   ],
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "variety-202610-0017": {
   "platform": "uc",
   "total": 0,
   "files": [],
   "error": "分享地址已失效",
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "variety-202610-0018": {
   "platform": "uc",
@@ -5888,76 +5818,21 @@
     "size": 3482281313
    }
   ],
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "tv-202610-0017": {
   "platform": "uc",
   "total": 0,
   "files": [],
   "error": "分享内无文件或已失效",
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "tv-202610-0018": {
   "platform": "uc",
-  "total": 11,
-  "files": [
-   {
-    "name": "01.mkv",
-    "path": "01.mkv",
-    "size": 1886084445
-   },
-   {
-    "name": "02.mkv",
-    "path": "02.mkv",
-    "size": 1566770251
-   },
-   {
-    "name": "03.mkv",
-    "path": "03.mkv",
-    "size": 1625504306
-   },
-   {
-    "name": "04.mkv",
-    "path": "04.mkv",
-    "size": 1674694659
-   },
-   {
-    "name": "05.mkv",
-    "path": "05.mkv",
-    "size": 1763933509
-   },
-   {
-    "name": "06.mkv",
-    "path": "06.mkv",
-    "size": 1517881480
-   },
-   {
-    "name": "07.mkv",
-    "path": "07.mkv",
-    "size": 1572293221
-   },
-   {
-    "name": "08.mkv",
-    "path": "08.mkv",
-    "size": 1627601058
-   },
-   {
-    "name": "09.mkv",
-    "path": "09.mkv",
-    "size": 1486860008
-   },
-   {
-    "name": "10.mkv",
-    "path": "10.mkv",
-    "size": 1567589904
-   },
-   {
-    "name": "10.mp4",
-    "path": "10.mp4",
-    "size": 1040781931
-   }
-  ],
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "total": 0,
+  "files": [],
+  "error": "分享内无文件或已失效",
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "tv-202610-0019": {
   "platform": "uc",
@@ -6084,14 +5959,14 @@
     "size": 1084588258
    }
   ],
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "movie-202610-0002": {
   "platform": null,
   "total": 0,
   "files": [],
   "error": "无 UC 链接",
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "variety-202610-0019": {
   "platform": "uc",
@@ -6148,7 +6023,7 @@
     "size": 1042162099
    }
   ],
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "tv-202610-0020": {
   "platform": "uc",
@@ -6335,7 +6210,7 @@
     "size": 306776009
    }
   ],
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "anime-202610-0011": {
   "platform": "uc",
@@ -6367,7 +6242,7 @@
     "size": 150486320
    }
   ],
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "anime-202610-0012": {
   "platform": "uc",
@@ -6399,7 +6274,7 @@
     "size": 66133235
    }
   ],
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "anime-202610-0013": {
   "platform": "uc",
@@ -6426,7 +6301,7 @@
     "size": 1253601174
    }
   ],
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "anime-202610-0014": {
   "platform": "uc",
@@ -6503,7 +6378,7 @@
     "size": 1004221483
    }
   ],
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "variety-202610-0020": {
   "platform": "uc",
@@ -6640,7 +6515,7 @@
     "size": 5433534242
    }
   ],
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "tv-202611-0001": {
   "platform": "uc",
@@ -6807,125 +6682,20 @@
     "size": 1677869147
    }
   ],
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "anime-202611-0001": {
   "platform": "uc",
   "total": 0,
   "files": [],
   "error": "分享地址已失效",
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "generatedAt": "2026-11-08T17:46:48+0800"
  },
  "tv-202611-0002": {
   "platform": "uc",
-  "total": 21,
-  "files": [
-   {
-    "name": "01.mkv",
-    "path": "01.mkv",
-    "size": 1713800161
-   },
-   {
-    "name": "01.mp4",
-    "path": "01.mp4",
-    "size": 3528507922
-   },
-   {
-    "name": "02.mkv",
-    "path": "02.mkv",
-    "size": 1683253343
-   },
-   {
-    "name": "02.mp4",
-    "path": "02.mp4",
-    "size": 3099369267
-   },
-   {
-    "name": "03.mkv",
-    "path": "03.mkv",
-    "size": 1864918442
-   },
-   {
-    "name": "03.mp4",
-    "path": "03.mp4",
-    "size": 3591195502
-   },
-   {
-    "name": "04.mkv",
-    "path": "04.mkv",
-    "size": 1937482440
-   },
-   {
-    "name": "04.mp4",
-    "path": "04.mp4",
-    "size": 3507663220
-   },
-   {
-    "name": "05.mkv",
-    "path": "05.mkv",
-    "size": 1819627709
-   },
-   {
-    "name": "05.mp4",
-    "path": "05.mp4",
-    "size": 3239427615
-   },
-   {
-    "name": "06.mkv",
-    "path": "06.mkv",
-    "size": 1908557382
-   },
-   {
-    "name": "06.mp4",
-    "path": "06.mp4",
-    "size": 3053841012
-   },
-   {
-    "name": "07.mkv",
-    "path": "07.mkv",
-    "size": 1826557998
-   },
-   {
-    "name": "07.mp4",
-    "path": "07.mp4",
-    "size": 3038169914
-   },
-   {
-    "name": "08.mkv",
-    "path": "08.mkv",
-    "size": 1491093712
-   },
-   {
-    "name": "08.mp4",
-    "path": "08.mp4",
-    "size": 2639499234
-   },
-   {
-    "name": "09.mkv",
-    "path": "09.mkv",
-    "size": 1511575975
-   },
-   {
-    "name": "09.mp4",
-    "path": "09.mp4",
-    "size": 2855763390
-   },
-   {
-    "name": "10.mkv",
-    "path": "10.mkv",
-    "size": 1580449055
-   },
-   {
-    "name": "10.mp4",
-    "path": "10.mp4",
-    "size": 2970631410
-   },
-   {
-    "name": "11.mkv",
-    "path": "11.mkv",
-    "size": 1916322188
-   }
-  ],
-  "generatedAt": "2026-11-05T18:57:46+0800"
+  "total": 0,
+  "files": [],
+  "error": "分享内无文件或已失效",
+  "generatedAt": "2026-11-08T17:46:48+0800"
  }
 }
