@@ -1,5 +1,11 @@
 [
   {
+    "hash": "01d54ae",
+    "date": "2026-11-08T17:49:03+08:00",
+    "message": "chore(links): 巡检下架失效网盘链接（1 条资源）",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/01d54ae1a83ed7f122aa7331304c44ce36d416fb"
+  },
+  {
     "hash": "91fc474",
     "date": "2026-11-05T18:59:30+08:00",
     "message": "data: 新增 莫语者/东大高武学院/走马上任；更新 璀璨之城EP18、大夏守墓人EP14",
@@ -172,11 +178,5 @@
     "date": "2026-10-18T05:32:25+08:00",
     "message": "chore(filelist): 刷新详情页「资源列表」数据",
     "url": "https://github.com/xi7ang/v-devmini-space/commit/09a7b3acd5a75659b2fc2ea84baca7a38fe0afd5"
-  },
-  {
-    "hash": "0e54af8",
-    "date": "2026-10-17T21:30:44+08:00",
-    "message": "chore: 每日公告：发布【2026-10-17】影视资源更新通知（4 条新资源）",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/0e54af8a83396507e18f5588fe3c8d1de4868856"
   }
 ]

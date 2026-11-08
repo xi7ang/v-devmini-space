@@ -1,16 +1,8 @@
 {
-  "checkedAt": "2026-11-08T17:46:48+0800",
-  "resources": 54,
-  "links": 62,
-  "dead": 1,
+  "checkedAt": "2026-11-09T05:30:48+0800",
+  "resources": 53,
+  "links": 61,
+  "dead": 0,
   "uncertain": 15,
-  "deadLinks": [
-    {
-      "id": "anime-202611-0001",
-      "platform": "uc",
-      "url": "https://drive.uc.cn/s/8e81a107fe8a4",
-      "dead": true,
-      "reason": "分享地址已失效"
-    }
-  ]
+  "deadLinks": []
 }
