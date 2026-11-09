@@ -1,5 +1,17 @@
 [
   {
+    "hash": "5e361f7",
+    "date": "2026-11-09T07:33:51+08:00",
+    "message": "chore: 每日公告：发布【2026-11-08】影视资源更新通知（3 条新资源）",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/5e361f7da6722259289246931e7a00677918c1b5"
+  },
+  {
+    "hash": "cf75316",
+    "date": "2026-11-09T05:32:26+08:00",
+    "message": "chore(filelist): 刷新详情页「资源列表」数据",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/cf75316e467cdbf2d7d6ac63baf48ff1550ac3c2"
+  },
+  {
     "hash": "01d54ae",
     "date": "2026-11-08T17:49:03+08:00",
     "message": "chore(links): 巡检下架失效网盘链接（1 条资源）",
@@ -166,17 +178,5 @@
     "date": "2026-10-18T21:31:24+08:00",
     "message": "chore: 每日公告：发布【2026-10-18】影视资源更新通知（1 条新资源）",
     "url": "https://github.com/xi7ang/v-devmini-space/commit/4741602fd93620b145feb7ae51b469222a2109b9"
-  },
-  {
-    "hash": "aff8505",
-    "date": "2026-10-18T20:00:44+08:00",
-    "message": "feat: 新增 一站到底·少年季S2 + 更新 伦敦合伙人/不想睡的星期五/梦想改造家/爱情来了",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/aff85059f81dd26ef708d6cf169c20f92ce38e8c"
-  },
-  {
-    "hash": "09a7b3a",
-    "date": "2026-10-18T05:32:25+08:00",
-    "message": "chore(filelist): 刷新详情页「资源列表」数据",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/09a7b3acd5a75659b2fc2ea84baca7a38fe0afd5"
   }
 ]

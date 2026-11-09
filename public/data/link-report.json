@@ -1,8 +1,37 @@
 {
-  "checkedAt": "2026-11-09T05:30:48+0800",
+  "checkedAt": "2026-11-10T05:31:56+0800",
   "resources": 53,
   "links": 61,
-  "dead": 0,
-  "uncertain": 15,
-  "deadLinks": []
+  "dead": 4,
+  "uncertain": 11,
+  "deadLinks": [
+    {
+      "id": "anime-202610-0008",
+      "platform": "xunlei",
+      "url": "https://pan.xunlei.com/s/VP3epasMP__Fc4li4czTEs9oA1?pwd=xqcu",
+      "dead": true,
+      "reason": "xunlei-invalid"
+    },
+    {
+      "id": "anime-202610-0006",
+      "platform": "xunlei",
+      "url": "https://pan.xunlei.com/s/VP3eKDo-XAqN4qIBRXMB9W0iA1?pwd=5vsi",
+      "dead": true,
+      "reason": "xunlei-invalid"
+    },
+    {
+      "id": "tv-202610-0003",
+      "platform": "xunlei",
+      "url": "https://pan.xunlei.com/s/VP3aVRo--Mtb80bcED3198nlA1?pwd=8n9f",
+      "dead": true,
+      "reason": "xunlei-invalid"
+    },
+    {
+      "id": "tv-202610-0001",
+      "platform": "xunlei",
+      "url": "https://pan.xunlei.com/s/VP3kFgWZ6FbbBNP1lMqkpp3_A1?pwd=b6ws",
+      "dead": true,
+      "reason": "xunlei-invalid"
+    }
+  ]
 }
