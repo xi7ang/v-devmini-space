@@ -369,25 +369,26 @@
   "platform": "xunlei",
   "url": "https://pan.xunlei.com/s/VP46lPd-sh4bjVwnfs781BJTA1?pwd=9sy4",
   "pwd": "9sy4",
-  "links": [
-   {
-    "platform": "xunlei",
-    "url": "https://pan.xunlei.com/s/VP46lPd-sh4bjVwnfs781BJTA1?pwd=9sy4",
-    "pwd": "9sy4"
-   }
-  ],
+  "links": [],
   "size": "",
   "sizeBytes": null,
   "quality": "4K",
   "year": 2026,
   "cover": "/covers/yizhanchengming.webp",
   "desc": "时秦桧把持朝堂，操控麾下缇骑四处镇压抗金义军。数月前，金使等四十一人命丧七里铺，江湖传言痛下杀手者正是唯一幸存的文官沈放。缇骑精锐奉命缉凶，下落不明的二十八万两涉案白银也引来不少江湖人士。各路人马齐聚驿站，竟无一人拿下沈放，更有不少高手接连横死。沈放却哭诉自己手无缚鸡之力，命案全系一名少年剑客所为……",
-  "status": "active",
+  "status": "inactive",
   "featured": false,
   "addedAt": "2026-10-17T02:52:14+08:00",
-  "updatedAt": "2026-10-17T02:52:14+08:00",
+  "updatedAt": "2026-11-11T05:31:33+08:00",
   "month": "202610",
-  "steamAppID": null
+  "steamAppID": null,
+  "deadLinks": [
+   {
+    "platform": "xunlei",
+    "url": "https://pan.xunlei.com/s/VP46lPd-sh4bjVwnfs781BJTA1?pwd=9sy4",
+    "pwd": "9sy4"
+   }
+  ]
  },
  {
   "id": "tv-202610-0019",
@@ -402,17 +403,12 @@
   ],
   "platform": "uc",
   "url": "https://drive.uc.cn/s/649d96e4a8f74",
-  "pwd": "jwnf",
+  "pwd": null,
   "links": [
    {
     "platform": "uc",
     "url": "https://drive.uc.cn/s/649d96e4a8f74",
     "pwd": null
-   },
-   {
-    "platform": "xunlei",
-    "url": "https://pan.xunlei.com/s/VP46kxhFSaE_AhOuvrpNYWgjA1?pwd=jwnf",
-    "pwd": "jwnf"
    }
   ],
   "size": "",
@@ -424,9 +420,16 @@
   "status": "active",
   "featured": false,
   "addedAt": "2026-10-17T02:52:14+08:00",
-  "updatedAt": "2026-10-23T14:22:00+08:00",
+  "updatedAt": "2026-11-11T05:31:33+08:00",
   "month": "202610",
-  "steamAppID": null
+  "steamAppID": null,
+  "deadLinks": [
+   {
+    "platform": "xunlei",
+    "url": "https://pan.xunlei.com/s/VP46kxhFSaE_AhOuvrpNYWgjA1?pwd=jwnf",
+    "pwd": "jwnf"
+   }
+  ]
  },
  {
   "id": "tv-202610-0018",
@@ -996,23 +999,17 @@
   "platform": "xunlei",
   "url": "https://pan.xunlei.com/s/VP3kFfqIkJ0UeWiK58tdPNwZA1?pwd=y6qs",
   "pwd": "y6qs",
-  "links": [
-   {
-    "platform": "xunlei",
-    "url": "https://pan.xunlei.com/s/VP3kFfqIkJ0UeWiK58tdPNwZA1?pwd=y6qs",
-    "pwd": "y6qs"
-   }
-  ],
+  "links": [],
   "size": "",
   "sizeBytes": null,
   "quality": "4K",
   "year": null,
   "cover": "/covers/tunshi-xingkong.webp",
   "desc": "某一天，地球上出现了不明来由的 RR 病毒，将世界卷入灾难之中。受到感染的动物变异成为可怕的怪兽，大举入侵，人类面临毁灭之际筑起了围墙，成立基地市作为人类最后的堡垒。人类在这一段时间经历的磨难，被称为“大涅槃时期”。",
-  "status": "active",
+  "status": "inactive",
   "featured": false,
   "addedAt": "2026-10-12T13:17:56+08:00",
-  "updatedAt": "2026-10-13T05:31:00+08:00",
+  "updatedAt": "2026-11-11T05:31:33+08:00",
   "month": "202610",
   "steamAppID": null,
   "deadLinks": [
@@ -1020,6 +1017,11 @@
     "platform": "uc",
     "url": "https://drive.uc.cn/s/66334b264bff4",
     "pwd": null
+   },
+   {
+    "platform": "xunlei",
+    "url": "https://pan.xunlei.com/s/VP3kFfqIkJ0UeWiK58tdPNwZA1?pwd=y6qs",
+    "pwd": "y6qs"
    }
   ]
  },
@@ -1081,11 +1083,6 @@
     "platform": "uc",
     "url": "https://drive.uc.cn/s/73e47f5c20274",
     "pwd": null
-   },
-   {
-    "platform": "xunlei",
-    "url": "https://pan.xunlei.com/s/VP3epeFdxItXsjoYywg_sKJmA1?pwd=xhbm",
-    "pwd": "xhbm"
    }
   ],
   "size": "",
@@ -1097,9 +1094,16 @@
   "status": "active",
   "featured": false,
   "addedAt": "2026-10-11T12:01:41+08:00",
-  "updatedAt": "2026-10-11T12:01:41+08:00",
+  "updatedAt": "2026-11-11T05:31:33+08:00",
   "month": "202610",
-  "steamAppID": null
+  "steamAppID": null,
+  "deadLinks": [
+   {
+    "platform": "xunlei",
+    "url": "https://pan.xunlei.com/s/VP3epeFdxItXsjoYywg_sKJmA1?pwd=xhbm",
+    "pwd": "xhbm"
+   }
+  ]
  },
  {
   "id": "tv-202610-0010",
@@ -1120,11 +1124,6 @@
     "platform": "uc",
     "url": "https://drive.uc.cn/s/8063317189cf4",
     "pwd": null
-   },
-   {
-    "platform": "xunlei",
-    "url": "https://pan.xunlei.com/s/VP3epckGBaHb6eabVlNP9u4cA1?pwd=pttn",
-    "pwd": "pttn"
    }
   ],
   "size": "",
@@ -1136,9 +1135,16 @@
   "status": "active",
   "featured": false,
   "addedAt": "2026-10-11T12:01:41+08:00",
-  "updatedAt": "2026-10-13T14:43:31+08:00",
+  "updatedAt": "2026-11-11T05:31:33+08:00",
   "month": "202610",
-  "steamAppID": null
+  "steamAppID": null,
+  "deadLinks": [
+   {
+    "platform": "xunlei",
+    "url": "https://pan.xunlei.com/s/VP3epckGBaHb6eabVlNP9u4cA1?pwd=pttn",
+    "pwd": "pttn"
+   }
+  ]
  },
  {
   "id": "movie-202610-0001",
@@ -1154,25 +1160,26 @@
   "platform": "xunlei",
   "url": "https://pan.xunlei.com/s/VP3epbXtrZZhLUClgp7GELY5A1?pwd=mhv3",
   "pwd": "mhv3",
-  "links": [
-   {
-    "platform": "xunlei",
-    "url": "https://pan.xunlei.com/s/VP3epbXtrZZhLUClgp7GELY5A1?pwd=mhv3",
-    "pwd": "mhv3"
-   }
-  ],
+  "links": [],
   "size": "",
   "sizeBytes": null,
   "quality": "4K",
   "year": 2026,
   "cover": "/covers/zhuoyao-tianshi.webp",
   "desc": "明朝中期，云水镇千年狐妖作乱。四位捉妖天师奉命除妖，与当地阴千户联手查案。狐妖盗取镇妖法器，化作美人设局挑拨离间，众人意外发现深得民心的阴千户竟是狐妖真身。危急时刻，天师梦千雪驰援，五人合力布阵，最终彻底剿灭黑狐妖，守护了云水镇安宁。",
-  "status": "active",
+  "status": "inactive",
   "featured": false,
   "addedAt": "2026-10-11T12:01:40+08:00",
-  "updatedAt": "2026-10-11T12:01:40+08:00",
+  "updatedAt": "2026-11-11T05:31:33+08:00",
   "month": "202610",
-  "steamAppID": null
+  "steamAppID": null,
+  "deadLinks": [
+   {
+    "platform": "xunlei",
+    "url": "https://pan.xunlei.com/s/VP3epbXtrZZhLUClgp7GELY5A1?pwd=mhv3",
+    "pwd": "mhv3"
+   }
+  ]
  },
  {
   "id": "anime-202610-0008",
@@ -1229,25 +1236,26 @@
   "platform": "xunlei",
   "url": "https://pan.xunlei.com/s/VP3eKGfEYv9PlrgMhv_S7jJqA1?pwd=9itt",
   "pwd": "9itt",
-  "links": [
-   {
-    "platform": "xunlei",
-    "url": "https://pan.xunlei.com/s/VP3eKGfEYv9PlrgMhv_S7jJqA1?pwd=9itt",
-    "pwd": "9itt"
-   }
-  ],
+  "links": [],
   "size": "",
   "sizeBytes": null,
   "quality": "4K",
   "year": 2026,
   "cover": "/covers/buke-kaojin-de-ta.webp",
   "desc": "首席芭蕾舞演员洛惜羽发生车祸后穿越到了2014年，遇到“问题学生”贺澜。洛惜羽发现自己和贺澜生死绑定，相爱就会再一次死去。而两人竟一直在循环，在新的时空中重新相遇、相爱，两人决定亲手找到凶手结束这一切。",
-  "status": "active",
+  "status": "inactive",
   "featured": false,
   "addedAt": "2026-10-11T09:40:28+08:00",
-  "updatedAt": "2026-10-11T09:40:28+08:00",
+  "updatedAt": "2026-11-11T05:31:33+08:00",
   "month": "202610",
-  "steamAppID": null
+  "steamAppID": null,
+  "deadLinks": [
+   {
+    "platform": "xunlei",
+    "url": "https://pan.xunlei.com/s/VP3eKGfEYv9PlrgMhv_S7jJqA1?pwd=9itt",
+    "pwd": "9itt"
+   }
+  ]
  },
  {
   "id": "tv-202610-0008",
@@ -1263,25 +1271,26 @@
   "platform": "xunlei",
   "url": "https://pan.xunlei.com/s/VP3eKFSF7sz5vqQh-IG38aO8A1?pwd=wn6n",
   "pwd": "wn6n",
-  "links": [
-   {
-    "platform": "xunlei",
-    "url": "https://pan.xunlei.com/s/VP3eKFSF7sz5vqQh-IG38aO8A1?pwd=wn6n",
-    "pwd": "wn6n"
-   }
-  ],
+  "links": [],
   "size": "",
   "sizeBytes": null,
   "quality": "4K",
   "year": 2026,
   "cover": "/covers/ta-shiyehuo.webp",
   "desc": "该剧讲述了女企业家谢南风在困境中重生，回到1991年的深圳特区，面对家庭困境与命运挑战，她凭借智慧与坚韧，实现了个人与时代的双向成就的故事。",
-  "status": "active",
+  "status": "inactive",
   "featured": false,
   "addedAt": "2026-10-11T09:40:28+08:00",
-  "updatedAt": "2026-10-11T09:40:28+08:00",
+  "updatedAt": "2026-11-11T05:31:33+08:00",
   "month": "202610",
-  "steamAppID": null
+  "steamAppID": null,
+  "deadLinks": [
+   {
+    "platform": "xunlei",
+    "url": "https://pan.xunlei.com/s/VP3eKFSF7sz5vqQh-IG38aO8A1?pwd=wn6n",
+    "pwd": "wn6n"
+   }
+  ]
  },
  {
   "id": "anime-202610-0007",
@@ -1297,25 +1306,26 @@
   "platform": "xunlei",
   "url": "https://pan.xunlei.com/s/VP3eKETQEpJ6CkF7_BpYx_HlA1?pwd=p7f4",
   "pwd": "p7f4",
-  "links": [
-   {
-    "platform": "xunlei",
-    "url": "https://pan.xunlei.com/s/VP3eKETQEpJ6CkF7_BpYx_HlA1?pwd=p7f4",
-    "pwd": "p7f4"
-   }
-  ],
+  "links": [],
   "size": "",
   "sizeBytes": null,
   "quality": "4K",
   "year": 2026,
   "cover": "/covers/sixing-jiangzhi.webp",
   "desc": "年轻律师付庭为追随业界权威大律师严同，需一个月内完成十三宗死刑案心理分析。在封闭房间中，他竟“穿越”进入案卷世界，亲历“犯罪现场”。最后一案指向严同母亲被害真相，付庭必须在现实与虚幻的交界处做出终极审判。",
-  "status": "active",
+  "status": "inactive",
   "featured": false,
   "addedAt": "2026-10-11T09:40:27+08:00",
-  "updatedAt": "2026-10-11T09:40:27+08:00",
+  "updatedAt": "2026-11-11T05:31:33+08:00",
   "month": "202610",
-  "steamAppID": null
+  "steamAppID": null,
+  "deadLinks": [
+   {
+    "platform": "xunlei",
+    "url": "https://pan.xunlei.com/s/VP3eKETQEpJ6CkF7_BpYx_HlA1?pwd=p7f4",
+    "pwd": "p7f4"
+   }
+  ]
  },
  {
   "id": "anime-202610-0006",
@@ -1372,11 +1382,6 @@
     "platform": "uc",
     "url": "https://drive.uc.cn/s/811db0342af84",
     "pwd": null
-   },
-   {
-    "platform": "xunlei",
-    "url": "https://pan.xunlei.com/s/VP3eKD6tJ6N2MzOr43bK3ztXA1?pwd=55mw",
-    "pwd": "55mw"
    }
   ],
   "size": "",
@@ -1388,9 +1393,16 @@
   "status": "active",
   "featured": false,
   "addedAt": "2026-10-11T09:40:26+08:00",
-  "updatedAt": "2026-10-11T09:40:26+08:00",
+  "updatedAt": "2026-11-11T05:31:33+08:00",
   "month": "202610",
-  "steamAppID": null
+  "steamAppID": null,
+  "deadLinks": [
+   {
+    "platform": "xunlei",
+    "url": "https://pan.xunlei.com/s/VP3eKD6tJ6N2MzOr43bK3ztXA1?pwd=55mw",
+    "pwd": "55mw"
+   }
+  ]
  },
  {
   "id": "tv-202610-0007",
