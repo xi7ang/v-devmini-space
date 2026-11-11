@@ -1,77 +1,14 @@
 {
-  "checkedAt": "2026-11-11T05:31:33+0800",
-  "resources": 52,
-  "links": 57,
-  "dead": 10,
-  "uncertain": 1,
+  "checkedAt": "2026-11-12T05:30:42+0800",
+  "resources": 46,
+  "links": 47,
+  "dead": 1,
+  "uncertain": 0,
   "deadLinks": [
     {
-      "id": "movie-202610-0002",
+      "id": "tv-202610-0011",
       "platform": "xunlei",
-      "url": "https://pan.xunlei.com/s/VP46lPd-sh4bjVwnfs781BJTA1?pwd=9sy4",
-      "dead": true,
-      "reason": "xunlei-invalid"
-    },
-    {
-      "id": "tv-202610-0019",
-      "platform": "xunlei",
-      "url": "https://pan.xunlei.com/s/VP46kxhFSaE_AhOuvrpNYWgjA1?pwd=jwnf",
-      "dead": true,
-      "reason": "xunlei-invalid"
-    },
-    {
-      "id": "anime-202610-0010",
-      "platform": "xunlei",
-      "url": "https://pan.xunlei.com/s/VP3kFfqIkJ0UeWiK58tdPNwZA1?pwd=y6qs",
-      "dead": true,
-      "reason": "xunlei-invalid"
-    },
-    {
-      "id": "anime-202610-0009",
-      "platform": "xunlei",
-      "url": "https://pan.xunlei.com/s/VP3epeFdxItXsjoYywg_sKJmA1?pwd=xhbm",
-      "dead": true,
-      "reason": "xunlei-invalid"
-    },
-    {
-      "id": "tv-202610-0010",
-      "platform": "xunlei",
-      "url": "https://pan.xunlei.com/s/VP3epckGBaHb6eabVlNP9u4cA1?pwd=pttn",
-      "dead": true,
-      "reason": "xunlei-invalid"
-    },
-    {
-      "id": "movie-202610-0001",
-      "platform": "xunlei",
-      "url": "https://pan.xunlei.com/s/VP3epbXtrZZhLUClgp7GELY5A1?pwd=mhv3",
-      "dead": true,
-      "reason": "xunlei-invalid"
-    },
-    {
-      "id": "tv-202610-0009",
-      "platform": "xunlei",
-      "url": "https://pan.xunlei.com/s/VP3eKGfEYv9PlrgMhv_S7jJqA1?pwd=9itt",
-      "dead": true,
-      "reason": "xunlei-invalid"
-    },
-    {
-      "id": "tv-202610-0008",
-      "platform": "xunlei",
-      "url": "https://pan.xunlei.com/s/VP3eKFSF7sz5vqQh-IG38aO8A1?pwd=wn6n",
-      "dead": true,
-      "reason": "xunlei-invalid"
-    },
-    {
-      "id": "anime-202610-0007",
-      "platform": "xunlei",
-      "url": "https://pan.xunlei.com/s/VP3eKETQEpJ6CkF7_BpYx_HlA1?pwd=p7f4",
-      "dead": true,
-      "reason": "xunlei-invalid"
-    },
-    {
-      "id": "anime-202610-0005",
-      "platform": "xunlei",
-      "url": "https://pan.xunlei.com/s/VP3eKD6tJ6N2MzOr43bK3ztXA1?pwd=55mw",
+      "url": "https://pan.xunlei.com/s/VP3epfo64QNdXtAcoxzEJm2VA1?pwd=wddu",
       "dead": true,
       "reason": "xunlei-invalid"
     }

@@ -1,5 +1,11 @@
 [
   {
+    "hash": "388e1d3",
+    "date": "2026-11-11T05:33:02+08:00",
+    "message": "chore(links): 巡检下架失效网盘链接（10 条资源）",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/388e1d3f9b71b728c12e2580e04ce1adeab5c8ff"
+  },
+  {
     "hash": "0d6476a",
     "date": "2026-11-10T05:33:29+08:00",
     "message": "chore(links): 巡检下架失效网盘链接（4 条资源）",
@@ -172,11 +178,5 @@
     "date": "2026-10-20T05:31:48+08:00",
     "message": "chore(filelist): 刷新详情页「资源列表」数据",
     "url": "https://github.com/xi7ang/v-devmini-space/commit/e39c4e40ca010a194e31a6bde90ed6aa07aa094b"
-  },
-  {
-    "hash": "c2c34c9",
-    "date": "2026-10-19T05:32:15+08:00",
-    "message": "chore(filelist): 刷新详情页「资源列表」数据",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/c2c34c9251a7270ca51f9ea509c28f58a67c0102"
   }
 ]
