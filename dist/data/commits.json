@@ -1,5 +1,11 @@
 [
   {
+    "hash": "bc4ab9b",
+    "date": "2026-11-12T05:32:14+08:00",
+    "message": "chore(links): 巡检下架失效网盘链接（1 条资源）",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/bc4ab9bedbc983fe815b8809461eba592c540657"
+  },
+  {
     "hash": "388e1d3",
     "date": "2026-11-11T05:33:02+08:00",
     "message": "chore(links): 巡检下架失效网盘链接（10 条资源）",
@@ -172,11 +178,5 @@
     "date": "2026-10-20T12:43:19+08:00",
     "message": "feat: 新增 璀璨之城 + 更新 玉簟秋EP15/嫁金钗EP10/醉梦EP10",
     "url": "https://github.com/xi7ang/v-devmini-space/commit/addbc86575e337e2f3b463b56b9d3d9ab751e0a3"
-  },
-  {
-    "hash": "e39c4e4",
-    "date": "2026-10-20T05:31:48+08:00",
-    "message": "chore(filelist): 刷新详情页「资源列表」数据",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/e39c4e40ca010a194e31a6bde90ed6aa07aa094b"
   }
 ]

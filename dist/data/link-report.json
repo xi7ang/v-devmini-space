@@ -1,16 +1,8 @@
 {
-  "checkedAt": "2026-11-12T05:30:42+0800",
+  "checkedAt": "2026-11-13T05:30:38+0800",
   "resources": 46,
-  "links": 47,
-  "dead": 1,
+  "links": 46,
+  "dead": 0,
   "uncertain": 0,
-  "deadLinks": [
-    {
-      "id": "tv-202610-0011",
-      "platform": "xunlei",
-      "url": "https://pan.xunlei.com/s/VP3epfo64QNdXtAcoxzEJm2VA1?pwd=wddu",
-      "dead": true,
-      "reason": "xunlei-invalid"
-    }
-  ]
+  "deadLinks": []
 }
