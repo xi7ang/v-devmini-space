@@ -1,5 +1,11 @@
 [
   {
+    "hash": "5aa79b7",
+    "date": "2026-11-13T05:32:08+08:00",
+    "message": "chore(filelist): 刷新详情页「资源列表」数据",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/5aa79b7081c40404f9128f79c4a0332f2ced8116"
+  },
+  {
     "hash": "bc4ab9b",
     "date": "2026-11-12T05:32:14+08:00",
     "message": "chore(links): 巡检下架失效网盘链接（1 条资源）",
@@ -172,11 +178,5 @@
     "date": "2026-10-20T12:43:48+08:00",
     "message": "chore: 移除未使用的封面 yudianqiu.webp（条目实际用 yudian-qiu.webp）",
     "url": "https://github.com/xi7ang/v-devmini-space/commit/64ee44917c53d239f248bbce07b39ca6d74fb583"
-  },
-  {
-    "hash": "addbc86",
-    "date": "2026-10-20T12:43:19+08:00",
-    "message": "feat: 新增 璀璨之城 + 更新 玉簟秋EP15/嫁金钗EP10/醉梦EP10",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/addbc86575e337e2f3b463b56b9d3d9ab751e0a3"
   }
 ]
