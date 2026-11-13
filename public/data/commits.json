@@ -1,5 +1,11 @@
 [
   {
+    "hash": "09d2afd",
+    "date": "2026-11-14T05:32:04+08:00",
+    "message": "chore(filelist): 刷新详情页「资源列表」数据",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/09d2afd8a28fdcc9e2c2a9602ee38dc9025bbeda"
+  },
+  {
     "hash": "5aa79b7",
     "date": "2026-11-13T05:32:08+08:00",
     "message": "chore(filelist): 刷新详情页「资源列表」数据",
@@ -172,11 +178,5 @@
     "date": "2026-10-20T21:31:45+08:00",
     "message": "chore: 每日公告：发布【2026-10-20】影视资源更新通知（1 条新资源）",
     "url": "https://github.com/xi7ang/v-devmini-space/commit/8268c747746f27d37d8a39116fd95af74d53b96f"
-  },
-  {
-    "hash": "64ee449",
-    "date": "2026-10-20T12:43:48+08:00",
-    "message": "chore: 移除未使用的封面 yudianqiu.webp（条目实际用 yudian-qiu.webp）",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/64ee44917c53d239f248bbce07b39ca6d74fb583"
   }
 ]
