@@ -1,5 +1,11 @@
 [
   {
+    "hash": "a430981",
+    "date": "2026-11-15T05:32:01+08:00",
+    "message": "chore(filelist): 刷新详情页「资源列表」数据",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/a430981a938707ee30735aeb3938236acb3b59fe"
+  },
+  {
     "hash": "0271438",
     "date": "2026-11-14T05:34:54+08:00",
     "message": "chore(filelist): 刷新详情页「资源列表」数据",
@@ -172,11 +178,5 @@
     "date": "2026-10-21T15:12:10+08:00",
     "message": "data: 大夏守墓人 更新至EP09（换链，保留原封面）",
     "url": "https://github.com/xi7ang/v-devmini-space/commit/8f5ec98551a1a9c9524f53fcacbbde7428028755"
-  },
-  {
-    "hash": "f3ab9ab",
-    "date": "2026-10-21T05:32:07+08:00",
-    "message": "chore(filelist): 刷新详情页「资源列表」数据",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/f3ab9ab630b147356d41926b28b7d64c6b095ec1"
   }
 ]
