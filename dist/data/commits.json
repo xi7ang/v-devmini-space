@@ -1,5 +1,11 @@
 [
   {
+    "hash": "a0b0ed0",
+    "date": "2026-11-17T05:32:01+08:00",
+    "message": "chore(filelist): 刷新详情页「资源列表」数据",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/a0b0ed060bb9a2500a6be1e43136a7bd52a07ac9"
+  },
+  {
     "hash": "d02e116",
     "date": "2026-11-16T05:32:06+08:00",
     "message": "chore(filelist): 刷新详情页「资源列表」数据",
@@ -172,11 +178,5 @@
     "date": "2026-10-21T15:16:40+08:00",
     "message": "feat: 新增 大理寺日志3 (更新至05集) + 封面",
     "url": "https://github.com/xi7ang/v-devmini-space/commit/14f1b911b6e365677a11f1113f77b5b5ba4eba5c"
-  },
-  {
-    "hash": "50c8412",
-    "date": "2026-10-21T15:12:15+08:00",
-    "message": "chore: 重建 sitemap（大夏守墓人更新）",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/50c8412b4f23e0324afa687354bba6671c0daa1a"
   }
 ]
