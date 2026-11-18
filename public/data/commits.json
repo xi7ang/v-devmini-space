@@ -1,5 +1,11 @@
 [
   {
+    "hash": "5d522ab",
+    "date": "2026-11-18T05:32:05+08:00",
+    "message": "chore(filelist): 刷新详情页「资源列表」数据",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/5d522aba9466634e869cefade29c720adc0b18ba"
+  },
+  {
     "hash": "a0b0ed0",
     "date": "2026-11-17T05:32:01+08:00",
     "message": "chore(filelist): 刷新详情页「资源列表」数据",
@@ -172,11 +178,5 @@
     "date": "2026-10-21T15:19:36+08:00",
     "message": "feat: 新增 都市古仙医2 (更新至03集) + 封面",
     "url": "https://github.com/xi7ang/v-devmini-space/commit/b6b8d72fdc38f5ea24e9aa1da2452f6223868fa0"
-  },
-  {
-    "hash": "14f1b91",
-    "date": "2026-10-21T15:16:40+08:00",
-    "message": "feat: 新增 大理寺日志3 (更新至05集) + 封面",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/14f1b911b6e365677a11f1113f77b5b5ba4eba5c"
   }
 ]
