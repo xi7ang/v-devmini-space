@@ -1,5 +1,11 @@
 [
   {
+    "hash": "95c2d38",
+    "date": "2026-11-19T05:32:05+08:00",
+    "message": "chore(filelist): 刷新详情页「资源列表」数据",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/95c2d380b5add5465ae9f4a9851a2c212a65e4c0"
+  },
+  {
     "hash": "5d522ab",
     "date": "2026-11-18T05:32:05+08:00",
     "message": "chore(filelist): 刷新详情页「资源列表」数据",
@@ -172,11 +178,5 @@
     "date": "2026-10-21T21:32:08+08:00",
     "message": "chore: 每日公告：发布【2026-10-21】影视资源更新通知（2 条新资源）",
     "url": "https://github.com/xi7ang/v-devmini-space/commit/832c8b679ba1fe12af90bdace62c58fae9c129a9"
-  },
-  {
-    "hash": "b6b8d72",
-    "date": "2026-10-21T15:19:36+08:00",
-    "message": "feat: 新增 都市古仙医2 (更新至03集) + 封面",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/b6b8d72fdc38f5ea24e9aa1da2452f6223868fa0"
   }
 ]
