@@ -1,5 +1,11 @@
 [
   {
+    "hash": "b66fa70",
+    "date": "2026-11-20T05:32:02+08:00",
+    "message": "chore(filelist): 刷新详情页「资源列表」数据",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/b66fa70b1cbdb1c09eb3c443834e256d45bd972c"
+  },
+  {
     "hash": "95c2d38",
     "date": "2026-11-19T05:32:05+08:00",
     "message": "chore(filelist): 刷新详情页「资源列表」数据",
@@ -172,11 +178,5 @@
     "date": "2026-10-22T11:23:51+08:00",
     "message": "data: 更新 大夏守墓人EP10 / 欲望的陷阱42集 / 妈妈发疯了18集（换链）",
     "url": "https://github.com/xi7ang/v-devmini-space/commit/00923e3b5b3365a7109bf8b594e296bf643a968e"
-  },
-  {
-    "hash": "832c8b6",
-    "date": "2026-10-21T21:32:08+08:00",
-    "message": "chore: 每日公告：发布【2026-10-21】影视资源更新通知（2 条新资源）",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/832c8b679ba1fe12af90bdace62c58fae9c129a9"
   }
 ]
