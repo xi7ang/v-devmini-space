@@ -1,5 +1,11 @@
 [
   {
+    "hash": "10d71b0",
+    "date": "2026-11-21T05:34:03+08:00",
+    "message": "chore(filelist): 刷新详情页「资源列表」数据",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/10d71b095b414c44953add5690b3b155f92c4387"
+  },
+  {
     "hash": "b66fa70",
     "date": "2026-11-20T05:32:02+08:00",
     "message": "chore(filelist): 刷新详情页「资源列表」数据",
@@ -172,11 +178,5 @@
     "date": "2026-10-23T22:25:00+08:00",
     "message": "data: 新增 蜡笔小新/狂王2；更新 玉簟秋EP22、第二次初恋24集完结（加UC）",
     "url": "https://github.com/xi7ang/v-devmini-space/commit/252370cfab965128394a7d4f0f7dbd9f6b5db55d"
-  },
-  {
-    "hash": "00923e3",
-    "date": "2026-10-22T11:23:51+08:00",
-    "message": "data: 更新 大夏守墓人EP10 / 欲望的陷阱42集 / 妈妈发疯了18集（换链）",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/00923e3b5b3365a7109bf8b594e296bf643a968e"
   }
 ]
