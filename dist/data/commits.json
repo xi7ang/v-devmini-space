@@ -1,5 +1,11 @@
 [
   {
+    "hash": "1fe58e4",
+    "date": "2026-11-23T05:32:06+08:00",
+    "message": "chore(filelist): 刷新详情页「资源列表」数据",
+    "url": "https://github.com/xi7ang/v-devmini-space/commit/1fe58e47ef6e65ba43ce77807ce8f91ad5898fe8"
+  },
+  {
     "hash": "2b92ac4",
     "date": "2026-11-22T05:32:11+08:00",
     "message": "chore(filelist): 刷新详情页「资源列表」数据",
@@ -172,11 +178,5 @@
     "date": "2026-10-24T03:01:30+08:00",
     "message": "feat(validate): 公告水位 watermark 加写入校验",
     "url": "https://github.com/xi7ang/v-devmini-space/commit/a737fff231e45c85cfe43f0bb4a23c0918930bea"
-  },
-  {
-    "hash": "e9d510b",
-    "date": "2026-10-24T02:50:35+08:00",
-    "message": "chore: 每日公告：发布【2026-10-24】影视资源更新通知（2 条新资源）",
-    "url": "https://github.com/xi7ang/v-devmini-space/commit/e9d510b2fb0bd5c8227d5a6613efbab8ca61b9c4"
   }
 ]
